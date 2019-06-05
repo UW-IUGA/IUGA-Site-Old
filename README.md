@@ -1,44 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# IUGA Website
 
-## Available Scripts
+Rewritten in 2019 by William Kwok, because the previous website code was way too complex for the use case of the site. That doesn't mean this one will have an easy to learn codebase either, but I have tried my best to make sure this code is scalable for any future modifications.
 
-In the project directory, you can run:
+# What you will need to learn
 
-### `npm start`
+* React hooks - https://reactjs.org/docs/hooks-intro.html
+    * If they're still teaching `class ABC extends Component` you should stop and make sure you use functional components instead because it's the future of React.
+    * How useState and useContext work, as well as how to create own hooks (this is only if you want to modify current hooks)
+* TypeScript - INFO 443
+    * You will need to learn typescript typing with React and hooks which isn't too bad
+* Deploying with Docker - INFO 441
+* NextJS server side rendering
+    * Makes things a lot easier and we don't have to mess around with any redirects with react router and nginx
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Intentional design decisions
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+* No styling libraries, just CSS per component. Harder to make mass changes to styling but easier to onboard and change things on a component by component basis
 
-### `npm test`
+# MAKE SURE TO DOCUMENT PROCESSES!
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The last website was not documented well at all and things were broken. 
 
-### `npm run build`
+# The correct way to test and deploy
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+# How google analytics works
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Make sure images are either hosted on gravatar or are under 500KB
