@@ -17,18 +17,12 @@ Rewritten in 2019 by William Kwok, because the previous website code was way too
 
 * No styling libraries, just CSS per component. Harder to make mass changes to styling but easier to onboard and change things on a component by component basis
 
-# MAKE SURE TO DOCUMENT PROCESSES!
+# MAKE SURE TO DOCUMENT PROCESSES IN THE WIKI!
 
 The last website was not documented well at all and things were broken. 
 
-# The correct way to test and deploy
+# TODO LIST
 
-```
-
-```
-
----
-
-# How google analytics works
-
-# Make sure images are either hosted on gravatar or are under 500KB
+* The correct way to test and deploy
+* How google analytics works
+* Make sure images are either hosted on gravatar or are under 500KB
