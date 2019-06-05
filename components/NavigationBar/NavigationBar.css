@@ -1,0 +1,16 @@
+.navigation-bar {
+    background: white;
+    border-top: 5px solid #39275b;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+#iuga-logo {
+    float: left;
+    height: 3em;
+}
