@@ -23,6 +23,8 @@ The last website was not documented well at all and things were broken.
 
 # TODO LIST
 
+* Intentional design decisions
 * The correct way to test and deploy
 * How google analytics works
 * Make sure images are either hosted on gravatar or are under 500KB
+* imageImports.d.ts
