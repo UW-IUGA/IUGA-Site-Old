@@ -1,5 +1,10 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", sans-serif !important;
+}
+
+.page-content {
+    margin: auto;
+    width: 80%;
 }

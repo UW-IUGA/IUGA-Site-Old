@@ -33,8 +33,10 @@ export const Page: React.FC<PageProps> = ({ children, pathname }) => {
 
     return <>
         <NavigationBar pathname={pathname} />
-        <HeaderBar pathname={pathname} />
-        Hi from page {pathname}
-        {children}
+        <div className="page-content">
+            <HeaderBar pathname={pathname} />
+            Hi from page {pathname}
+            {children}
+        </div>
     </>
 }

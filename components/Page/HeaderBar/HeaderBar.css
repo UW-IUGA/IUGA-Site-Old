@@ -1,0 +1,12 @@
+.header-bar h1 {
+    background-color: #39275b;
+    text-indent: 15px;
+    font-weight: 700;
+    font-size: 35px;
+    color: #fff;
+}
+
+.header-bar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

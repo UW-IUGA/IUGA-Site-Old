@@ -183,11 +183,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderBar", function() { return HeaderBar; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _data_headerBarContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_data/headerBarContent */ "./components/_data/headerBarContent.ts");
+/* harmony import */ var _HeaderBar_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HeaderBar.css */ "./components/Page/HeaderBar/HeaderBar.css");
+/* harmony import */ var _HeaderBar_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_HeaderBar_css__WEBPACK_IMPORTED_MODULE_2__);
 
-const HeaderBar = ({
-  pathname
-}) => {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null);
+
+
+var HeaderBar = function HeaderBar(_ref) {
+  var pathname = _ref.pathname;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "header-bar"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, _data_headerBarContent__WEBPACK_IMPORTED_MODULE_1__["headerBarContent"][pathname])));
 };
 
 /***/ }),
@@ -211,7 +217,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _HeaderBar_HeaderBar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./HeaderBar/HeaderBar */ "./components/Page/HeaderBar/HeaderBar.tsx");
-var _jsxFileName = "/Users/williamk/Desktop/Work/IUGA/iuga-site/components/Page/Page.tsx";
 
 
 
@@ -227,14 +232,14 @@ var _jsxFileName = "/Users/williamk/Desktop/Work/IUGA/iuga-site/components/Page/
  *      William Kwok
  *      June 5, 2019
  */
-const Page = ({
-  children,
-  pathname
-}) => {
+var Page = function Page(_ref) {
+  var children = _ref.children,
+      pathname = _ref.pathname;
+
   /**
    * On component mount, load the fonts. 
    */
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     Object(_Fonts_Fonts__WEBPACK_IMPORTED_MODULE_2__["Fonts"])();
   }, []);
   /**
@@ -242,20 +247,12 @@ const Page = ({
    */
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavigationBar_NavigationBar__WEBPACK_IMPORTED_MODULE_1__["NavigationBar"], {
-    pathname: pathname,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: undefined
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_HeaderBar_HeaderBar__WEBPACK_IMPORTED_MODULE_5__["HeaderBar"], {
-    pathname: pathname,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: undefined
-  }), "Hi from page ", pathname, children);
+    pathname: pathname
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "page-content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_HeaderBar_HeaderBar__WEBPACK_IMPORTED_MODULE_5__["HeaderBar"], {
+    pathname: pathname
+  }), "Hi from page ", pathname, children));
 };
 
 /***/ }),
@@ -268,6 +265,23 @@ const Page = ({
 /***/ (function(module, exports) {
 
 module.exports = "/_next/static/images/IUGA-header-image-776077cd2e66f29ce67bcc70dacabc9b.jpg";
+
+/***/ }),
+
+/***/ "./components/_data/headerBarContent.ts":
+/*!**********************************************!*\
+  !*** ./components/_data/headerBarContent.ts ***!
+  \**********************************************/
+/*! exports provided: headerBarContent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "headerBarContent", function() { return headerBarContent; });
+var headerBarContent = {
+  "/": "About Us",
+  "/elections": "IUGA/WINFO Elections"
+};
 
 /***/ }),
 
