@@ -20,6 +20,10 @@ type RouterProps = WithRouterProps<Record<string, string | string[] | undefined>
  *      June 6, 2019
  */
 class CustomApp extends App<RouterProps> {
+    /**
+     * getInitialProps is required because the way nextjs works is through server side rendering.
+     * It would mess up if you tried to do it the conventional way.
+     */
     static async getInitialProps({ Component, ctx }: NextAppContext) {
         let pageProps = {};
 
@@ -32,12 +36,14 @@ class CustomApp extends App<RouterProps> {
 
     render() {
         const { Component, pageProps, router } = this.props;
-        console.log(router);
-        return < Container >
+
+        // If the year query parameter exists, you can access it. Otherwise it is undefined.
+        return <Container>
             <Page pathname={router.pathname}>
-                <Component {...pageProps} year={router && router.query && router.query.year} />
+                <Component {...pageProps}
+                    year={router && router.query && router.query.year} />
             </Page>
-        </Container >
+        </Container>
     }
 }
 
