@@ -6,6 +6,14 @@ const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
+/**
+ * This is linked to /components/_data/pageCodes.ts, where the VALUES of `PAGE_CODES` in this file
+ * refer to the KEYS of the other file. 
+ * 
+ * Last Modified:
+ *      William Kwok
+ *      June 5, 2019
+ */
 const PAGE_CODES = {
     HOME: "HOME",
     ELECTIONS: "ELECTIONS"

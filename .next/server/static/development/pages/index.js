@@ -258,7 +258,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/router */ "next/router");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _data_pageCodes__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../_data/pageCodes */ "./components/_data/pageCodes.ts");
 
 
 
@@ -266,7 +265,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
+/**
+ * Page is the base page used for all the pages on the IUGA website. It will provide the Navigation
+ * bar with the appropriately selected menu option (If none are appropriate, it will remain black).
+ * 
+ * Last Modified
+ *      William Kwok
+ *      June 5, 2019
+ */
 var Page = function Page(_ref) {
   var children = _ref.children,
       router = _ref.router;
@@ -277,11 +283,19 @@ var Page = function Page(_ref) {
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     Object(_Fonts_Fonts__WEBPACK_IMPORTED_MODULE_2__["Fonts"])();
   }, []);
-  var page = router && router.query && router.query.page || _data_pageCodes__WEBPACK_IMPORTED_MODULE_6__["PAGE_CODES"].HOME;
+  /**
+   * This line of code grabs the page from the query.
+   */
+
+  var page = router && router.query && router.query.page || "";
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavigationBar_NavigationBar__WEBPACK_IMPORTED_MODULE_1__["NavigationBar"], {
     page: page
   }), "Hi from page ", page, children);
 };
+/**
+ * Wrap the class in `withRouter` to gain access to the query.
+ */
+
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_5__["withRouter"])(Page));
 
@@ -344,6 +358,14 @@ const navigationBarLinks = [{
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PAGE_CODES", function() { return PAGE_CODES; });
+/**
+ * PAGE_CODES here has its keys connected to the PAGE_CODES in app.js, and the VALUES are associated
+ * with the `name`s under the `navigationBarLinks` in `./navigationBarLinks.ts`
+ * 
+ * Last Modified
+ *      William Kwok
+ *      June 5, 2019
+ */
 var PAGE_CODES = {
   HOME: "home",
   ELECTIONS: "elections"

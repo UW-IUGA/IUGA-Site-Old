@@ -38,6 +38,7 @@ export const NavigationBar: React.FC<NavigationBarProps> = ({ page }) => {
                 <Nav className="ml-auto" navbar>
                     {navigationBarLinks.map((navbarLink: NavigationBarLink) => {
                         return <NavItem className="navbar-item" key={navbarLink.name}>
+                            {/** Check the current page name against the page code */}
                             <Link href={navbarLink.link}>
                                 <a className={`navbar-link ${PAGE_CODES[page] === navbarLink.name ?
                                     "navbar-link-active" : ""}`}>{navbarLink.name}</a>
