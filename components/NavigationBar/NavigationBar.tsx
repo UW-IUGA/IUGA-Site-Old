@@ -4,10 +4,9 @@ import iugaLogoImage from '../_assets/navbarImages/IUGA-header-image.jpg';
 import './NavigationBar.css';
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from 'reactstrap';
 import { navigationBarLinks, NavigationBarLink } from '../_data/navigationBarLinks';
-import { PAGE_CODES } from '../_data/pageCodes';
 
 type NavigationBarProps = {
-    page: string
+    pathname: string
 }
 
 /**
@@ -23,7 +22,7 @@ type NavigationBarProps = {
  *      William Kwok
  *      June 5, 2019
  */
-export const NavigationBar: React.FC<NavigationBarProps> = ({ page }) => {
+export const NavigationBar: React.FC<NavigationBarProps> = ({ pathname }) => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     return <header>
@@ -38,9 +37,9 @@ export const NavigationBar: React.FC<NavigationBarProps> = ({ page }) => {
                 <Nav className="ml-auto" navbar>
                     {navigationBarLinks.map((navbarLink: NavigationBarLink) => {
                         return <NavItem className="navbar-item" key={navbarLink.name}>
-                            {/** Check the current page name against the page code */}
+                            {/** Check the current page name */}
                             <Link href={navbarLink.link}>
-                                <a className={`navbar-link ${PAGE_CODES[page] === navbarLink.name ?
+                                <a className={`navbar-link ${pathname === navbarLink.link ?
                                     "navbar-link-active" : ""}`}>{navbarLink.name}</a>
                             </Link>
                         </NavItem>
