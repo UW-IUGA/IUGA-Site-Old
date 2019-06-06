@@ -93,10 +93,10 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/FontFaceObserver/FontFaceObserver.ts":
-/*!*********************************************************!*\
-  !*** ./components/FontFaceObserver/FontFaceObserver.ts ***!
-  \*********************************************************/
+/***/ "./components/Fonts/Fonts.ts":
+/*!***********************************!*\
+  !*** ./components/Fonts/Fonts.ts ***!
+  \***********************************/
 /*! exports provided: Fonts */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -106,6 +106,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var fontfaceobserver__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fontfaceobserver */ "fontfaceobserver");
 /* harmony import */ var fontfaceobserver__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fontfaceobserver__WEBPACK_IMPORTED_MODULE_0__);
 // @ts-ignore
+
+/**
+ * Fonts will use the FontFaceObserver library to load the fonts in dynamically to the page. This 
+ * was one of the easier ways I figured to do this. Ideally we would want to keep the fonts local
+ * but getting it off google is alright too. If we want it to stay static, we could mess around 
+ * with using `dangerouslySetInnerHTML` on a `style` tag, but that isn't ideal either. 
+ * 
+ * Last Modified
+ *      William Kwok
+ *      June 5, 2019
+ */
 
 const Fonts = async () => {
   const link = document.createElement("link");
@@ -140,18 +151,21 @@ const Fonts = async () => {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavigationBar", function() { return NavigationBar; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _assets_navbarImages_IUGA_header_image_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../_assets/navbarImages/IUGA-header-image.jpg */ "./components/_assets/navbarImages/IUGA-header-image.jpg");
-/* harmony import */ var _assets_navbarImages_IUGA_header_image_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_navbarImages_IUGA_header_image_jpg__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _NavigationBar_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NavigationBar.css */ "./components/NavigationBar/NavigationBar.css");
-/* harmony import */ var _NavigationBar_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_NavigationBar_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _data_navigationBarLinks__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../_data/navigationBarLinks */ "./components/_data/navigationBarLinks.ts");
-var _jsxFileName = "/Users/williamk/Desktop/Work/IUGA/iuga-site/components/NavigationBar/NavigationBar.tsx";
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_navbarImages_IUGA_header_image_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../_assets/navbarImages/IUGA-header-image.jpg */ "./components/_assets/navbarImages/IUGA-header-image.jpg");
+/* harmony import */ var _assets_navbarImages_IUGA_header_image_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_navbarImages_IUGA_header_image_jpg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _NavigationBar_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./NavigationBar.css */ "./components/NavigationBar/NavigationBar.css");
+/* harmony import */ var _NavigationBar_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_NavigationBar_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! reactstrap */ "reactstrap");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _data_navigationBarLinks__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../_data/navigationBarLinks */ "./components/_data/navigationBarLinks.ts");
+/* harmony import */ var _data_pageCodes__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../_data/pageCodes */ "./components/_data/pageCodes.ts");
+
+
 
 
 
@@ -172,91 +186,42 @@ var _jsxFileName = "/Users/williamk/Desktop/Work/IUGA/iuga-site/components/Navig
  *      William Kwok
  *      June 5, 2019
  */
-const NavigationBar = () => {
-  const [isOpen, setIsOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Navbar"], {
+var NavigationBar = function NavigationBar(_ref) {
+  var page = _ref.page;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+      isOpen = _useState2[0],
+      setIsOpen = _useState2[1];
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Navbar"], {
     className: "navigation-bar",
     light: true,
-    expand: "md",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    expand: "md"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
     alt: "IUGA Logo",
     id: "iuga-logo",
-    src: _assets_navbarImages_IUGA_header_image_jpg__WEBPACK_IMPORTED_MODULE_2___default.a,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: undefined
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["NavbarToggler"], {
-    onClick: () => setIsOpen(!isOpen),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: undefined
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Collapse"], {
+    src: _assets_navbarImages_IUGA_header_image_jpg__WEBPACK_IMPORTED_MODULE_3___default.a
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["NavbarToggler"], {
+    onClick: function onClick() {
+      return setIsOpen(!isOpen);
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Collapse"], {
     isOpen: isOpen,
-    navbar: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Nav"], {
+    navbar: true
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Nav"], {
     className: "ml-auto",
-    navbar: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: undefined
-  }, _data_navigationBarLinks__WEBPACK_IMPORTED_MODULE_5__["navigationBarLinks"].map(navbarLink => {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["NavItem"], {
+    navbar: true
+  }, _data_navigationBarLinks__WEBPACK_IMPORTED_MODULE_6__["navigationBarLinks"].map(function (navbarLink) {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["NavItem"], {
       className: "navbar-item",
-      key: navbarLink.name,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 39
-      },
-      __self: undefined
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: navbarLink.link,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 40
-      },
-      __self: undefined
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      className: "navbar-link",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 41
-      },
-      __self: undefined
+      key: navbarLink.name
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      href: navbarLink.link
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+      className: "navbar-link ".concat(_data_pageCodes__WEBPACK_IMPORTED_MODULE_7__["PAGE_CODES"][page] === navbarLink.name ? "navbar-link-active" : "")
     }, navbarLink.name)));
   })))));
 };
@@ -278,40 +243,47 @@ const NavigationBar = () => {
 /*!**********************************!*\
   !*** ./components/Page/Page.tsx ***!
   \**********************************/
-/*! exports provided: Page */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Page", function() { return Page; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _NavigationBar_NavigationBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../NavigationBar/NavigationBar */ "./components/NavigationBar/NavigationBar.tsx");
-/* harmony import */ var _FontFaceObserver_FontFaceObserver__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../FontFaceObserver/FontFaceObserver */ "./components/FontFaceObserver/FontFaceObserver.ts");
+/* harmony import */ var _Fonts_Fonts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Fonts/Fonts */ "./components/Fonts/Fonts.ts");
 /* harmony import */ var _Page_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Page.css */ "./components/Page/Page.css");
 /* harmony import */ var _Page_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Page_css__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/williamk/Desktop/Work/IUGA/iuga-site/components/Page/Page.tsx";
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _data_pageCodes__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../_data/pageCodes */ "./components/_data/pageCodes.ts");
 
 
 
 
 
-const Page = ({
-  children
-}) => {
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    Object(_FontFaceObserver_FontFaceObserver__WEBPACK_IMPORTED_MODULE_2__["Fonts"])();
+
+
+
+var Page = function Page(_ref) {
+  var children = _ref.children,
+      router = _ref.router;
+
+  /**
+   * On component mount, load the fonts. 
+   */
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    Object(_Fonts_Fonts__WEBPACK_IMPORTED_MODULE_2__["Fonts"])();
   }, []);
+  var page = router && router.query && router.query.page || _data_pageCodes__WEBPACK_IMPORTED_MODULE_6__["PAGE_CODES"].HOME;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavigationBar_NavigationBar__WEBPACK_IMPORTED_MODULE_1__["NavigationBar"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: undefined
-  }), "Hi from page", children);
+    page: page
+  }), "Hi from page ", page, children);
 };
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_5__["withRouter"])(Page));
 
 /***/ }),
 
@@ -336,6 +308,19 @@ module.exports = "/_next/static/images/IUGA-header-image-776077cd2e66f29ce67bcc7
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "navigationBarLinks", function() { return navigationBarLinks; });
+/**
+ * Navigation bar links with names and link. 
+ * 
+ * The name is what is displayed in the navigation bar. The link is the hyperlink reference. It is 
+ * displayed from left to right in order of appearance in this array.
+ * 
+ * The name doubles as a react `key` for the `.map` function. Try to keep this as a single word. I
+ * *think* that react requires `key`s to be a single word. 
+ * 
+ * Last Modified
+ *      William Kwok
+ *      June 5, 2019
+ */
 const navigationBarLinks = [{
   name: "home",
   link: "/"
@@ -346,6 +331,45 @@ const navigationBarLinks = [{
   name: "store",
   link: "http://store.iuga.info"
 }];
+
+/***/ }),
+
+/***/ "./components/_data/pageCodes.ts":
+/*!***************************************!*\
+  !*** ./components/_data/pageCodes.ts ***!
+  \***************************************/
+/*! exports provided: PAGE_CODES */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PAGE_CODES", function() { return PAGE_CODES; });
+var PAGE_CODES = {
+  HOME: "home",
+  ELECTIONS: "elections"
+};
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/array/is-array */ "core-js/library/fn/array/is-array");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/get-iterator */ "core-js/library/fn/get-iterator");
 
 /***/ }),
 
@@ -489,6 +513,104 @@ function _createClass(Constructor, protoProps, staticProps) {
 }
 
 module.exports = _createClass;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithHoles.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithHoles.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _arrayWithHoles; });
+/* harmony import */ var _core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+/* harmony import */ var _core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__);
+
+function _arrayWithHoles(arr) {
+  if (_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default()(arr)) return arr;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArrayLimit.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArrayLimit.js ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _iterableToArrayLimit; });
+/* harmony import */ var _core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/get-iterator */ "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js");
+/* harmony import */ var _core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0__);
+
+function _iterableToArrayLimit(arr, i) {
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = _core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default()(arr), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableRest.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableRest.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _nonIterableRest; });
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance");
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _slicedToArray; });
+/* harmony import */ var _arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayWithHoles */ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithHoles.js");
+/* harmony import */ var _iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArrayLimit */ "./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArrayLimit.js");
+/* harmony import */ var _nonIterableRest__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nonIterableRest */ "./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableRest.js");
+
+
+
+function _slicedToArray(arr, i) {
+  return Object(_arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__["default"])(arr, i) || Object(_nonIterableRest__WEBPACK_IMPORTED_MODULE_2__["default"])();
+}
 
 /***/ }),
 
@@ -925,30 +1047,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Page_Page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Page/Page */ "./components/Page/Page.tsx");
-var _jsxFileName = "/Users/williamk/Desktop/Work/IUGA/iuga-site/pages/index.tsx";
 
 
 
-const IndexPage = () => {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page_Page__WEBPACK_IMPORTED_MODULE_1__["Page"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: undefined
-  }, "hi"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: undefined
-  }, "hihi"));
+var IndexPage = function IndexPage() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page_Page__WEBPACK_IMPORTED_MODULE_1__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "hi"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "hihi"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (IndexPage);
@@ -964,6 +1067,28 @@ const IndexPage = () => {
 
 module.exports = __webpack_require__(/*! /Users/williamk/Desktop/Work/IUGA/iuga-site/pages/index.tsx */"./pages/index.tsx");
 
+
+/***/ }),
+
+/***/ "core-js/library/fn/array/is-array":
+/*!****************************************************!*\
+  !*** external "core-js/library/fn/array/is-array" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/array/is-array");
+
+/***/ }),
+
+/***/ "core-js/library/fn/get-iterator":
+/*!**************************************************!*\
+  !*** external "core-js/library/fn/get-iterator" ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/get-iterator");
 
 /***/ }),
 

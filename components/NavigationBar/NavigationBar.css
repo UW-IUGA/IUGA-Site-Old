@@ -29,8 +29,8 @@
     color: #000000;
 }
 
-.navbar-link:hover {
-    color: #d7a900;
+.navbar-link:hover, .navbar-link-active, .navbar-link:focus {
+    color: #d7a900 !important;
     border-bottom: 3.5px solid #d7a900;
     text-decoration: none;
 }
