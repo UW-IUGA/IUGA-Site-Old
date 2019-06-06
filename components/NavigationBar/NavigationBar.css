@@ -14,3 +14,23 @@
     float: left;
     height: 3em;
 }
+
+.navbar-item {
+    margin-right: 1em;
+    font-size: 125%;
+}
+
+.navbar-link {
+    font-family: "PT Sans";
+}
+
+.navbar-link, .navbar-link:link, .navbar-link:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbar-link:hover {
+    color: #d7a900;
+    border-bottom: 3.5px solid #d7a900;
+    text-decoration: none;
+}

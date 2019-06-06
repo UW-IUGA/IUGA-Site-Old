@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import iugaLogoImage from '../_assets/navbarImages/IUGA-header-image.jpg';
 import './NavigationBar.css';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from 'reactstrap';
 import { navigationBarLinks, NavigationBarLink } from '../_data/navigationBarLinks';
 
 type NavigationBarProps = {
@@ -27,20 +27,18 @@ export const NavigationBar: React.FC<NavigationBarProps> = () => {
 
     return <header>
         <Navbar className="navigation-bar" light expand="md">
-            <NavbarBrand>
-                <Link href="/">
-                    <a>
-                        <img alt="IUGA Logo" id="iuga-logo" src={iugaLogoImage} />
-                    </a>
-                </Link>
-            </NavbarBrand>
+            <Link href="/">
+                <a>
+                    <img alt="IUGA Logo" id="iuga-logo" src={iugaLogoImage} />
+                </a>
+            </Link>
             <NavbarToggler onClick={() => setIsOpen(!isOpen)} />
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                     {navigationBarLinks.map((navbarLink: NavigationBarLink) => {
-                        return <NavItem>
+                        return <NavItem className="navbar-item" key={navbarLink.name}>
                             <Link href={navbarLink.link}>
-                                <a>{navbarLink.name}</a>
+                                <a className="navbar-link">{navbarLink.name}</a>
                             </Link>
                         </NavItem>
                     })}
