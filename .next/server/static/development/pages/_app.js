@@ -1616,8 +1616,8 @@ function (_App) {
       var _this$props = this.props,
           Component = _this$props.Component,
           pageProps = _this$props.pageProps,
-          router = _this$props.router;
-      console.log(router);
+          router = _this$props.router; // If the year query parameter exists, you can access it. Otherwise it is undefined.
+
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_9__["Container"], null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_Page_Page__WEBPACK_IMPORTED_MODULE_11__["Page"], {
         pathname: router.pathname
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, pageProps, {
@@ -1626,6 +1626,11 @@ function (_App) {
     }
   }], [{
     key: "getInitialProps",
+
+    /**
+     * getInitialProps is required because the way nextjs works is through server side rendering.
+     * It would mess up if you tried to do it the conventional way.
+     */
     value: function () {
       var _getInitialProps = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
       /*#__PURE__*/
