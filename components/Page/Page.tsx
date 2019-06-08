@@ -4,6 +4,7 @@ import { Fonts } from '../Fonts/Fonts';
 import './Page.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { HeaderBar } from './HeaderBar/HeaderBar';
+import { HelmetContent } from './HelmetContent/HelmetContent';
 
 type PageProps = {
     children: React.ReactNode,
@@ -16,7 +17,7 @@ type PageProps = {
  * 
  * Last Modified
  *      William Kwok
- *      June 5, 2019
+ *      June 7, 2019
  */
 export const Page: React.FC<PageProps> = ({ children, pathname }) => {
     /**
@@ -26,16 +27,11 @@ export const Page: React.FC<PageProps> = ({ children, pathname }) => {
         Fonts();
     }, []);
 
-    /**
-     * This line of code grabs the page from the query.
-     */
-
-
     return <>
+        <HelmetContent />
         <NavigationBar pathname={pathname} />
         <div className="page-content">
             <HeaderBar pathname={pathname} />
-            Hi from page {pathname}
             {children}
         </div>
     </>

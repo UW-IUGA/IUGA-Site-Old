@@ -38,6 +38,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: "PT Sans", sans-serif !important;
+    background-color: #ebebeb !important;
 }
 
 .page-content {
@@ -62,6 +63,28 @@ body {
 .header-bar {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.content-box {
+    border-top: 4px solid #39275b;
+    padding: 10px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.social-container {
+    color: #39275B;
+    margin-bottom: 10px;
+}
+
+.social-container a {
+    text-decoration: none !important;
+}
+
+.social-title {
+    font-size: 125%;
+    margin-left: 10px;
 }
 
 /*# sourceMappingURL=styles.chunk.css.map*/

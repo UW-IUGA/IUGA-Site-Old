@@ -1,6 +1,17 @@
-import { faGithub, faInstagram, faFacebook, IconDefinition } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faFacebook, IconDefinition } from '@fortawesome/free-brands-svg-icons';
 import alejandro from "../_assets/electionsImages/2019/alejandro.jpg";
+import william from "../_assets/electionsImages/2019/williamkwok.jpg";
+import casey from "../_assets/electionsImages/2019/caseytran.jpg";
+import godgiven from "../_assets/electionsImages/2019/godgiven.jpg";
+import shruti from "../_assets/electionsImages/2019/shrutir.jpg";
 
+/**
+ * Use these officers enumerates below when you define them and the associated role.
+ * 
+ * Last Modified
+ *      William Kwok
+ *      June 7, 2019
+ */
 enum Officers {
     PRESIDENT = "President",
     VICE_PRESIDENT = "Vice President",
@@ -22,7 +33,7 @@ type SocialMediaIcons = {
 type OfficerInfo = {
     position: Officers,
     name: string,
-    picture: string,
+    picture?: string,
     github?: string,
     linkedin?: string
 }
@@ -38,18 +49,33 @@ type HomePageData = {
     socialMediaTitle: string,
     socialMedia: SocialMediaIcons[],
     officers: OfficerInfo[],
+    membershipBlurb: string,
     positionInformation: {
         [idx: string]: OfficerResponsibilities
     }
 }
 
+/**
+ * homePageData is all the data that is on the home page.
+ * 
+ * Includes: 
+ *      Main Blurb
+ *      Social Media Links and Associated FontAwesome Icon
+ *      Officers
+ *      Officer position descriptions
+ *      Membership blurb
+ * 
+ * Last Modified
+ *      William Kwok
+ *      June 7, 2019
+ */
 export const homePageData: HomePageData = {
     blurbTitle: "What is IUGA?",
     blurb: "We are the Informatics Undergraduate Association. We are an RSO that acts as the student government for Informatics students. We communicate between the Informatics student body, faculty, and administration of the University of Washington Information School. We host fun, community building events as well as events for professional development.",
     socialMediaTitle: "Follow us to keep up with all things Informatics!",
     socialMedia: [
         {
-            title: "Facebook",
+            title: "IUGA Facebook Group",
             link: "http://bit.ly/iugafb",
             icon: faFacebook
         },
@@ -59,67 +85,64 @@ export const homePageData: HomePageData = {
             icon: faInstagram
         }
     ],
+    membershipBlurb: "Membership eligibility in IUGA is held by matriculated declared Informatics majors as defined by the Information School and the University of Washington. Members must also be in good disciplinary standing as outlined in the Student Code at the University of Washington.",
     officers: [
         {
             position: Officers.PRESIDENT,
             name: "Alejandro Huante",
             picture: alejandro,
+            github: "https://github.com/ahuante-1741170",
+            linkedin: "https://www.linkedin.com/in/alejandro-huante-28533a141/"
         },
         {
             position: Officers.VICE_PRESIDENT,
             name: "James Kim",
-            picture: "",
             github: "https://github.com/thejameskim",
             linkedin: "https://www.linkedin.com/in/thejameskim/"
         },
         {
             position: Officers.FINANCE,
             name: "Kiran Pradhan",
-            picture: "",
-            github: "",
-            linkedin: ""
+            github: "https://github.com/kiranpradhan01",
+            linkedin: "https://www.linkedin.com/in/kiran-pradhan-aa8861162/"
         },
         {
             position: Officers.CREATIVE,
             name: "Casey Tran",
-            picture: "",
-            github: "",
-            linkedin: ""
+            picture: casey,
+            linkedin: "https://www.linkedin.com/in/caseytran/"
         },
         {
             position: Officers.PUBLIC_RELATIONS,
             name: "Allison Lee",
-            picture: "",
-            github: "",
-            linkedin: ""
+            github: "https://github.com/alliL",
+            linkedin: "https://www.linkedin.com/in/allison20/"
         },
         {
             position: Officers.OUTREACH,
             name: "Dayoung Cheong",
-            picture: "",
-            github: "",
-            linkedin: ""
+            github: "https://github.com/dayoungcheong",
+            linkedin: "https://www.linkedin.com/in/dayoungcheong/"
         },
         {
             position: Officers.DIVERSITY,
             name: "Godgiven Reamico",
-            picture: "",
-            github: "",
-            linkedin: ""
+            picture: godgiven,
+            linkedin: "https://www.linkedin.com/in/godgiven1/"
         },
         {
             position: Officers.IT,
             name: "William Kwok",
-            picture: "",
-            github: "",
-            linkedin: ""
+            picture: william,
+            github: "https://github.com/kwokwilliam",
+            linkedin: "https://www.linkedin.com/in/william-w-kwok/"
         },
         {
             position: Officers.ACADEMIC,
             name: "Shruti Rajagopalan",
-            picture: "",
-            github: "",
-            linkedin: ""
+            picture: shruti,
+            github: "https://github.com/ShrutiR5",
+            linkedin: "https://www.linkedin.com/in/shrutira/"
         }
     ],
     positionInformation: {

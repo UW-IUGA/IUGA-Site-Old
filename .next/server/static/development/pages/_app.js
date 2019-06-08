@@ -314,6 +314,78 @@ var HeaderBar = function HeaderBar(_ref) {
 
 /***/ }),
 
+/***/ "./components/Page/HelmetContent/HelmetContent.tsx":
+/*!*********************************************************!*\
+  !*** ./components/Page/HelmetContent/HelmetContent.tsx ***!
+  \*********************************************************/
+/*! exports provided: HelmetContent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HelmetContent", function() { return HelmetContent; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-helmet */ "react-helmet");
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_site_bbq_banner_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_assets/site/bbq_banner.jpg */ "./components/_assets/site/bbq_banner.jpg");
+/* harmony import */ var _assets_site_bbq_banner_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_site_bbq_banner_jpg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_site_IUGA_Monogram_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../_assets/site/IUGA-Monogram.jpg */ "./components/_assets/site/IUGA-Monogram.jpg");
+/* harmony import */ var _assets_site_IUGA_Monogram_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_site_IUGA_Monogram_jpg__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+var icon = __webpack_require__(/*! ../../_assets/site/icon.png */ "./components/_assets/site/icon.png");
+
+var HelmetContent = function HelmetContent() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_helmet__WEBPACK_IMPORTED_MODULE_1__["Helmet"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    charSet: "utf-8"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "viewport",
+    content: "width=device-width, initial-scale=1"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    property: "og:title",
+    content: "Informatics Undergraduate Association (IUGA)"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    property: "og:site_name",
+    content: "Informatics Undergraduate Association (IUGA)"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    property: "og:description",
+    content: "The Informatics Undergraduate Association (IUGA) is a Registered Student Organization that functions as a student government for Informatics students."
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    property: "og:image",
+    content: _assets_site_bbq_banner_jpg__WEBPACK_IMPORTED_MODULE_2___default.a
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    property: "og:type",
+    content: "school"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "twitter:card",
+    content: "summary"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "twitter:site",
+    content: "@iugauw"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "twitter:title",
+    content: "Informatics Undergraduate Association"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "twitter:description",
+    content: "The Informatics Undergraduate Association (IUGA) is a Registered Student Organization that functions as a student government for Informatics students."
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "twitter:image",
+    content: _assets_site_IUGA_Monogram_jpg__WEBPACK_IMPORTED_MODULE_3___default.a
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "twitter:image:alt",
+    content: "Informatics Undergraduate Association (IUGA) Logo"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+    rel: "shortcut icon",
+    href: icon
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "IUGA"));
+};
+
+/***/ }),
+
 /***/ "./components/Page/Page.css":
 /*!**********************************!*\
   !*** ./components/Page/Page.css ***!
@@ -344,6 +416,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _HeaderBar_HeaderBar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./HeaderBar/HeaderBar */ "./components/Page/HeaderBar/HeaderBar.tsx");
+/* harmony import */ var _HelmetContent_HelmetContent__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./HelmetContent/HelmetContent */ "./components/Page/HelmetContent/HelmetContent.tsx");
+
 
 
 
@@ -357,7 +431,7 @@ __webpack_require__.r(__webpack_exports__);
  * 
  * Last Modified
  *      William Kwok
- *      June 5, 2019
+ *      June 7, 2019
  */
 var Page = function Page(_ref) {
   var children = _ref.children,
@@ -369,17 +443,13 @@ var Page = function Page(_ref) {
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     Object(_Fonts_Fonts__WEBPACK_IMPORTED_MODULE_2__["Fonts"])();
   }, []);
-  /**
-   * This line of code grabs the page from the query.
-   */
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavigationBar_NavigationBar__WEBPACK_IMPORTED_MODULE_1__["NavigationBar"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_HelmetContent_HelmetContent__WEBPACK_IMPORTED_MODULE_6__["HelmetContent"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavigationBar_NavigationBar__WEBPACK_IMPORTED_MODULE_1__["NavigationBar"], {
     pathname: pathname
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "page-content"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_HeaderBar_HeaderBar__WEBPACK_IMPORTED_MODULE_5__["HeaderBar"], {
     pathname: pathname
-  }), "Hi from page ", pathname, children));
+  }), children));
 };
 
 /***/ }),
@@ -392,6 +462,39 @@ var Page = function Page(_ref) {
 /***/ (function(module, exports) {
 
 module.exports = "/_next/static/images/IUGA-header-image-776077cd2e66f29ce67bcc70dacabc9b.jpg";
+
+/***/ }),
+
+/***/ "./components/_assets/site/IUGA-Monogram.jpg":
+/*!***************************************************!*\
+  !*** ./components/_assets/site/IUGA-Monogram.jpg ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/IUGA-Monogram-b60a3520b854e9efb941f9e41f104d32.jpg";
+
+/***/ }),
+
+/***/ "./components/_assets/site/bbq_banner.jpg":
+/*!************************************************!*\
+  !*** ./components/_assets/site/bbq_banner.jpg ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/bbq_banner-01246598c82596e75e6e7f3c0c707fc6.jpg";
+
+/***/ }),
+
+/***/ "./components/_assets/site/icon.png":
+/*!******************************************!*\
+  !*** ./components/_assets/site/icon.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
 
 /***/ }),
 
@@ -1881,6 +1984,17 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-helmet":
+/*!*******************************!*\
+  !*** external "react-helmet" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-helmet");
 
 /***/ }),
 
