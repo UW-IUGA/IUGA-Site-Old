@@ -45,6 +45,15 @@ body {
     margin: auto;
     width: 80%;
 }
+
+a, a:hover, a:active, a:focus, a:visited {
+    color: #39275B !important;
+    text-decoration: none !important;
+}
+
+.spacer {
+    margin-bottom: 70px;
+}
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -67,11 +76,17 @@ body {
 .content-box {
     border-top: 4px solid #39275b;
     padding: 10px;
-    padding-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
     margin-right: 5px;
     background-color: #fff;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    height: 98%;
+}
+
+.content-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 .social-container {
     color: #39275B;
@@ -85,6 +100,18 @@ body {
 .social-title {
     font-size: 125%;
     margin-left: 10px;
+}
+
+.officers {
+    padding: 0px;
+}
+
+.officer-name {
+    margin-bottom: 0px !important;
+}
+
+.officer-heading {
+    margin-bottom: 5px;
 }
 
 /*# sourceMappingURL=styles.chunk.css.map*/

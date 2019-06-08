@@ -9,3 +9,12 @@ body {
     margin: auto;
     width: 80%;
 }
+
+a, a:hover, a:active, a:focus, a:visited {
+    color: #39275B !important;
+    text-decoration: none !important;
+}
+
+.spacer {
+    margin-bottom: 70px;
+}

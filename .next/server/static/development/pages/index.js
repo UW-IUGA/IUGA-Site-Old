@@ -961,6 +961,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pageStyles_index_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_pageStyles_index_css__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/free-brands-svg-icons */ "@fortawesome/free-brands-svg-icons");
+/* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__);
+
 
 
 
@@ -972,8 +975,11 @@ var IndexPage = function IndexPage() {
   var blurbTitle = _components_data_homePageData__WEBPACK_IMPORTED_MODULE_2__["homePageData"].blurbTitle,
       blurb = _components_data_homePageData__WEBPACK_IMPORTED_MODULE_2__["homePageData"].blurb,
       socialMediaTitle = _components_data_homePageData__WEBPACK_IMPORTED_MODULE_2__["homePageData"].socialMediaTitle,
-      socialMedia = _components_data_homePageData__WEBPACK_IMPORTED_MODULE_2__["homePageData"].socialMedia;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, blurbTitle), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContentBox_ContentBox__WEBPACK_IMPORTED_MODULE_1__["ContentBox"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, blurb)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, socialMediaTitle), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContentBox_ContentBox__WEBPACK_IMPORTED_MODULE_1__["ContentBox"], null, socialMedia.map(function (socialMediaIcon) {
+      socialMedia = _components_data_homePageData__WEBPACK_IMPORTED_MODULE_2__["homePageData"].socialMedia,
+      membershipBlurb = _components_data_homePageData__WEBPACK_IMPORTED_MODULE_2__["homePageData"].membershipBlurb,
+      officers = _components_data_homePageData__WEBPACK_IMPORTED_MODULE_2__["homePageData"].officers,
+      positionInformation = _components_data_homePageData__WEBPACK_IMPORTED_MODULE_2__["homePageData"].positionInformation;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, blurbTitle), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContentBox_ContentBox__WEBPACK_IMPORTED_MODULE_1__["ContentBox"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, blurb)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, socialMediaTitle), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContentBox_ContentBox__WEBPACK_IMPORTED_MODULE_1__["ContentBox"], null, socialMedia.map(function (socialMediaIcon) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
       href: socialMediaIcon.link
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -986,7 +992,47 @@ var IndexPage = function IndexPage() {
     })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "social-title"
     }, socialMediaIcon.title))));
-  })));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Who are your officers? What do they do?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, officers.map(function (officer) {
+    var position = officer.position;
+    var officerPositionInfo = positionInformation[position];
+    var description = officerPositionInfo.description,
+        responsibilities = officerPositionInfo.responsibilities;
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContentBox_ContentBox__WEBPACK_IMPORTED_MODULE_1__["ContentBox"], null, officer.picture && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: officer.picture,
+      alt: officer.name
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "d-flex align-items-center officer-heading"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+      className: "officer-name"
+    }, officer.name), officer.github && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: officer.github
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faGithub"],
+      size: "2x",
+      fixedWidth: true
+    })), officer.linkedin && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: officer.linkedin
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faLinkedin"],
+      size: "2x",
+      fixedWidth: true
+    }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, officer.position), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, responsibilities.map(function (responsibility) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, responsibility);
+    }))));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Membership"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContentBox_ContentBox__WEBPACK_IMPORTED_MODULE_1__["ContentBox"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, membershipBlurb)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Contact us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContentBox_ContentBox__WEBPACK_IMPORTED_MODULE_1__["ContentBox"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Have a comment, question, or suggestion?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Email us at ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "mailto:IUGA@uw.edu"
+  }, "IUGA@uw.edu"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#",
+    onClick: function onClick() {
+      window.scrollTo(0, 0);
+    }
+  }, "\u2191 back to top"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "spacer"
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (IndexPage);
