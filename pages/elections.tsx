@@ -6,7 +6,7 @@ type ElectionsPageProps = {
 const ElectionsPage: React.FC<ElectionsPageProps> = ({ year }) => {
     console.log(year);
     return <>
-
+        This page is under construction
     </>
 }
 
