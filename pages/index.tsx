@@ -6,6 +6,15 @@ import "../pageStyles/index.css";
 import Link from 'next/link';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
+/**
+ * IndexPage is the home page shown at route "/"
+ * 
+ * The data for this page can be modified at `../components/_data/homePageData`
+ * 
+ * Last Modified
+ *      William Kwok
+ *      June 7, 2019
+ */
 const IndexPage: React.FC = () => {
     const {
         blurbTitle,
@@ -16,17 +25,19 @@ const IndexPage: React.FC = () => {
         officers,
         positionInformation
     } = homePageData;
+
     return <>
         <h2>{blurbTitle}</h2>
         <ContentBox>
             <p>{blurb}</p>
         </ContentBox>
+
         <h2>{socialMediaTitle}</h2>
         <ContentBox>
             {socialMedia.map(socialMediaIcon => {
-                return <Link href={socialMediaIcon.link}>
+                return <Link href={socialMediaIcon.link} key={socialMediaIcon.title}>
                     <a>
-                        <div className="container d-flex align-items-center social-container">
+                        <div className="d-flex align-items-center social-container">
                             <div><FontAwesomeIcon icon={socialMediaIcon.icon} size={"2x"}
                                 fixedWidth
                                 className={"social-icon"} /></div>
@@ -38,6 +49,7 @@ const IndexPage: React.FC = () => {
                 </Link>
             })}
         </ContentBox>
+
         <h2>Who are your officers? What do they do?</h2>
         <div className="row">
             {officers.map(officer => {
@@ -45,19 +57,25 @@ const IndexPage: React.FC = () => {
                 const officerPositionInfo = positionInformation[position];
                 const { description, responsibilities } = officerPositionInfo;
 
-                return <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                return <div
+                    className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12"
+                    key={officer.position}>
                     <ContentBox>
                         {officer.picture && <img src={officer.picture} alt={officer.name} />}
                         <div className="d-flex align-items-center officer-heading">
                             <h4 className="officer-name">{officer.name}</h4>
-                            {officer.github && <a href={officer.github}><FontAwesomeIcon icon={faGithub} size={"2x"} fixedWidth /></a>}
-                            {officer.linkedin && <a href={officer.linkedin}><FontAwesomeIcon icon={faLinkedin} size={"2x"} fixedWidth /></a>}
+                            {officer.github && <a href={officer.github}>
+                                <FontAwesomeIcon icon={faGithub} size={"2x"} fixedWidth />
+                            </a>}
+                            {officer.linkedin && <a href={officer.linkedin}>
+                                <FontAwesomeIcon icon={faLinkedin} size={"2x"} fixedWidth />
+                            </a>}
                         </div>
                         <h5>{officer.position}</h5>
                         <p>{description}</p>
                         <ul>
-                            {responsibilities.map(responsibility => {
-                                return <li>{responsibility}</li>
+                            {responsibilities.map((responsibility, index) => {
+                                return <li key={"resp" + index}>{responsibility}</li>
                             })}
                         </ul>
                     </ContentBox>
@@ -71,7 +89,6 @@ const IndexPage: React.FC = () => {
         </ContentBox>
 
         <h2>Contact us</h2>
-
         <ContentBox>
             <p>Have a comment, question, or suggestion?</p>
             <p>Email us at <a href="mailto:IUGA@uw.edu">IUGA@uw.edu</a></p>
