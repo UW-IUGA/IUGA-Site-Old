@@ -13,4 +13,4 @@ RUN npm run build
 # RUN apk del dev-dependencies
 
 EXPOSE 3000
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "productionstart"]

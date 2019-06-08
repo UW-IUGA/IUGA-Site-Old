@@ -1,17 +1,36 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_2011977376de5c4d4cfb.js"
-  ],
+  "devFiles": [],
   "pages": {
+    "/": [
+      "static/runtime/webpack-8ed9452df514b4d17d80.js",
+      "static/chunks/commons.00bb2a27a57cb9e736bf.js",
+      "static/css/styles.f7a85dbc.chunk.css",
+      "static/chunks/styles.9dce279d459cdb3247ba.js",
+      "static/runtime/main-541f01c65744a5c2c60b.js"
+    ],
     "/_app": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-8ed9452df514b4d17d80.js",
+      "static/chunks/commons.00bb2a27a57cb9e736bf.js",
+      "static/css/styles.f7a85dbc.chunk.css",
+      "static/chunks/styles.9dce279d459cdb3247ba.js",
+      "static/runtime/main-541f01c65744a5c2c60b.js"
     ],
     "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-8ed9452df514b4d17d80.js",
+      "static/chunks/commons.00bb2a27a57cb9e736bf.js",
+      "static/runtime/main-541f01c65744a5c2c60b.js"
+    ],
+    "/elections": [
+      "static/runtime/webpack-8ed9452df514b4d17d80.js",
+      "static/chunks/commons.00bb2a27a57cb9e736bf.js",
+      "static/runtime/main-541f01c65744a5c2c60b.js"
+    ],
+    "/index": [
+      "static/runtime/webpack-8ed9452df514b4d17d80.js",
+      "static/chunks/commons.00bb2a27a57cb9e736bf.js",
+      "static/css/styles.f7a85dbc.chunk.css",
+      "static/chunks/styles.9dce279d459cdb3247ba.js",
+      "static/runtime/main-541f01c65744a5c2c60b.js"
     ]
   }
 }
