@@ -11,5 +11,6 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({ pathname }) => {
         <div className="header-bar">
             <h1>{headerBarContent[pathname]}</h1>
         </div>
+        <div className="header-spacer"></div>
     </>
 }

@@ -28,6 +28,7 @@ const IndexPage: React.FC = () => {
 
     return <>
         <p>This page is currently undergoing some changes. Please excuse any broken images or links!</p>
+
         <h2>{blurbTitle}</h2>
         <ContentBox>
             <p>{blurb}</p>

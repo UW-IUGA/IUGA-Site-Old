@@ -1,12 +1,35 @@
 .header-bar h1 {
-    background-color: #39275b;
     text-indent: 15px;
     font-weight: 700;
     font-size: 35px;
+    margin-bottom: 0px;
+    padding-top: 10px;
     color: #fff;
+    margin: auto;
+    width: 80%;
 }
 
 .header-bar {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    background-color: #39275b;
+}
+
+.header-bar:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    left: 0;
+    width: 100%;
+    border-style: solid;
+    /**
+     * left height, width, right height
+     */
+    border-width: 20px 100vw 0px 0px;
+    /**
+     * left color, right color
+     */
+    border-color: #39275b transparent transparent transparent;
+}
+
+.header-spacer {
+    margin-top: 30px;
 }

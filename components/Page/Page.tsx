@@ -30,8 +30,8 @@ export const Page: React.FC<PageProps> = ({ children, pathname }) => {
     return <>
         <HelmetContent />
         <NavigationBar pathname={pathname} />
+        <HeaderBar pathname={pathname} />
         <div className="page-content">
-            <HeaderBar pathname={pathname} />
             {children}
         </div>
     </>
