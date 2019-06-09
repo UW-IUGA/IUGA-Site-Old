@@ -13,7 +13,7 @@ const icon = require('../../_assets/site/icon.png');
  * 
  * Last Modified
  *      William Kwok
-*       June 7, 2019
+*       June 9, 2019
  */
 export const HelmetContent = () => {
     return <Helmet>
