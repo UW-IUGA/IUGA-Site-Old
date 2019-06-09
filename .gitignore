@@ -3,6 +3,8 @@
 # Ignore the nextjs output directories
 /.next
 /dist
+.next/
+dist/
 
 # dependencies
 /node_modules
