@@ -4,7 +4,9 @@ import william from "../_assets/electionsImages/2019/williamkwok.jpg";
 import casey from "../_assets/electionsImages/2019/caseytran.jpg";
 import godgiven from "../_assets/electionsImages/2019/godgiven.jpg";
 import shruti from "../_assets/electionsImages/2019/shrutir.jpg";
-
+import allison from '../_assets/electionsImages/2019/allison_lee.jpg';
+import dayoung from '../_assets/electionsImages/2019/dayoung.jpg';
+import kiran from '../_assets/electionsImages/2019/kiran.jpg';
 /**
  * Use these officers enumerates below when you define them and the associated role.
  * 
@@ -103,6 +105,7 @@ export const homePageData: HomePageData = {
         {
             position: Officers.FINANCE,
             name: "Kiran Pradhan",
+            picture: kiran,
             github: "https://github.com/kiranpradhan01",
             linkedin: "https://www.linkedin.com/in/kiran-pradhan-aa8861162/"
         },
@@ -115,12 +118,14 @@ export const homePageData: HomePageData = {
         {
             position: Officers.PUBLIC_RELATIONS,
             name: "Allison Lee",
+            picture: allison,
             github: "https://github.com/alliL",
             linkedin: "https://www.linkedin.com/in/allison20/"
         },
         {
             position: Officers.OUTREACH,
             name: "Dayoung Cheong",
+            picture: dayoung,
             github: "https://github.com/dayoungcheong",
             linkedin: "https://www.linkedin.com/in/dayoungcheong/"
         },
