@@ -2,6 +2,33 @@
 
 Rewritten in 2019 by William Kwok, because the previous website code was way too complex for the use case of the site. That doesn't mean this one will have an easy to learn codebase either, but I have tried my best to make sure this code is scalable for any future modifications.
 
+# How to install
+
+Using currently node version 12.3.0
+
+```
+npm install
+```
+
+# How to run DEVELOPMENT MODE
+
+On file save, it will refresh the application and start deploying the latest changes.
+
+```
+npm run dev
+```
+
+# How to build and run a LOCAL PRODUCTION mode application
+
+This is what we do on the IUGA server. Production mode is different from development mode because all the files are static and load faster. It is optimized for production rather than development. This means things like variable names are more obfuscated for compression, etc.
+
+```
+npm run build
+npm run productionstart
+```
+
+# Remove below
+
 # What you will need to learn
 
 * React hooks - https://reactjs.org/docs/hooks-intro.html
