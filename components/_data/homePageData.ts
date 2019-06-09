@@ -37,7 +37,8 @@ type OfficerInfo = {
     name: string,
     picture?: string,
     github?: string,
-    linkedin?: string
+    linkedin?: string,
+    website?: string
 }
 
 type OfficerResponsibilities = {
@@ -140,7 +141,8 @@ export const homePageData: HomePageData = {
             name: "William Kwok",
             picture: william,
             github: "https://github.com/kwokwilliam",
-            linkedin: "https://www.linkedin.com/in/william-w-kwok/"
+            linkedin: "https://www.linkedin.com/in/william-w-kwok/",
+            website: "https://williamk.info"
         },
         {
             position: Officers.ACADEMIC,

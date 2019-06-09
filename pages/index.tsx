@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../pageStyles/index.css";
 import Link from 'next/link';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 /**
  * IndexPage is the home page shown at route "/"
  * 
@@ -71,6 +71,9 @@ const IndexPage: React.FC = () => {
                             </a>}
                             {officer.linkedin && <a href={officer.linkedin}>
                                 <FontAwesomeIcon icon={faLinkedin} size={"2x"} fixedWidth />
+                            </a>}
+                            {officer.website && <a href={officer.website}>
+                                <FontAwesomeIcon icon={faGlobe} size={"2x"} fixedWidth />
                             </a>}
                         </div>
                         <h5>{officer.position}</h5>
