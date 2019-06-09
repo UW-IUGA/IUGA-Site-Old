@@ -14,7 +14,7 @@ import kiran from '../_assets/electionsImages/2019/kiran.jpg';
  *      William Kwok
  *      June 7, 2019
  */
-enum Officers {
+export enum Officers {
     PRESIDENT = "President",
     VICE_PRESIDENT = "Vice President",
     FINANCE = "Director of Finance",
@@ -23,7 +23,8 @@ enum Officers {
     OUTREACH = "Director of Outreach",
     DIVERSITY = "Director of Diversity Efforts",
     IT = "Director of Information Technology",
-    ACADEMIC = "Director of Academic Support"
+    ACADEMIC = "Director of Academic Support",
+    OPERATIONS = "Director of Operations" // This was an old role
 }
 
 type SocialMediaIcons = {
@@ -32,7 +33,7 @@ type SocialMediaIcons = {
     icon: IconDefinition
 }
 
-type OfficerInfo = {
+export type OfficerInfo = {
     position: Officers,
     name: string,
     picture?: string,
