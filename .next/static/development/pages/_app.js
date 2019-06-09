@@ -220,8 +220,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+/**
+ * png files have to be `require`d and cannot be imported correctly.
+ */
 
 var icon = __webpack_require__(/*! ../../_assets/site/icon.png */ "./components/_assets/site/icon.png");
+/**
+ * HelmetContent contains crucial metadata about the website, like the title elements, banner
+ * content for linked things, the icon, etc.
+ * 
+ * Last Modified
+ *      William Kwok
+*       June 7, 2019
+ */
+
 
 var HelmetContent = function HelmetContent() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_helmet__WEBPACK_IMPORTED_MODULE_1__["Helmet"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -383,7 +395,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "headerBarContent", function() { return headerBarContent; });
 var headerBarContent = {
   "/": "About Us",
-  "/elections": "IUGA/WINFO Elections"
+  "/elections": "IUGA/WINFO Elections",
+  "/pastofficers": "Past IUGA Officers"
 };
 
 /***/ }),
@@ -411,9 +424,12 @@ __webpack_require__.r(__webpack_exports__);
  *      William Kwok
  *      June 5, 2019
  */
-const navigationBarLinks = [{
+var navigationBarLinks = [{
   name: "home",
   link: "/"
+}, {
+  name: "past officers",
+  link: "/pastofficers"
 }, {
   name: "elections",
   link: "/elections"
