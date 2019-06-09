@@ -1,6 +1,7 @@
 /**
  * This config file is because nextjs does not natively support CSS and TypeScript, so we must
  * use a loader to make sure the nextjs compiler knows to use CSS and TypeScript when we compile
+ * as well as next-images which allows for images to be imported correctly.
  * 
  * Last modified:
  *      William Kwok

@@ -2,8 +2,19 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import bbqbanner from '../../_assets/site/bbq_banner.jpg';
 import monogram from '../../_assets/site/IUGA-Monogram.jpg';
+/**
+ * png files have to be `require`d and cannot be imported correctly.
+ */
 const icon = require('../../_assets/site/icon.png');
 
+/**
+ * HelmetContent contains crucial metadata about the website, like the title elements, banner
+ * content for linked things, the icon, etc.
+ * 
+ * Last Modified
+ *      William Kwok
+*       June 7, 2019
+ */
 export const HelmetContent = () => {
     return <Helmet>
         <meta charSet="utf-8" />
