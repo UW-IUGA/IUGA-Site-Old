@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
 import next from 'next';
-import { CURRENT_YEAR } from 'components/_data/constantsToChangeEachYear';
+import { CURRENT_YEAR } from './components/_data/constantsToChangeEachYear';
 
 const port = process.env.PORT || 3000;
 const dev = process.env.NODE_ENV !== 'production'

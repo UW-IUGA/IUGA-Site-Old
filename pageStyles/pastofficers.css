@@ -1,0 +1,24 @@
+.past-officer-year-selector {
+    text-align: center;
+    font-family: "PT Sans";
+    font-size: 125%;
+}
+
+.past-officer-year-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.past-officer-year-link:hover, .past-officer-year-link-active, .past-officer-year-link:focus {
+    color: #d7a900 !important;
+    border-bottom: 3.5px solid #d7a900;
+    text-decoration: none;
+}
+
+.past-officer-name {
+    margin-bottom: 0px !important;
+}
+
+.past-officers {
+    margin-top: 20px;
+}
