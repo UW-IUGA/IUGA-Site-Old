@@ -19,6 +19,7 @@ import _2017_ethan from '../_assets/electionsImages/2017/ethan-anderson.jpg';
 import _2017_jessica from '../_assets/electionsImages/2017/jessica-libman.jpg';
 import _2017_rosemary from '../_assets/electionsImages/2017/rosemary-adams.jpg';
 import _2017_sanjana from '../_assets/electionsImages/2017/sanjana-galgalikar.jpg';
+import _2017_daniel from '../_assets/electionsImages/2017/daniel-hoang.jpg';
 
 
 /** 2016 officer images */
@@ -169,44 +170,56 @@ export const pastOfficersData: PastOfficersData = {
     2017: [
         {
             position: Officers.PRESIDENT,
-            name: "",
-            picture: ""
+            name: "Ethan Anderson",
+            picture: _2017_ethan,
+            linkedin: "https://www.linkedin.com/in/aethanol"
         },
         {
             position: Officers.VICE_PRESIDENT,
-            name: "",
-            picture: ""
+            name: "Jessica Libman",
+            picture: _2017_jessica,
+            linkedin: "https://www.linkedin.com/in/jessica-libman"
         },
         {
             position: Officers.FINANCE,
-            name: "",
-            picture: ""
+            name: "Davin Lee",
+            picture: _2017_davin
         },
         {
             position: Officers.CREATIVE,
-            name: "",
-            picture: ""
+            name: "Daniel Hoang",
+            picture: _2017_daniel,
+            linkedin: "https://www.linkedin.com/in/dhoang48"
         },
         {
             position: Officers.PUBLIC_RELATIONS,
-            name: "",
-            picture: ""
+            name: "Alex Gilbert",
+            picture: _2017_alex
         },
         {
             position: Officers.OUTREACH,
-            name: "",
-            picture: ""
+            name: "Sanjana Galgalikar",
+            picture: _2017_sanjana,
+            linkedin: "https://www.linkedin.com/in/sanjanagalgalikar"
         },
         {
             position: Officers.IT,
-            name: "",
-            picture: ""
+            name: "Brendan Kellogg",
+            picture: _2017_brendan,
+            linkedin: "https://www.linkedin.com/in/brendankellogg"
         },
         {
             position: Officers.DIVERSITY,
-            name: "",
-            picture: ""
+            name: "Rosemary Adams",
+            picture: _2017_rosemary,
+            linkedin: "https://www.linkedin.com/in/rosemary-adams-067499104"
         },
+        {
+            position: Officers.ACADEMIC,
+            name: "Chris Oh",
+            picture: _2017_chris,
+            linkedin: "https://www.linkedin.com/in/bummookoh"
+        }
     ],
     2016: [
         {
