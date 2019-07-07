@@ -1,4 +1,17 @@
 import { faInstagram, faFacebook, IconDefinition } from '@fortawesome/free-brands-svg-icons';
+
+/**
+ * Make sure when you upload the images, they are square, and small in terms of file size.
+ * 
+ * We run it through squoosh to condense file sizes
+ * 
+ * https://github.com/UW-IUGA/IUGA-Site/wiki/5.-Good-practices
+ * 
+ * Also, pngs have to be required instead of imported because the next loader doesn't like
+ * pngs for some reason
+ * 
+ * `const abc = require('../abc/abc.png')`
+ */
 import alejandro from "../_assets/electionsImages/2019/alejandro.jpg";
 import william from "../_assets/electionsImages/2019/williamkwok.jpg";
 import casey from "../_assets/electionsImages/2019/caseytran.jpg";
@@ -7,6 +20,7 @@ import shruti from "../_assets/electionsImages/2019/shrutir.jpg";
 import allison from '../_assets/electionsImages/2019/allison_lee.jpg';
 import dayoung from '../_assets/electionsImages/2019/dayoung.jpg';
 import kiran from '../_assets/electionsImages/2019/kiran.jpg';
+
 /**
  * Use these officers enumerates below when you define them and the associated role.
  * 
