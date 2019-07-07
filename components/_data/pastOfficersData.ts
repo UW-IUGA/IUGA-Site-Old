@@ -10,6 +10,17 @@ import _2019_allison from '../_assets/electionsImages/2019/allison_lee.jpg';
 import _2019_dayoung from '../_assets/electionsImages/2019/dayoung.jpg';
 import _2019_kiran from '../_assets/electionsImages/2019/kiran.jpg';
 
+/** 2018 officer images */
+import _2018_andrea from '../_assets/electionsImages/2018/andrea_chen.jpg'
+import _2018_anton from '../_assets/electionsImages/2018/anton_zheng.jpg'
+import _2018_cole from '../_assets/electionsImages/2018/cole_french.jpg'
+import _2018_joseph from '../_assets/electionsImages/2018/joseph_tsai.jpg'
+import _2018_katie from '../_assets/electionsImages/2018/katie_goulding.jpg'
+import _2018_kidus from '../_assets/electionsImages/2018/kidus_sendeke.jpg'
+import _2018_mano from '../_assets/electionsImages/2018/mano_barkovics.jpg'
+import _2018_neha from '../_assets/electionsImages/2018/neha_yadav.jpg'
+import _2018_oorja from '../_assets/electionsImages/2018/oorja_chowdhary.jpg'
+
 /** 2017 officer images */
 import _2017_alex from '../_assets/electionsImages/2017/alex-gilbert.jpg';
 import _2017_brendan from '../_assets/electionsImages/2017/brendan-kellogg.jpg';
@@ -20,7 +31,6 @@ import _2017_jessica from '../_assets/electionsImages/2017/jessica-libman.jpg';
 import _2017_rosemary from '../_assets/electionsImages/2017/rosemary-adams.jpg';
 import _2017_sanjana from '../_assets/electionsImages/2017/sanjana-galgalikar.jpg';
 import _2017_daniel from '../_assets/electionsImages/2017/daniel-hoang.jpg';
-
 
 /** 2016 officer images */
 import _2016_belltowne from '../_assets/electionsImages/2016/alexander-bell-towne.jpg';
@@ -128,44 +138,61 @@ export const pastOfficersData: PastOfficersData = {
     2018: [
         {
             position: Officers.PRESIDENT,
-            name: "",
-            picture: ""
+            name: "Andrea Chen",
+            picture: _2018_andrea,
+            linkedin: "https://www.linkedin.com/in/abchen",
+            website: "http://abchen.com/",
+            github: "https://github.com/andyblueyo"
         },
         {
             position: Officers.VICE_PRESIDENT,
-            name: "",
-            picture: ""
+            name: "Manó Bárkovics",
+            picture: _2018_mano,
+            website: "http://manobarkovics.com/",
+            linkedin: "https://www.linkedin.com/in/manobarkovics"
         },
         {
             position: Officers.FINANCE,
-            name: "",
-            picture: ""
+            name: "Anton Zheng",
+            picture: _2018_anton,
+            linkedin: "https://www.linkedin.com/in/antonzheng"
         },
         {
             position: Officers.CREATIVE,
-            name: "",
-            picture: ""
+            name: "Oorja Chowdhary",
+            picture: _2018_oorja,
+            linkedin: "https://www.linkedin.com/in/oorjac"
         },
         {
             position: Officers.PUBLIC_RELATIONS,
-            name: "",
-            picture: ""
+            name: "Neha Yadav",
+            picture: _2018_neha,
+            linkedin: "https://www.linkedin.com/in/neha-yadav-2b6498109"
         },
         {
             position: Officers.OUTREACH,
-            name: "",
-            picture: ""
+            name: "Cole French",
+            picture: _2018_cole,
+            linkedin: "https://www.linkedin.com/in/colemanfrench"
         },
         {
             position: Officers.IT,
-            name: "",
-            picture: ""
+            name: "Kidus Sendeke",
+            picture: _2018_kidus,
+            linkedin: "https://www.linkedin.com/in/kidus-sendeke"
         },
         {
             position: Officers.DIVERSITY,
-            name: "",
-            picture: ""
+            name: "Katie Goulding",
+            picture: _2018_katie,
+            linkedin: "https://www.linkedin.com/in/kate-goulding-613569164"
         },
+        {
+            position: Officers.ACADEMIC,
+            name: "Joseph Tsai",
+            picture: _2018_joseph,
+            linkedin: "https://www.linkedin.com/in/josephktsai"
+        }
     ],
     2017: [
         {
