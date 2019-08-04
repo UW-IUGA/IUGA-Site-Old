@@ -20,21 +20,21 @@ const handle = app.getRequestHandler();
  *      June 6, 2019
  */
 app.prepare()
-    .then(() => {
-        const server = express();
+	.then(() => {
+		const server = express();
 
         /** 
          * This is the elections endpoint that provides the year as a parameter
          */
-        server.get('/elections/:year', (req: Request, res: Response) => {
-            return app.render(req, res, '/elections', { year: req.params.year || CURRENT_YEAR });
-        })
+		server.get('/elections/:year', (req: Request, res: Response) => {
+			return app.render(req, res, '/elections', { year: req.params.year || CURRENT_YEAR });
+		})
 
-        server.get('*', (req: Request, res: Response) => {
-            return handle(req, res)
-        })
+		server.get('*', (req: Request, res: Response) => {
+			return handle(req, res)
+		})
 
-        server.listen(port, () => {
-            console.log(`> Ready on http://localhost:${port}`)
-        })
-    });
+		server.listen(port, () => {
+			console.log(`> Ready on http://localhost:${port}`)
+		})
+	});

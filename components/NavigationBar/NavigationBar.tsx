@@ -6,7 +6,7 @@ import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from 'reactstrap';
 import { navigationBarLinks, NavigationBarLink } from '../_data/navigationBarLinks';
 
 type NavigationBarProps = {
-    pathname: string
+	pathname: string
 }
 
 /**
@@ -23,29 +23,29 @@ type NavigationBarProps = {
  *      June 5, 2019
  */
 export const NavigationBar: React.FC<NavigationBarProps> = ({ pathname }) => {
-    const [isOpen, setIsOpen] = useState<boolean>(false);
+	const [isOpen, setIsOpen] = useState<boolean>(false);
 
-    return <header>
-        <Navbar className="navigation-bar" light expand="md">
-            <Link href="/">
-                <a>
-                    <img alt="IUGA Logo" id="iuga-logo" src={iugaLogoImage} />
-                </a>
-            </Link>
-            <NavbarToggler onClick={() => setIsOpen(!isOpen)} />
-            <Collapse isOpen={isOpen} navbar>
-                <Nav className="ml-auto" navbar>
-                    {navigationBarLinks.map((navbarLink: NavigationBarLink) => {
-                        return <NavItem className="navbar-item" key={navbarLink.name}>
-                            {/** Check the current page name */}
-                            <Link href={navbarLink.link}>
-                                <a className={`navbar-link ${pathname === navbarLink.link ?
-                                    "navbar-link-active" : ""}`}>{navbarLink.name}</a>
-                            </Link>
-                        </NavItem>
-                    })}
-                </Nav>
-            </Collapse>
-        </Navbar>
-    </header>
+	return <header>
+		<Navbar className="navigation-bar" light expand="md">
+			<Link href="/">
+				<a>
+					<img alt="IUGA Logo" id="iuga-logo" src={iugaLogoImage} />
+				</a>
+			</Link>
+			<NavbarToggler onClick={() => setIsOpen(!isOpen)} />
+			<Collapse isOpen={isOpen} navbar>
+				<Nav className="ml-auto" navbar>
+					{navigationBarLinks.map((navbarLink: NavigationBarLink) => {
+						return <NavItem className="navbar-item" key={navbarLink.name}>
+							{/** Check the current page name */}
+							<Link href={navbarLink.link}>
+								<a className={`navbar-link ${pathname === navbarLink.link ?
+									"navbar-link-active" : ""}`}>{navbarLink.name}</a>
+							</Link>
+						</NavItem>
+					})}
+				</Nav>
+			</Collapse>
+		</Navbar>
+	</header>
 }

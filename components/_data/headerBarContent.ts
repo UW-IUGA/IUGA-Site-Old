@@ -1,9 +1,9 @@
 type HeaderBarContent = {
-    [idx: string]: string
+	[idx: string]: string
 }
 
 export const headerBarContent: HeaderBarContent = {
-    "/": "About Us",
-    "/elections": "IUGA/WINFO Elections",
-    "/pastofficers": "Past IUGA Officers",
+	"/": "About Us",
+	"/elections": "IUGA/WINFO Elections",
+	"/pastofficers": "Past IUGA Officers",
 }

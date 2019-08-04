@@ -1,7 +1,7 @@
 {
-    "watch": [
-        "server",
-        "static"
-    ],
-    "exec": "ts-node --project tsconfig.server.json app.ts"
+	"watch": [
+		"server",
+		"static"
+	],
+	"exec": "ts-node --project tsconfig.server.json app.ts"
 }

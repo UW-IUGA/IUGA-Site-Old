@@ -1,20 +1,20 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: "PT Sans", sans-serif !important;
-    background-color: #ebebeb !important;
+	margin: 0px;
+	padding: 0px;
+	font-family: "PT Sans", sans-serif !important;
+	background-color: #ebebeb !important;
 }
 
 .page-content {
-    margin: auto;
-    width: 80%;
+	margin: auto;
+	width: 80%;
 }
 
 a, a:hover, a:active, a:focus, a:visited {
-    color: #39275B !important;
-    text-decoration: none !important;
+	color: #39275B !important;
+	text-decoration: none !important;
 }
 
 .spacer {
-    margin-bottom: 70px;
+	margin-bottom: 70px;
 }

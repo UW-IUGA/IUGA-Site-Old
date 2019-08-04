@@ -24,27 +24,27 @@ class CustomApp extends App<RouterProps> {
      * getInitialProps is required because the way nextjs works is through server side rendering.
      * It would mess up if you tried to do it the conventional way.
      */
-    static async getInitialProps({ Component, ctx }: NextAppContext) {
-        let pageProps = {};
+	static async getInitialProps({ Component, ctx }: NextAppContext) {
+		let pageProps = {};
 
-        if (Component.getInitialProps) {
-            pageProps = await Component.getInitialProps(ctx);
-        }
+		if (Component.getInitialProps) {
+			pageProps = await Component.getInitialProps(ctx);
+		}
 
-        return { pageProps };
-    }
+		return { pageProps };
+	}
 
-    render() {
-        const { Component, pageProps, router } = this.props;
+	render() {
+		const { Component, pageProps, router } = this.props;
 
-        // If the year query parameter exists, you can access it. Otherwise it is undefined.
-        return <Container>
-            <Page pathname={router.pathname}>
-                <Component {...pageProps}
-                    year={router && router.query && router.query.year} />
-            </Page>
-        </Container>
-    }
+		// If the year query parameter exists, you can access it. Otherwise it is undefined.
+		return <Container>
+			<Page pathname={router.pathname}>
+				<Component {...pageProps}
+					year={router && router.query && router.query.year} />
+			</Page>
+		</Container>
+	}
 }
 
 export default withRouter(CustomApp);

@@ -1,15 +1,15 @@
 .content-box {
-    border-top: 4px solid #39275b;
-    padding: 10px;
-    margin-bottom: 18px;
-    margin-right: 5px;
-    background-color: #fff;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-    height: 98%;
+	border-top: 4px solid #39275b;
+	padding: 10px;
+	margin-bottom: 18px;
+	margin-right: 5px;
+	background-color: #fff;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	height: 98%;
 }
 
 .content-box img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
 }

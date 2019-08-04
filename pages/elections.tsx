@@ -1,12 +1,12 @@
 import React from 'react';
 
 type ElectionsPageProps = {
-    year: string
+	year: string
 }
 const ElectionsPage: React.FC<ElectionsPageProps> = ({ year }) => {
-    console.log(year);
-    return <>
-        This page is under construction
+	console.log(year);
+	return <>
+		This page is under construction
     </>
 }
 

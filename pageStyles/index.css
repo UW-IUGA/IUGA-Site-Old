@@ -1,25 +1,25 @@
 .social-container {
-    color: #39275B;
-    margin-bottom: 10px;
+	color: #39275B;
+	margin-bottom: 10px;
 }
 
 .social-container a {
-    text-decoration: none !important;
+	text-decoration: none !important;
 }
 
 .social-title {
-    font-size: 125%;
-    margin-left: 10px;
+	font-size: 125%;
+	margin-left: 10px;
 }
 
 .officers {
-    padding: 0px;
+	padding: 0px;
 }
 
 .officer-name {
-    margin-bottom: 0px !important;
+	margin-bottom: 0px !important;
 }
 
 .officer-heading {
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 }

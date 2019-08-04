@@ -16,27 +16,27 @@ const icon = require('../../_assets/site/icon.png');
 *       June 9, 2019
  */
 export const HelmetContent = () => {
-    return <Helmet>
-        <meta charSet="utf-8" />
-        <meta name="theme-color" content="#39275b"></meta>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+	return <Helmet>
+		<meta charSet="utf-8" />
+		<meta name="theme-color" content="#39275b"></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {/** OpenGraph content. Used for when our page is linked to other websites like Facebook or Slack */}
-        <meta property="og:title" content="Informatics Undergraduate Association (IUGA)" />
-        <meta property="og:site_name" content="Informatics Undergraduate Association (IUGA)" />
-        <meta property="og:description" content="The Informatics Undergraduate Association (IUGA) is a Registered Student Organization that functions as a student government for Informatics students." />
-        <meta property="og:image" content={bbqbanner} />
-        <meta property="og:type" content="school" />
+		{/** OpenGraph content. Used for when our page is linked to other websites like Facebook or Slack */}
+		<meta property="og:title" content="Informatics Undergraduate Association (IUGA)" />
+		<meta property="og:site_name" content="Informatics Undergraduate Association (IUGA)" />
+		<meta property="og:description" content="The Informatics Undergraduate Association (IUGA) is a Registered Student Organization that functions as a student government for Informatics students." />
+		<meta property="og:image" content={bbqbanner} />
+		<meta property="og:type" content="school" />
 
-        {/** Twitter graph content. Used when our page is shared on twitter. */}
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@iugauw" />
-        <meta name="twitter:title" content="Informatics Undergraduate Association" />
-        <meta name="twitter:description" content="The Informatics Undergraduate Association (IUGA) is a Registered Student Organization that functions as a student government for Informatics students." />
-        <meta name="twitter:image" content={monogram} />
-        <meta name="twitter:image:alt" content="Informatics Undergraduate Association (IUGA) Logo" />
+		{/** Twitter graph content. Used when our page is shared on twitter. */}
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@iugauw" />
+		<meta name="twitter:title" content="Informatics Undergraduate Association" />
+		<meta name="twitter:description" content="The Informatics Undergraduate Association (IUGA) is a Registered Student Organization that functions as a student government for Informatics students." />
+		<meta name="twitter:image" content={monogram} />
+		<meta name="twitter:image:alt" content="Informatics Undergraduate Association (IUGA) Logo" />
 
-        <link rel="shortcut icon" href={icon} />
-        <title>IUGA</title>
-    </Helmet>
+		<link rel="shortcut icon" href={icon} />
+		<title>IUGA</title>
+	</Helmet>
 }

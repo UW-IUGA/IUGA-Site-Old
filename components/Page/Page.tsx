@@ -7,8 +7,8 @@ import { HeaderBar } from './HeaderBar/HeaderBar';
 import { HelmetContent } from './HelmetContent/HelmetContent';
 
 type PageProps = {
-    children: React.ReactNode,
-    pathname: string
+	children: React.ReactNode,
+	pathname: string
 }
 
 /**
@@ -23,16 +23,16 @@ export const Page: React.FC<PageProps> = ({ children, pathname }) => {
     /**
      * On component mount, load the fonts. 
      */
-    useEffect(() => {
-        Fonts();
-    }, []);
+	useEffect(() => {
+		Fonts();
+	}, []);
 
-    return <>
-        <HelmetContent />
-        <NavigationBar pathname={pathname} />
-        <HeaderBar pathname={pathname} />
-        <div className="page-content">
-            {children}
-        </div>
-    </>
+	return <>
+		<HelmetContent />
+		<NavigationBar pathname={pathname} />
+		<HeaderBar pathname={pathname} />
+		<div className="page-content">
+			{children}
+		</div>
+	</>
 }

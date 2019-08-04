@@ -1,6 +1,6 @@
 export type NavigationBarLink = {
-    name: string,
-    link: string
+	name: string,
+	link: string
 }
 
 /**
@@ -17,20 +17,20 @@ export type NavigationBarLink = {
  *      June 5, 2019
  */
 export const navigationBarLinks: NavigationBarLink[] = [
-    {
-        name: "home",
-        link: "/",
-    },
-    {
-        name: "past officers",
-        link: "/pastofficers"
-    },
-    {
-        name: "elections",
-        link: "/elections",
-    },
-    {
-        name: "store",
-        link: "http://store.iuga.info"
-    }
+	{
+		name: "home",
+		link: "/",
+	},
+	{
+		name: "past officers",
+		link: "/pastofficers"
+	},
+	{
+		name: "elections",
+		link: "/elections",
+	},
+	{
+		name: "store",
+		link: "http://store.iuga.info"
+	}
 ]

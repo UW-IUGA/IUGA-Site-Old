@@ -1,36 +1,36 @@
 .navigation-bar {
-    background: white;
-    border-top: 5px solid #39275b;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-    position: fixed;
-    z-index: 1;
-    top: 0;
+	background: white;
+	border-top: 5px solid #39275b;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	position: fixed;
+	z-index: 1;
+	top: 0;
 }
 
 #iuga-logo {
-    float: left;
-    height: 3em;
+	float: left;
+	height: 3em;
 }
 
 .navbar-item {
-    margin-right: 1em;
-    font-size: 125%;
+	margin-right: 1em;
+	font-size: 125%;
 }
 
 .navbar-link {
-    font-family: "PT Sans";
+	font-family: "PT Sans";
 }
 
 .navbar-link, .navbar-link:link, .navbar-link:visited {
-    text-decoration: none;
-    color: #000000;
+	text-decoration: none;
+	color: #000000;
 }
 
 .navbar-link:hover, .navbar-link-active, .navbar-link:focus {
-    color: #d7a900 !important;
-    border-bottom: 3.5px solid #d7a900;
-    text-decoration: none;
+	color: #d7a900 !important;
+	border-bottom: 3.5px solid #d7a900;
+	text-decoration: none;
 }
