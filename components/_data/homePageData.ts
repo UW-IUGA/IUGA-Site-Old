@@ -157,7 +157,7 @@ export const homePageData: HomePageData = {
 			picture: william,
 			github: "https://github.com/kwokwilliam",
 			linkedin: "https://www.linkedin.com/in/william-w-kwok/",
-			website: "https://williamk.info"
+			website: "https://williamk.info/?q=iuga"
 		},
 		{
 			position: Officers.ACADEMIC,
