@@ -20,6 +20,7 @@ import shruti from "../_assets/electionsImages/2019/shrutir.jpg";
 import allison from '../_assets/electionsImages/2019/allison_lee.jpg';
 import dayoung from '../_assets/electionsImages/2019/dayoung.jpg';
 import kiran from '../_assets/electionsImages/2019/kiran.jpg';
+import james from '../_assets/electionsImages/2019/james.jpg';
 
 /**
  * Use these officers enumerates below when you define them and the associated role.
@@ -115,6 +116,7 @@ export const homePageData: HomePageData = {
 		{
 			position: Officers.VICE_PRESIDENT,
 			name: "James Kim",
+			picture: james,
 			github: "https://github.com/thejameskim",
 			linkedin: "https://www.linkedin.com/in/thejameskim/"
 		},
