@@ -57,6 +57,14 @@ export type OfficerInfo = {
 	website?: string
 }
 
+export type FYRInfo = {
+	name: string,
+	picture?: string,
+	github?: string,
+	linkedin?: string,
+	website?: string
+}
+
 type OfficerResponsibilities = {
 	description: string,
 	responsibilities: string[]
@@ -71,7 +79,8 @@ type HomePageData = {
 	membershipBlurb: string,
 	positionInformation: {
 		[idx: string]: OfficerResponsibilities
-	}
+	},
+	fyrs: FYRInfo[]
 }
 
 /**
@@ -264,7 +273,30 @@ export const homePageData: HomePageData = {
 				"Organize and promote academic related events",
 				"Work closely with other organizations to conduct joint events"
 			]
+		},
+	},
+	fyrs: [
+		{
+			name: "Jacinda Eng",
+			picture: "",
+			github: "",
+			linkedin: "",
+			website: ""
+		},
+		{
+			name: "Joseph Altamira",
+			picture: "",
+			github: "",
+			linkedin: "",
+			website: ""
+		},
+		{
+			name: "Nam Pham",
+			picture: "",
+			github: "",
+			linkedin: "",
+			website: ""
 		}
-	}
+	]
 
 }
