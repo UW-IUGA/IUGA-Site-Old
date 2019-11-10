@@ -93,7 +93,7 @@ const IndexPage: React.FC = () => {
 		<ContentBox>
 			<p>Your first year representatives act as a liaison between your cohort and IUGA, become more involved in the iSchool communities, and plan events.</p>
 		</ContentBox>
-		<div className="row">
+		<div className="row justify-content-md-center">
 			{fyrs.map(fyr => {
 				return <div
 					className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12"

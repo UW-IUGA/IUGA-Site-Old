@@ -21,6 +21,7 @@ import allison from '../_assets/electionsImages/2019/allison_lee.jpg';
 import dayoung from '../_assets/electionsImages/2019/dayoung.jpg';
 import kiran from '../_assets/electionsImages/2019/kiran.jpg';
 import james from '../_assets/electionsImages/2019/james.jpg';
+import jacinda from '../_assets/electionsImages/2019/jacindaeng.jpg';
 
 /**
  * Use these officers enumerates below when you define them and the associated role.
@@ -278,10 +279,9 @@ export const homePageData: HomePageData = {
 	fyrs: [
 		{
 			name: "Jacinda Eng",
-			picture: "",
-			github: "",
-			linkedin: "",
-			website: ""
+			picture: jacinda,
+			github: "https://github.com/jacindaeng",
+			linkedin: "http://linkedin.com/in/jacinda-eng-6432a8171"
 		},
 		{
 			name: "Joseph Altamira",
