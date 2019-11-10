@@ -53,7 +53,7 @@ const IndexPage: React.FC = () => {
 		</ContentBox>
 
 		<h2>Who are your officers? What do they do?</h2>
-		<div className="row">
+		<div className="row justify-content-md-center">
 			{officers.map(officer => {
 				const { position } = officer;
 				const officerPositionInfo = positionInformation[position];
@@ -86,6 +86,14 @@ const IndexPage: React.FC = () => {
 					</ContentBox>
 				</div>
 			})}
+		</div>
+
+		<h2>Who are your First Year Representatives? What do they do?</h2>
+		<ContentBox>
+			<p>Your first year representatives act as a liaison between your cohort and IUGA, become more involved in the iSchool communities, and plan events.</p>
+		</ContentBox>
+		<div className="row">
+
 		</div>
 
 		<h2>Membership</h2>

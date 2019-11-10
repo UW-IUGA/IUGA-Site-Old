@@ -147,12 +147,12 @@ export const homePageData: HomePageData = {
 			github: "https://github.com/dayoungcheong",
 			linkedin: "https://www.linkedin.com/in/dayoungcheong/"
 		},
-		{
-			position: Officers.DIVERSITY,
-			name: "Godgiven Reamico",
-			picture: godgiven,
-			linkedin: "https://www.linkedin.com/in/godgiven1/"
-		},
+		// {
+		// 	position: Officers.DIVERSITY,
+		// 	name: "Godgiven Reamico",
+		// 	picture: godgiven,
+		// 	linkedin: "https://www.linkedin.com/in/godgiven1/"
+		// },
 		{
 			position: Officers.IT,
 			name: "William Kwok",
