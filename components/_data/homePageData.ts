@@ -296,5 +296,4 @@ export const homePageData: HomePageData = {
 			linkedin: "https://www.linkedin.com/in/npham24/"
 		}
 	]
-
 }
