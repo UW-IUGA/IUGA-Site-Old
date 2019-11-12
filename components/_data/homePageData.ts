@@ -6,11 +6,6 @@ import { faInstagram, faFacebook, IconDefinition } from '@fortawesome/free-brand
  * We run it through squoosh to condense file sizes
  * 
  * https://github.com/UW-IUGA/IUGA-Site/wiki/5.-Good-practices
- * 
- * Also, pngs have to be required instead of imported because the next loader doesn't like
- * pngs for some reason
- * 
- * `const abc = require('../abc/abc.png')`
  */
 import alejandro from "../_assets/electionsImages/2019/alejandro.jpg";
 import william from "../_assets/electionsImages/2019/williamkwok.jpg";
@@ -22,7 +17,6 @@ import kiran from '../_assets/electionsImages/2019/kiran.jpg';
 import james from '../_assets/electionsImages/2019/james.jpg';
 import jacinda from '../_assets/electionsImages/2019/jacindaeng.jpg';
 import joseph from '../_assets/electionsImages/2019/josephaltamira.jpg';
-import nam from '../_assets/electionsImages/2019/nam.jpg';
 
 /**
  * Use these officers enumerates below when you define them and the associated role.
@@ -41,7 +35,8 @@ export enum Officers {
 	DIVERSITY = "Director of Diversity Efforts",
 	IT = "Director of Information Technology",
 	ACADEMIC = "Director of Academic Support",
-	OPERATIONS = "Director of Operations" // This was an old role
+	OPERATIONS = "Director of Operations", // This was an old role
+	HACKATHON_DIRECTOR = "Hackathon Director" // This is for WINFO Hackathon Director in specific
 }
 
 type SocialMediaIcons = {
@@ -160,9 +155,8 @@ export const homePageData: HomePageData = {
 		},
 		// {
 		// 	position: Officers.DIVERSITY,
-		// 	name: "Godgiven Reamico",
-		// 	picture: godgiven,
-		// 	linkedin: "https://www.linkedin.com/in/godgiven1/"
+		// 	name: 
+		// 	picture: 
 		// },
 		{
 			position: Officers.IT,
@@ -289,12 +283,6 @@ export const homePageData: HomePageData = {
 			picture: joseph,
 			github: "https://github.com/Jornalt",
 			linkedin: "https://www.linkedin.com/in/joseph-altamira-0b0a22161"
-		},
-		{
-			name: "Nam Pham",
-			picture: nam,
-			linkedin: "https://www.linkedin.com/in/npham24/"
 		}
 	]
-
 }

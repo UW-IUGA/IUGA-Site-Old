@@ -4,7 +4,7 @@ import { Officers, OfficerInfo } from "./homePageData";
 import _2019_alejandro from "../_assets/electionsImages/2019/alejandro.jpg";
 import _2019_william from "../_assets/electionsImages/2019/williamkwok.jpg";
 import _2019_casey from "../_assets/electionsImages/2019/caseytran.jpg";
-import _2019_godgiven from "../_assets/electionsImages/2019/godgiven.jpg";
+import _2019_james from "../_assets/electionsImages/2019/james.jpg";
 import _2019_shruti from "../_assets/electionsImages/2019/shrutir.jpg";
 import _2019_allison from '../_assets/electionsImages/2019/allison_lee.jpg';
 import _2019_dayoung from '../_assets/electionsImages/2019/dayoung.jpg';
@@ -72,69 +72,64 @@ type PastOfficersData = {
  *      July 6, 2019
  */
 export const pastOfficersData: PastOfficersData = {
-	// 2019: [
-	//     {
-	//         position: Officers.PRESIDENT,
-	//         name: "Alejandro Huante",
-	//         picture: _2019_alejandro,
-	//         github: "https://github.com/ahuante-1741170",
-	//         linkedin: "https://www.linkedin.com/in/alejandro-huante-28533a141/"
-	//     },
-	//     {
-	//         position: Officers.VICE_PRESIDENT,
-	//         name: "James Kim",
-	//         github: "https://github.com/thejameskim",
-	//         linkedin: "https://www.linkedin.com/in/thejameskim/"
-	//     },
-	//     {
-	//         position: Officers.FINANCE,
-	//         name: "Kiran Pradhan",
-	//         picture: _2019_kiran,
-	//         github: "https://github.com/kiranpradhan01",
-	//         linkedin: "https://www.linkedin.com/in/kiran-pradhan-aa8861162/"
-	//     },
-	//     {
-	//         position: Officers.CREATIVE,
-	//         name: "Casey Tran",
-	//         picture: _2019_casey,
-	//         linkedin: "https://www.linkedin.com/in/caseytran/"
-	//     },
-	//     {
-	//         position: Officers.PUBLIC_RELATIONS,
-	//         name: "Allison Lee",
-	//         picture: _2019_allison,
-	//         github: "https://github.com/alliL",
-	//         linkedin: "https://www.linkedin.com/in/allison20/"
-	//     },
-	//     {
-	//         position: Officers.OUTREACH,
-	//         name: "Dayoung Cheong",
-	//         picture: _2019_dayoung,
-	//         github: "https://github.com/dayoungcheong",
-	//         linkedin: "https://www.linkedin.com/in/dayoungcheong/"
-	//     },
-	//     {
-	//         position: Officers.DIVERSITY,
-	//         name: "Godgiven Reamico",
-	//         picture: _2019_godgiven,
-	//         linkedin: "https://www.linkedin.com/in/godgiven1/"
-	//     },
-	//     {
-	//         position: Officers.IT,
-	//         name: "William Kwok",
-	//         picture: _2019_william,
-	//         github: "https://github.com/kwokwilliam",
-	//         linkedin: "https://www.linkedin.com/in/william-w-kwok/",
-	//         website: "https://williamk.info"
-	//     },
-	//     {
-	//         position: Officers.ACADEMIC,
-	//         name: "Shruti Rajagopalan",
-	//         picture: shruti,
-	//         github: "https://github.com/ShrutiR5",
-	//         linkedin: "https://www.linkedin.com/in/shrutira/"
-	//     }
-	// ],
+	2019: [
+		{
+			position: Officers.PRESIDENT,
+			name: "Alejandro Huante",
+			picture: _2019_alejandro,
+			github: "https://github.com/ahuante-1741170",
+			linkedin: "https://www.linkedin.com/in/alejandro-huante-28533a141/"
+		},
+		{
+			position: Officers.VICE_PRESIDENT,
+			name: "James Kim",
+			picture: _2019_james,
+			github: "https://github.com/thejameskim",
+			linkedin: "https://www.linkedin.com/in/thejameskim/"
+		},
+		{
+			position: Officers.FINANCE,
+			name: "Kiran Pradhan",
+			picture: _2019_kiran,
+			github: "https://github.com/kiranpradhan01",
+			linkedin: "https://www.linkedin.com/in/kiran-pradhan-aa8861162/"
+		},
+		{
+			position: Officers.CREATIVE,
+			name: "Casey Tran",
+			picture: _2019_casey,
+			linkedin: "https://www.linkedin.com/in/caseytran/"
+		},
+		{
+			position: Officers.PUBLIC_RELATIONS,
+			name: "Allison Lee",
+			picture: _2019_allison,
+			github: "https://github.com/alliL",
+			linkedin: "https://www.linkedin.com/in/allison20/"
+		},
+		{
+			position: Officers.OUTREACH,
+			name: "Dayoung Cheong",
+			picture: _2019_dayoung,
+			github: "https://github.com/dayoungcheong",
+			linkedin: "https://www.linkedin.com/in/dayoungcheong/"
+		},
+		{
+			position: Officers.IT,
+			name: "William Kwok",
+			picture: _2019_william,
+			github: "https://github.com/kwokwilliam",
+			linkedin: "https://www.linkedin.com/in/william-w-kwok/",
+			website: "https://williamk.info"
+		},
+		{
+			position: Officers.ACADEMIC,
+			name: "Shruti Rajagopalan",
+			picture: _2019_shruti,
+			github: "https://github.com/ShrutiR5",
+			linkedin: "https://www.linkedin.com/in/shrutira/"
+		}
+	],
 	2018: [
 		{
 			position: Officers.PRESIDENT,

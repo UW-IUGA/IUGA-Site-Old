@@ -28,8 +28,6 @@ const IndexPage: React.FC = () => {
 	} = homePageData;
 
 	return <>
-		<p>This page is currently undergoing some changes. Please excuse any broken images or links!</p>
-
 		<h2>{blurbTitle}</h2>
 		<ContentBox>
 			<p>{blurb}</p>
@@ -88,34 +86,37 @@ const IndexPage: React.FC = () => {
 				</div>
 			})}
 		</div>
-
-		<h2>Who are your First Year Representatives? What do they do?</h2>
-		<ContentBox>
-			<p>Your first year representatives act as a liaison between your cohort and IUGA, become more involved in the iSchool communities, and plan events.</p>
-		</ContentBox>
-		<div className="row justify-content-md-center">
-			{fyrs.map(fyr => {
-				return <div
-					className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12"
-					key={fyr.name}>
-					<ContentBox>
-						{fyr.picture && <img src={fyr.picture} alt={fyr.name} />}
-						<div className="d-flex align-items-center officer-heading">
-							<h4 className="officer-name">{fyr.name}</h4>
-							{fyr.github && <a href={fyr.github}>
-								<FontAwesomeIcon icon={faGithub} size={"2x"} fixedWidth />
-							</a>}
-							{fyr.linkedin && <a href={fyr.linkedin}>
-								<FontAwesomeIcon icon={faLinkedin} size={"2x"} fixedWidth />
-							</a>}
-							{fyr.website && <a href={fyr.website}>
-								<FontAwesomeIcon icon={faGlobe} size={"2x"} fixedWidth />
-							</a>}
+		{fyrs.length > 0 &&
+			<>
+				<h2>Who are your First Year Representatives? What do they do?</h2>
+				<ContentBox>
+					<p>Your first year representatives act as a liaison between your cohort and IUGA, become more involved in the iSchool communities, and plan events.</p>
+				</ContentBox>
+				<div className="row justify-content-md-center">
+					{fyrs.map(fyr => {
+						return <div
+							className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12"
+							key={fyr.name}>
+							<ContentBox>
+								{fyr.picture && <img src={fyr.picture} alt={fyr.name} />}
+								<div className="d-flex align-items-center officer-heading">
+									<h4 className="officer-name">{fyr.name}</h4>
+									{fyr.github && <a href={fyr.github}>
+										<FontAwesomeIcon icon={faGithub} size={"2x"} fixedWidth />
+									</a>}
+									{fyr.linkedin && <a href={fyr.linkedin}>
+										<FontAwesomeIcon icon={faLinkedin} size={"2x"} fixedWidth />
+									</a>}
+									{fyr.website && <a href={fyr.website}>
+										<FontAwesomeIcon icon={faGlobe} size={"2x"} fixedWidth />
+									</a>}
+								</div>
+							</ContentBox>
 						</div>
-					</ContentBox>
+					})}
 				</div>
-			})}
-		</div>
+			</>
+		}
 
 		<h2>Membership</h2>
 		<ContentBox>

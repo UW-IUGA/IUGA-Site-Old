@@ -1,0 +1,58 @@
+.elections-selector {
+	font-family: "PT Sans";
+	font-size: 125%;
+}
+
+.elections-link {
+	text-decoration: none;
+	color: #000000;
+}
+
+.elections-link:hover, .elections-link-active, .elections-link:focus {
+	color: #d7a900 !important;
+	border-bottom: 3.5px solid #d7a900;
+	text-decoration: none;
+}
+
+.elections-elected-appointed {
+	color: black !important;
+}
+
+.elections ul {
+	margin: 2px;
+	list-style-type: none;
+}
+
+.elections li {
+	font-weight: bold;
+}
+
+.election-image {
+	float: left;
+	width: 20vw;
+	height: auto;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+.election-iframe {
+	margin: auto;
+	width: 35vw;
+	height: 22.5vw;
+}
+
+.election-wrapper {
+	text-align: center;
+}
+
+.admin-message {
+	font-style: italic;
+}
+
+.portfolio-link {
+	font-weight: bold;
+}
+
+.elections-extra-image {
+	width: 100%;
+}
