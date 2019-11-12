@@ -15,13 +15,14 @@ import { faInstagram, faFacebook, IconDefinition } from '@fortawesome/free-brand
 import alejandro from "../_assets/electionsImages/2019/alejandro.jpg";
 import william from "../_assets/electionsImages/2019/williamkwok.jpg";
 import casey from "../_assets/electionsImages/2019/caseytran.jpg";
-import godgiven from "../_assets/electionsImages/2019/godgiven.jpg";
 import shruti from "../_assets/electionsImages/2019/shrutir.jpg";
 import allison from '../_assets/electionsImages/2019/allison_lee.jpg';
 import dayoung from '../_assets/electionsImages/2019/dayoung.jpg';
 import kiran from '../_assets/electionsImages/2019/kiran.jpg';
 import james from '../_assets/electionsImages/2019/james.jpg';
 import jacinda from '../_assets/electionsImages/2019/jacindaeng.jpg';
+import joseph from '../_assets/electionsImages/2019/josephaltamira.jpg';
+import nam from '../_assets/electionsImages/2019/nam.jpg';
 
 /**
  * Use these officers enumerates below when you define them and the associated role.
@@ -285,17 +286,14 @@ export const homePageData: HomePageData = {
 		},
 		{
 			name: "Joseph Altamira",
-			picture: "",
-			github: "",
-			linkedin: "",
-			website: ""
+			picture: joseph,
+			github: "https://github.com/Jornalt",
+			linkedin: "https://www.linkedin.com/in/joseph-altamira-0b0a22161"
 		},
 		{
 			name: "Nam Pham",
-			picture: "",
-			github: "",
-			linkedin: "",
-			website: ""
+			picture: nam,
+			linkedin: "https://www.linkedin.com/in/npham24/"
 		}
 	]
 
