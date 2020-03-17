@@ -11,6 +11,8 @@ const withPlugins = require("next-compose-plugins");
 const withTypescript = require("@zeit/next-typescript");
 const withCSS = require("@zeit/next-css");
 const withImages = require("next-images");
+
+// This is from a package that could not be installed correctly.
 const withPdf = (nextConfig = {}) => {
 	return Object.assign({}, nextConfig, {
 		webpack(config, options) {

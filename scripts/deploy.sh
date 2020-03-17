@@ -14,14 +14,17 @@
 #
 # Last Modified:
 #       William Kwok
-#       June 8, 2019
+#       3/16/2020
 
+
+# Get the directory of this script
+BASE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"\
 
 # Build and push the container
 docker-compose -f "docker-compose.yml" build
 docker-compose push
 
 # SSH into the IUGA server and run an update script that is passed in through the ssh
-# 
-# MAKE SURE TO CHANGE THE USERNAME TO YOUR OWN!
-ssh wkwok16@iuga.info 'bash -s' < zz_deploy_helper_update.sh
+echo -n "UW NetID: "
+read username
+ssh $username@iuga.info 'bash -s' < $BASE/deploy_pipe.sh

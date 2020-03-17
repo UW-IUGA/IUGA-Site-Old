@@ -37,3 +37,9 @@ This is what we do on the IUGA server. Production mode is different from develop
 npm run build
 npm run productionstart
 ```
+
+# How to deploy
+
+```
+npm run deploy
+```
