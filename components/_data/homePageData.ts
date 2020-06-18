@@ -7,16 +7,18 @@ import { faInstagram, faFacebook, IconDefinition } from '@fortawesome/free-brand
  * 
  * https://github.com/UW-IUGA/IUGA-Site/wiki/5.-Good-practices
  */
-import alejandro from "../_assets/electionsImages/2019/alejandro.jpg";
-import william from "../_assets/electionsImages/2019/williamkwok.jpg";
-import casey from "../_assets/electionsImages/2019/caseytran.jpg";
-import shruti from "../_assets/electionsImages/2019/shrutir.jpg";
-import allison from '../_assets/electionsImages/2019/allison_lee.jpg';
-import dayoung from '../_assets/electionsImages/2019/dayoung.jpg';
-import kiran from '../_assets/electionsImages/2019/kiran.jpg';
-import james from '../_assets/electionsImages/2019/james.jpg';
-import jacinda from '../_assets/electionsImages/2019/jacindaeng.jpg';
-import joseph from '../_assets/electionsImages/2019/josephaltamira.jpg';
+import kiran from '../_assets/electionsImages/2020/kiranpradhan.jpg';
+import jacinda from '../_assets/electionsImages/2020/jacindaeng.jpg';
+import alexander from '../_assets/electionsImages/2020/alexandersanchez.jpg';
+import jojo from '../_assets/electionsImages/2020/jojosaunders.jpg';
+import cheryl from '../_assets/electionsImages/2020/cherylwu.jpg';
+import ana from '../_assets/electionsImages/2020/anadelasalas.jpg';
+import aaron from '../_assets/electionsImages/2020/aaronzhao.jpg';
+import andrey from '../_assets/electionsImages/2020/andreybutenko.jpg';
+import joseph from '../_assets/electionsImages/2020/josephaltamira.jpg';
+// TODO: update 2020 FYRs once they're elected
+// import fyr1 from '../_assets/electionsImages/2019/jacindaeng.jpg';
+// import fyr2 from '../_assets/electionsImages/2019/josephaltamira.jpg';
 
 /**
  * Use these officers enumerates below when you define them and the associated role.
@@ -114,64 +116,68 @@ export const homePageData: HomePageData = {
 	officers: [
 		{
 			position: Officers.PRESIDENT,
-			name: "Alejandro Huante",
-			picture: alejandro,
-			github: "https://github.com/ahuante-1741170",
-			linkedin: "https://www.linkedin.com/in/alejandro-huante-28533a141/"
+      name: "Kiran Pradhan",
+			picture: kiran,
+      github: "https://github.com/kiranpradhan01",
+      linkedin: "https://www.linkedin.com/in/kiran-pradhan/"
 		},
 		{
 			position: Officers.VICE_PRESIDENT,
-			name: "James Kim",
-			picture: james,
-			github: "https://github.com/thejameskim",
-			linkedin: "https://www.linkedin.com/in/thejameskim/"
+			name: "Jacinda Eng",
+			picture: jacinda,
+			linkedin: "https://www.linkedin.com/in/jacinda-eng-6432a8171",
+      github: "https://github.com/jacindaeng",
+      website: "https://jacindaeng.com/"
 		},
 		{
 			position: Officers.FINANCE,
-			name: "Kiran Pradhan",
-			picture: kiran,
-			github: "https://github.com/kiranpradhan01",
-			linkedin: "https://www.linkedin.com/in/kiran-pradhan-aa8861162/"
+			name: "Alexander Sanchez",
+			picture: alexander,
+			github: "https://github.com/AlexanderES",
+			linkedin: "https://www.linkedin.com/in/alexander-escalera-503360176/"
 		},
 		{
 			position: Officers.CREATIVE,
-			name: "Casey Tran",
-			picture: casey,
-			linkedin: "https://www.linkedin.com/in/caseytran/"
+			name: "JoJo Saunders",
+			picture: jojo,
+      linkedin: "https://www.linkedin.com/in/jojosaunders/",
+      website: "https://www.jojosaunders.me/"
 		},
 		{
 			position: Officers.PUBLIC_RELATIONS,
-			name: "Allison Lee",
-			picture: allison,
-			github: "https://github.com/alliL",
-			linkedin: "https://www.linkedin.com/in/allison20/"
+			name: "Cheryl Wu",
+      picture: cheryl,
+			linkedin: "https://www.linkedin.com/in/cheryl-wu-59baa8174",
+			website: "https://wucheryl.com"
 		},
 		{
 			position: Officers.OUTREACH,
-			name: "Dayoung Cheong",
-			picture: dayoung,
+			name: "Ana De Las Alas",
+			picture: ana,
 			github: "https://github.com/dayoungcheong",
-			linkedin: "https://www.linkedin.com/in/dayoungcheong/"
+			linkedin: "https://www.linkedin.com/in/ana-de-las-alas/"
 		},
-		// {
-		// 	position: Officers.DIVERSITY,
-		// 	name: 
-		// 	picture: 
-		// },
+		{
+			position: Officers.DIVERSITY,
+			name: "Aaron Zhao",
+      picture: aaron,
+      linkedin: "https://www.linkedin.com/in/zhaoaaron/",
+      website: "https://www.aaronzhao.io/"
+		},
 		{
 			position: Officers.IT,
-			name: "William Kwok",
-			picture: william,
-			github: "https://github.com/kwokwilliam",
-			linkedin: "https://www.linkedin.com/in/william-w-kwok/",
-			website: "https://williamk.info/?q=iuga"
+			name: "Andrey Butenko",
+			picture: andrey,
+			github: "https://github.com/andreybutenko",
+			linkedin: "https://www.linkedin.com/in/butenkoandrey/",
+			website: "https://andreybutenko.com/"
 		},
 		{
 			position: Officers.ACADEMIC,
-			name: "Shruti Rajagopalan",
-			picture: shruti,
-			github: "https://github.com/ShrutiR5",
-			linkedin: "https://www.linkedin.com/in/shrutira/"
+			name: "Joseph Altamira",
+      picture: joseph,
+      github: "https://github.com/Jornalt",
+			linkedin: "https://www.linkedin.com/in/joseph-altamira-0b0a22161/"
 		}
 	],
 	positionInformation: {
@@ -272,17 +278,17 @@ export const homePageData: HomePageData = {
 		},
 	},
 	fyrs: [
-		{
-			name: "Jacinda Eng",
-			picture: jacinda,
-			github: "https://github.com/jacindaeng",
-			linkedin: "http://linkedin.com/in/jacinda-eng-6432a8171"
-		},
-		{
-			name: "Joseph Altamira",
-			picture: joseph,
-			github: "https://github.com/Jornalt",
-			linkedin: "https://www.linkedin.com/in/joseph-altamira-0b0a22161"
-		}
+		// {
+		// 	name: "Jacinda Eng",
+		// 	picture: jacinda,
+		// 	github: "https://github.com/jacindaeng",
+		// 	linkedin: "http://linkedin.com/in/jacinda-eng-6432a8171"
+		// },
+		// {
+		// 	name: "Joseph Altamira",
+		// 	picture: joseph,
+		// 	github: "https://github.com/Jornalt",
+		// 	linkedin: "https://www.linkedin.com/in/joseph-altamira-0b0a22161"
+		// }
 	]
 }
