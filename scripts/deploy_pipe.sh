@@ -28,6 +28,6 @@ uwiuga/next_site
 # network is running off the host so it can bypass any weird issues. 
 docker run -d \
 --net=host \
--v /certs:/certs/iuga:ro \
+-v /root:/root/iuga:ro \
 --name site \
 uwiuga/nginx_site

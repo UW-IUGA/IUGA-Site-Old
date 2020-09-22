@@ -5,5 +5,6 @@ type HeaderBarContent = {
 export const headerBarContent: HeaderBarContent = {
 	"/": "About Us",
 	"/elections": "IUGA/WINFO Elections",
-	"/pastofficers": "Past IUGA Officers",
+    "/pastofficers": "Past IUGA Officers",
+    "/calendar": "Calendar"
 }

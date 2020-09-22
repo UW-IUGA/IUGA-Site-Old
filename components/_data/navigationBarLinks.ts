@@ -28,7 +28,11 @@ export const navigationBarLinks: NavigationBarLink[] = [
 	{
 		name: "elections",
 		link: "/elections",
-	},
+    },
+    {
+        name: "calendar",
+        link: "/calendar",
+    },
 	{
 		name: "store",
 		link: "http://store.iuga.info"

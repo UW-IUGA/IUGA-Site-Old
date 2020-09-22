@@ -27,4 +27,4 @@ docker-compose push
 # SSH into the IUGA server and run an update script that is passed in through the ssh
 echo -n "UW NetID: "
 read username
-ssh $username@iuga.info 'bash -s' < $BASE/deploy_pipe.sh
+ssh $username@iuga.info 'bash -s' < $BASE/scripts/deploy_pipe.sh
