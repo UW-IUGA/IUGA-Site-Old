@@ -16,9 +16,8 @@ import ana from '../_assets/electionsImages/2020/anadelasalas.jpg';
 import aaron from '../_assets/electionsImages/2020/aaronzhao.jpg';
 import andrey from '../_assets/electionsImages/2020/andreybutenko.jpg';
 import joseph from '../_assets/electionsImages/2020/josephaltamira.jpg';
-// TODO: update 2020 FYRs once they're elected
-// import fyr1 from '../_assets/electionsImages/2019/jacindaeng.jpg';
-// import fyr2 from '../_assets/electionsImages/2019/josephaltamira.jpg';
+import fyr1 from '../_assets/electionsImages/2020/justin-fyr.jpg';
+import fyr2 from '../_assets/electionsImages/2020/sachi-fyr.jpg';
 
 /**
  * Use these officers enumerates below when you define them and the associated role.
@@ -278,17 +277,14 @@ export const homePageData: HomePageData = {
 		},
 	},
 	fyrs: [
-		// {
-		// 	name: "Jacinda Eng",
-		// 	picture: jacinda,
-		// 	github: "https://github.com/jacindaeng",
-		// 	linkedin: "http://linkedin.com/in/jacinda-eng-6432a8171"
-		// },
-		// {
-		// 	name: "Joseph Altamira",
-		// 	picture: joseph,
-		// 	github: "https://github.com/Jornalt",
-		// 	linkedin: "https://www.linkedin.com/in/joseph-altamira-0b0a22161"
-		// }
+		{
+			name: "Sachi Figliolini",
+			picture: fyr2
+		},
+		{
+			name: "Justin Zeng",
+			picture: fyr1,
+			linkedin: "https://www.linkedin.com/in/justin-zeng-3b7b47165/"
+		}
 	]
 }
