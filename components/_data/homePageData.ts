@@ -37,7 +37,8 @@ export enum Officers {
 	IT = "Director of Information Technology",
 	ACADEMIC = "Director of Academic Support",
 	OPERATIONS = "Director of Operations", // This was an old role
-	HACKATHON_DIRECTOR = "Hackathon Director" // This is for WINFO Hackathon Director in specific
+	HACKATHON_DIRECTOR = "Hackathon Director", // This is for WINFO Hackathon Director in specific
+    COMMUNITY_EFFORTS = "Director of Community Efforts" // WINFO-specific
 }
 
 type SocialMediaIcons = {
