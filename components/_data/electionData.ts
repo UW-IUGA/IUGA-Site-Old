@@ -13,6 +13,56 @@
  * has become super famous or something.
  */
 
+// import _2021_name from '../_assets/electionsImages/2021/file';
+
+/** 2021 iuga officer images */
+import _2021_kavya from '../_assets/electionsImages/2021/kavyaiyer.jpg';
+import _2021_kavya_infographic from '../_assets/electionsImages/2021/kavyaiyer-infographic.pdf';
+import _2021_kelsey from '../_assets/electionsImages/2021/kelseylu.jpg';
+import _2021_kelsey_infographic from '../_assets/electionsImages/2021/kelseylu-infographic.pdf';
+import _2021_sachi from '../_assets/electionsImages/2021/sachifigliolini.jpg';
+import _2021_sachi_infographic from '../_assets/electionsImages/2021/sachifigliolini-infographic.pdf';
+import _2021_aaron from '../_assets/electionsImages/2021/aaronzhao.jpg';
+import _2021_yenny from '../_assets/electionsImages/2021/yennypark.jpg';
+import _2021_yenny_infographic from '../_assets/electionsImages/2021/yennypark-infographic.pdf';
+import _2021_justin from '../_assets/electionsImages/2021/justinzeng.jpg';
+import _2021_justin_infographic from '../_assets/electionsImages/2021/justinzeng-infographic.pdf';
+import _2021_pranav from '../_assets/electionsImages/2021/pranavshekar.jpg';
+import _2021_pranav_infographic from '../_assets/electionsImages/2021/pranavshekar-infographic.pdf';
+import _2021_chang from '../_assets/electionsImages/2021/changzeng.jpg';
+import _2021_chang_infographic from '../_assets/electionsImages/2021/changzeng-infographic.jpg';
+import _2021_timothy from '../_assets/electionsImages/2021/timothyjoo.jpg';
+import _2021_timothy_infographic from '../_assets/electionsImages/2021/timothyjoo-infographic.pdf';
+import _2021_shruti from '../_assets/electionsImages/2021/shrutikompella.jpg';
+import _2021_shruti_infographic from '../_assets/electionsImages/2021/shrutikompella-infographic.pdf';
+import _2021_anika from '../_assets/electionsImages/2021/anikamishra.jpg';
+import _2021_anika_infographic from '../_assets/electionsImages/2021/anikamishra-infographic.pdf';
+import _2021_augene from '../_assets/electionsImages/2021/augenejohnpak.jpg';
+import _2021_augene_portfolio from '../_assets/electionsImages/2021/augenejohnpak-portfolio.pdf';
+
+/** 2021 winfo officer images */
+import _2021_allison from '../_assets/electionsImages/2021/allisongeary.jpg';
+import _2021_allison_resume from '../_assets/electionsImages/2021/allisongeary-resume.pdf';
+import _2021_gisele from '../_assets/electionsImages/2021/giselejosephinefox.jpg';
+import _2021_roshni from '../_assets/electionsImages/2021/roshnisrikanth.jpg';
+import _2021_roshni_resume from '../_assets/electionsImages/2021/roshnisrikanth-resume.pdf';
+import _2021_sam from '../_assets/electionsImages/2021/samrondini.jpg';
+import _2021_dana from '../_assets/electionsImages/2021/danarin.jpg';
+import _2021_dana_infographic from '../_assets/electionsImages/2021/danarin-infographic.pdf';
+import _2021_elise from '../_assets/electionsImages/2021/eliseadams.jpg';
+import _2021_elise_resume from '../_assets/electionsImages/2021/eliseadams-resume.pdf';
+import _2021_melina from '../_assets/electionsImages/2021/melinaperraut.jpg';
+import _2021_melina_resume from '../_assets/electionsImages/2021/melinaperraut-resume.pdf';
+import _2021_kayla from '../_assets/electionsImages/2021/kaylachea.jpg';
+import _2021_kayla_infographic from '../_assets/electionsImages/2021/kaylachea-infographic.pdf';
+import _2021_rachel from '../_assets/electionsImages/2021/rachelkinkley.png';
+import _2021_emiri from '../_assets/electionsImages/2021/emirinishizawa.jpg';
+import _2021_emiri_infographic from '../_assets/electionsImages/2021/emirinishizawa-infographic.pdf';
+import _2021_janvi from '../_assets/electionsImages/2021/janviwadhawan.jpg';
+import _2021_janvi_infographic from '../_assets/electionsImages/2021/janviwadhawan-infographic.pdf';
+import _2021_sharon from '../_assets/electionsImages/2021/sharonlin.jpg';
+import _2021_sharon_resume from '../_assets/electionsImages/2021/sharonlin-resume.pdf';
+
 /** 2020 iuga officer images */
 import _2020_cheryl from '../_assets/electionsImages/2020/cherylwu.jpg';
 import _2020_cheryl_infographic from '../_assets/electionsImages/2020/cherylwuinfographic.pdf';
@@ -177,6 +227,8 @@ import _2015_thirumalai from '../_assets/electionsImages/2015/Thirulamai.jpg';
 import _2015_hama from '../_assets/electionsImages/2015/Hama.jpg';
 import _2015_perry from '../_assets/electionsImages/2015/Perry.jpg'
 
+import _placeholder_image from '../_assets/electionsImages/2021/dubs.jpg'
+
 import { Officers } from "./homePageData";
 
 export enum ElectionGroup {
@@ -216,6 +268,7 @@ export const IUGA_ELECTIONS_ORDER_PRIORITY = [
 	Officers.IT,
 	Officers.ACADEMIC,
 	Officers.OPERATIONS,
+    Officers.COMMUNITY_EFFORTS,
 	Officers.HACKATHON_DIRECTOR
 ]
 
@@ -792,7 +845,9 @@ export const IUGA_ELECTIONS: Elections = {
 				statement: "Hi! My name is Andrey Butenko (he/him/his) and I am excited to be running to be your next IUGA Director of Public Relations.\nIn this role, I have two objectives. First, I believe that mental health is an important topic at the University of Washington, and I hope to organize accessible de-stress and self-care events so Informatics students can take time for themselves amidst studying and job-hunting.\nSecond, I hope to further develop our sense of community and belonging through organizing social events that bring us together. I am continually impressed by the collaborative, supportive, and welcoming environments I find in my Informatics courses. I believe that our community makes Informatics really special and I am excited to help support it.\nI feel that I would be very effective in this role: as the current Assistant Resident Director of Haggett Hall, I help develop a sense of community among our 400 residents and 25+ active members of our community council through advising and organizing building-wide initiatives. I also regularly send out announcements and design marketing for our diverse population of residents.\nTo wrap up, the Informatics community is special and I am excited to publicize IUGA events, bring us together, give us the opportunity to de-stress, and create connections within our community of current and prospective Informatics students. I hope to meet many of you and serve all of you as your Director of Public Relations. Thank you for your time!",
 				image: _2020_andrey,
 				video: "https://www.youtube.com/embed/8kLZvIm1o8Y",
-				pdf: _2020_andrey_resume
+				pdf: _2020_andrey_resume,
+                elected: true,
+                adminMessage: "Elected as Director of IT"
 			},
 			{
 				name: "Cheryl Wu",
@@ -875,29 +930,99 @@ export const IUGA_ELECTIONS: Elections = {
 				linkToPortfolio: "http://www.victoriahuynh.dev"
 			}
 		]
+	},
+	2021: {
+		[Officers.PRESIDENT]: [
+            {
+                name: "Aaron Zhao",
+                statement: "Hello Info students!\nMy name is Aaron Zhao and I would love to be your next IUGA President. \nThis past year presented unique challenges for us: Our interactions are limited to Zoom and we feel disconnected from our friends and classmates. As we move onto the new year, it is an incredible opportunity for all of us to rebuild our relationships and community that we might have lost during the Pandemic. Through my experiences as a TA, an IUGA Officer, and an Undergraduate Peer Advisor, I have been able to understand what makes our program so great and unique, and the struggles we are going through as students in the recent years. \nAnd that’s why I want to be your President: I want to make sure your voices are heard as our program continues to grow. I want to push for the changes you want. And I want to make sure that we continue nurturing our community to include everyone, no matter your background. Check out my video below for more details on how I want to tackle this next year!\nDuring my past two years as an Informatics student, I have taken on many initiatives. As INFO 200’s TA, I get the opportunity to meet and mentor many prospective students. As your Director of Diversity Efforts, I get the chance to organize IUGA’s Care Package, host FearLess, Tech More, a tech challenge reaching out to high school students, and help out with many other events. My experience working with faculty, staff, and fellow students has prepared me to serve you as IUGA President. \nI am grateful for the opportunity to serve as your IUGA President. And I need your help, your vote, your input, your voice, and your criticism. Together, we can make iSchool a more inclusive, stronger community.",
+                image: _2021_aaron,
+                video: "https://youtube.com/embed/VyoSxBRF3lo"
+            }
+		],
+		[Officers.VICE_PRESIDENT]: [
+            {
+                name: "Justin Zeng",
+                statement: "Hey there Info!\nMy name is Justin Zeng and I'm stoked to accept my nomination for IUGA's Vice President position for the 2021-2022 school year! Starting at UW as an Informatics Freshman Direct Admit during COVID-19 wasn't quite what I expected. Although I've found it particularly difficult to get to know more people, I have always been drawn by the open-minded, friendly, and motivated community of the iSchool. \nExperiences that I've had that make me qualified for this position include being the First-Year Representative for IUGA as well as the Director of Public Relations for SUDO. As your First Year Representative this year, I've had the pleasure of meeting a lot of you from organizing popular social events like the quarterly game night and new professional events like the PM speaker panel series. But I want to go beyond that and get to know those of you who don't really attend these events. Through being the Director of Public Relations for SUDO, I learned the importance of open communication and transparency as well as being adaptable to different situations. This is why as Vice President, my goal is to provide you with the opportunities and events that you want. I will work hard with the Director of Public Relations to provide consistent ways to support students from different time zones by hosting events in times that work for everyone. I plan to build a collaborative community after the devastation COVID-19 caused on our community. I want to also coordinate with the Director of Outreach to secure outside sources like sponsors for game nights, guest speakers, and even company tours when we are back together in person. I am beyond excited to have this opportunity and can't wait to connect with you all! Thank you!",
+                image: _2021_justin,
+                pdf: _2021_justin_infographic
+            }
+		],
+		[Officers.FINANCE]: [
+            {
+                name: "Sachi Figliolini",
+                statement: "Hello Informatics Students! My name is Sachi Figliolini and I am excited to be running for IUGA’s Director of Finance for the 2020 – 2021 school year.\nAs a freshman direct admit to the Information School, I am so grateful and eager to be apart of this amazing community to collaborate and learn from fellow students. This year, I had the opportunity to be an IUGA first-year representative where I learned more about the iSchool community, while helping and observing what leadership looks like in an online environment. I learned the importance of building community and maintaining events to keep students motivated to learn and communicate.\nWith this position as Director of Finance, I want to help this community continue to thrive. I will listen to the concerns and opinions of the student body to help allocate the budget in a way to best serve students.\nI have experience working with managing finances in my high school student council, where I managed different budgets for all school events and resources that were needed by different leadership groups and classes. I found ways to fundraise or create merchandise with a restricted budget and distributed it by listening to student voices.\nAs your Director of Finance, I would like to act as a liaison between the student body and the administration to support IUGA by looking at the big picture and allocate the budget meaningfully to serve students. I am enthusiastic to start working with this professional, hard-working community to help students in the iSchool succeed.\nThank you!",
+                image: _2021_sachi,
+                pdf: _2021_sachi_infographic
+            }
+		],
+		[Officers.CREATIVE]: [
+            {
+                name: "Chang Zeng",
+                statement: "Hello!\nMy name is Chang Zeng, a third-year student in the iSchool. I am glad to have the opportunity to run for the position of Creative Director in the IUGA team. I have been always passionate about visual design and have half a decade of experience of designing key visions and event advertising materials. Before entering the University, I have not considered too much of how to convert my passion into a career. Taking INFO 101 during my first quarter answered the question of where and how I can contribute my passion and what are the meaningful things I should do to help more people. \nI received huge amounts of support from people in the iSchool during the anxious application days, and I gradually understood the core value in the community of inclusion, diversity, and creativity. I want to uphold these ideals and maintain the image of the iSchool as a place where people who are passionate about information technology and innovation can interact, explore, and help create a better world. The position of Creative Director allows me to contribute my knowledge and experiences to meet these goals. \nAlong with collaborating with other officers holding and advertising IUGA events, I want to illustrate the creativity, diversity, and passion within every person in the iSchool. By upgrading and uniform the iSchool visual elements, I want to make the iSchool brand recognizable throughout the campus. In our posters, banners, and merchandise, applying these visual elements will help popularize the iSchool icon and draw more people to understand what the iSchool is and what ideas we hold. I want to be part of the IUGA team, support people in/out of school like people supporting me, spread our enthusiasm and vision to wider audiences and draw my life at the iSchool to perfect end.",
+                image: _2021_chang,
+                extraImage: _2021_chang_infographic
+            },
+            {
+                name: "Timothy Joo",
+                statement: "Hello iSchool students! \nMy name is Tim Joo and I’m a junior in the iSchool with a focus on Data Analytics, UX Design, and Project Management. A little bit about myself is that I’m a first-generation Korean American from Tacoma, WA. Overall, I couldn’t be more excited to run for this position as Creative Director for the 2021-2022 School year! \nA past experience relating to this position is with my own personal photography business. I’ve been shooting photos for the last 5 years, ranging from portraits, weddings, events, high school seniors, college graduations, family, and even engagement photos. My absolute favorite aspect of photography comes with the emotions that I’m able to capture for each person that I work with. I hope to capture all of the best moments for the students within the iSchool and help highlight all the incredible feats that the students do achieve. \nAnother recent experience comes with my 2 years working in professional videography settings. The power and emotion that can come from a single video are truly an incredible thing. I hope to evoke more of this to help unify and bring our students together through the year to come. \nAt the same time, I’ve led as the creative lead for the past 3 years at my college fellowship group, ConXion. I’ve built up our team from the ground up and have experience working alongside other students to create incredible pieces of work. \nOverall, my goal is to bring my past experiences in the creative field to help the iSchool students shine brighter to the world around us. IUGA has made a tremendous impact on my experience as an Informatics student and my goal would be to continue its vision of welcoming future students and truly making the iSchool their home away from home.",
+                image: _2021_timothy,
+                pdf: _2021_timothy_infographic
+            },
+            {
+                name: "Anika Mishra",
+                statement: "Hello! I’m Anika Mishra, a junior in Informatics, and I’m so excited to be running for Creative Director for the 2021-2022 school year!\nWhat makes the iSchool truly incredible is its people. From the first INFO course I took, I knew that this community was special, and I knew I wanted to be more involved. After getting accepted, it wasn’t long before I felt like I belonged to the community and could count on those around me. \nIUGA has played a huge role in making me, and countless others feel welcome, and that’s why I’m running to be an IUGA officer. From Portfolio 101 to Ergonomics Workshops, to working with admin to voicing student thoughts, I’ve felt supported in every way possible. \nAs IUGA Creative Director, I want to help support the entire Informatics community, and make sure everyone has the resources they need to be successful. I’m committed to upholding the IUGA branding across material, in helping create new ways to share and discover content, and in helping make sure you can rep the iSchool wherever you go. \nI’m currently a Campus Tour Guide, a TA for INFO 498A, and Marketing Officer for Women in User Experience. Through each of these roles, I’ve not only learned organizational skills, but also the importance of being communicative, dedicated, and persistent. I’ve also worked as a UX Designer at three Seattle-area startups, and was previously Recruitment Chair for my design fraternity. I love design, and I love making things, and I’d be honored to be IUGA’s Creative Director!\nI want to make sure that everyone feels comfortable sharing feedback, thoughts, and critique, and that everyone in the iSchool community continues to feel like they belong. Thanks for reading, and don’t hesitate to reach out :)",
+                image: _2021_anika,
+                pdf: _2021_anika_infographic
+            }
+		],
+		[Officers.PUBLIC_RELATIONS]: [
+            {
+				name: "Augene John Pak",
+				statement: "Hello IUGA Students! My name is Augene Pak and I am excited to be running for IUGA’s Director of Public Relations for the 2021–2022 school year. \nAs a freshman direct admit to the Informatics major, I have been grateful to be a part of this community that brings us together and allows us to collaborate and benefit from each other. I believe that IUGA is a truly amazing opportunity to connect with others in the major on a communal level; while our major itself is open-ended and allows for various career opportunities, I feel like the close-knit nature of the major largely originates from organizations like IUGA tying everybody from the major together. With this position as Director of Public Relations, I want to help IUGA continue to grow through providing an improved platform that connects the public with the various events that we would plan. \nI possess ample experience in public relations, as I worked with public relations for both my high school’s Academic Coaches department and a nonprofit organization Hugs for Ghana. Through experiences in both, I amassed crucial communication skills with the public regarding marketing and advertising events and utilizing social media as a mean for communication. \nLastly, I am extremely enthusiastic to begin work as the Director of Public Relations and do my part in improving public relations within the IUGA community and therefore the experiences of every Informatics student. \nThank you! \n(I have attached a portfolio containing a compilation of my past work)",
+				image: _2021_augene,
+				pdf: _2021_augene_portfolio
+			}
+		],
+		[Officers.OUTREACH]: [
+            {
+				name: "Kelsey Lu",
+				statement: "Hi there! \nMy name is Kelsey Lu and I’m excited to run for the 2021-2022 Director of Outreach position! I’m currently a sophomore from the Bay Area and a first year student at the iSchool. When I got accepted into Informatics, I was eager to get as involved as possible. It didn’t take long for me to feel comfortable in this new community, and a big part of that is due to IUGA. From joining portfolio 101 events to chatting with fellow INFO students, I loved how everyone is so supportive and passionate about the field. IUGA has helped me feel like I’m part of a community even though I’m 954 miles away from Seattle. \nI’m running for the Director of Outreach position because I want to plan events similar to the ones that helped me grow professionally. I’ll continue to organize informational sessions, but I’ll also increase the amount of events with companies. Since everything has gone virtual, it can feel harder to connect with professionals. However, I’ll work to bridge that gap by planning networking workshops and Q&A sessions with employers. This way, students can feel prepared and comfortable asking questions once they open those zoom meetings. I’m confident I can use my experiences in organizing, planning, and marketing to promote events and highlight resources that help students reach their professional goals. \nThere’s so much to learn in Informatics that it can feel overwhelming at times. I hope I can ease that stress and create an environment where everyone feels heard and supported by organizing valuable workshops and events. \nThank you!",
+				image: _2021_kelsey,
+				pdf: _2021_kelsey_infographic
+			},
+            {
+				name: "Shruti Kompella",
+				statement: "Hey I'm Shruti Kompella and I'm running to be your next Director of Outreach!\nWhen I came to UW, I knew I wanted to do something related to technology but I wasn't sure what to major in. After taking INFO 200, I knew I wanted to pursue Informatics because of the incredibly supportive community who encouraged me to be well rounded regardless of my track. Although the tracks students pursue in this major are diverse, everyone had something interesting to bring to the table during discussions and projects and it was the most welcome I'd ever felt since coming to UW. I knew I'd found my place and I want to help other students find their community at UW and continue to grow.\nAs Director of Outreach, I want to bring back more in person tours of local Seattle offices! We haven’t had those much this year because of the pandemic and I’m excited to organize visits with companies and meet with current employees. I also want to continue to host professional development workshops such as resume and portfolio review. However, I also want to host general workshops for students starting their internship/job search that give them tips and resources on where and how to apply and specific workshops for each INFO track. I was pretty confused when I started applying and talking to other informatics students in the same boat helped me a lot with applications. I also want to continue to update the IUGA Medium blog! There’s some great advice about classes and applications on here and I want to continue to contribute to it and make sure that different backgrounds and different aspirations are shown on the blog. \nExcited for the next year!",
+				image: _2021_shruti,
+				pdf: _2021_shruti_infographic
+			}
+		],
+		[Officers.DIVERSITY]: [
+            {
+                name: "Yenny Park",
+                statement: "Hi, my name is Yenny and I am running to be your next Director of Diversity Efforts! I am a sophomore majoring in the Human Computer Interaction track of Informatics and was admitted as a freshman in 2019. I grew up in a variety of academic settings. I attended private schools, public schools, and even schools abroad. Each time I was placed in a new environment, the idea of being included and represented in unfamiliar settings overwhelmed me. In certain settings, there were definitely moments I felt discriminated against and disrespected whether it was intentional or not. That is where my passion for diversity and inclusivity stems from. \nThere are many students in the Informatics program, and everyone comes from different backgrounds and stories. In such a community, while it can be difficult to create an environment that equally hears all of these voices and recognizes the differences, I have always felt accepted and heard. Within classes, events, and even just light conversations with people in this community, there has never been a moment where I did not feel appreciated. \nI would love to continue promoting this inclusive environment as a Director of Diversity. By working with the Diversity Programs Advisor, the Diversity Committee, and other diversity promoting RSOs like WINFO, I want to organize meaningful, diverse events for the iSchool. I will strive to ensure that current students and prospective students all feel welcomed and safe in this environment. As an open-minded and dependable candidate, I can promise my commitment to this role and its responsibilities.",
+                image: _2021_yenny,
+                pdf: _2021_yenny_infographic
+            },
+            {
+                name: "Pranav Shekar",
+                statement: "Hello! My name is Pranav (they/he) and I’m a second-year iSchool student hoping to be your Director of Diversity! \nAs a non-binary queer South Asian in Seattle, identity has always been centered within my life. Understanding identity as important and fluid, I have consistently focused my efforts on fostering environments that are conducive to growth, healing, and collaboration. Working on K-12 sustainability curriculum, ethical childcare, and worker’s rights, my first two years at the University of Washington have allowed me to find identity within community and myself - through my experiences inside and outside UW. \nLooking forward, as Director of Diversity, I aim to facilitate identity-making spaces within the iSchool. Oftentimes, it’s simple to conflate diversity with representation. Instead, I hope to push the iSchool for diversity that maintains a proactive awareness of race, ethnicity, religion, sexuality, gender, socioeconomic backgrounds, etc., and the disparate structural and interpersonal barriers that impact students and faculty. \nGenerating challenging conversations with leadership, I want to push the iSchool to be a major and community intent on cultivating students invested in equity; a community that is not reactionary, but radically becoming better. Working with the Diversity Programs Advisor, Diversity Committee, IUGA, and various groups and RSOs, as your Director of Diversity, I will strive to prioritize the demands of the people and our spaces. \nIn my time within the iSchool, I have greatly admired the conversations faculty and students have had and strongly believe I have the dedication to expand and cultivate those same discussions. At the intersection of tech, design, and human values, it’s necessary that the iSchool has a distinct awareness of the nuanced socio-technical impacts technology has had and continues to have and I hope to be part of a group of people dedicated to understanding and highlighting that. Thank you!",
+                image: _2021_pranav,
+                pdf: _2021_pranav_infographic
+            }
+		],
+		[Officers.IT]: [
+		],
+        [Officers.ACADEMIC]: [
+            {
+				name: "Kavya Iyer",
+				statement: "Coming from a high school graduating class of 66 people, I was terrified of how huge UW would be. How would I make friends, and find a space for myself at this school? \nAfter I took INFO 200 and 201 in my sophomore year and got to know the professors, TA’s and more about what the iSchool stood for, it was clear to me that Informatics would be the perfect place for me to call home at the UW. Once I was accepted to the program, I knew I wanted to help other people like me find their community in college as well. By working as an Informatics Peer Advisor and a Tour Guide with the Office of Admissions, I get to learn firsthand the academic and emotional support both current and prospective Informatics students need in order to thrive. With the pandemic winding down and us transitioning back to on-campus life again, I believe my perspective is necessary in order to make sure no student is left behind. \nAs your Director of Academic support, I will do my utmost to ensure every student at the iSchool has access to the resources and materials they need to succeed at school – whether its organizing capstone groups, hosting social events, or building mentorship programs. Informatics is a close knit community, and my goal as IUGA’s Director of Academic Support is to make our connections even stronger!\nPlease feel free to Facebook message me if you have any questions or just want to chat! Thank you for your time, I look forward to making the 2021-22 school year the best it can be 😊  \nKavya ",
+				image: _2021_kavya,
+				pdf: _2021_kavya_infographic
+			}
+        ]
 	}
-	// 2021: {
-	// 	[Officers.PRESIDENT]: [
-	// 		{
-	// 		},
-	// 	],
-	// 	[Officers.VICE_PRESIDENT]: [
-	// 	],
-	// 	[Officers.PUBLIC_RELATIONS]: [
-	// 	],
-	// 	[Officers.OUTREACH]: [
-	// 	],
-	// 	[Officers.FINANCE]: [
-	// 	],
-	// 	[Officers.DIVERSITY]: [
-	// 	],
-	// 	[Officers.CREATIVE]: [
-	// 	],
-	// 	[Officers.IT]: [
-	// 	],
-	//  [Officers.ACADEMIC]: [
-	//  ]
-	// }
 }
 
 export const WINFO_ELECTIONS: Elections = {
@@ -1222,6 +1347,7 @@ export const WINFO_ELECTIONS: Elections = {
 				image: _2020_rachel,
 				pdf: _2020_rachel_infographic,
 				elected: true,
+				adminMessage: "Elected as Director of Community Efforts."
 			},
 			{
 				name: "Harkiran Saluja",
@@ -1273,28 +1399,98 @@ export const WINFO_ELECTIONS: Elections = {
 				video: "https://www.youtube.com/embed/K4Peh3GzNU4"
 			}
 		]
+	},
+	2021: {
+		[Officers.PRESIDENT]: [
+            {
+				name: "Allison Geary",
+				statement: "Hi all!\nMy name is Allison Geary and I am currently a junior in Informatics and one of Winfo’s current Co-Presidents. I am originally from Chicago and have loved making the Pacific Northwest my new home! Some of my interests include theatre, astrology, and anything that has to do with food :). Having grown up in the theater, I love communicating with others and have thoroughly enjoyed my time working alongside the current Winfo Officers. I would love to continue my work with Winfo, therefore I am running for Winfo President  for a second term.   For the past three years, I have been heavily involved in Winfo, first starting off as a First Year Representative to then as their Director of Public Relations, and now as one of their Co-Presidents.  With my background, I believe I can really make an impact by increasing awareness and interest in what Winfo is all about: female empowerment through technology.My leadership skills have grown immensely in the past couple years through being a TA for INFO 200. I want to not only incorporate these leadership skills, but also the knowledge I have gained from being on the Winfo team for the past three years into the President’s position for a second time. I am committed to making a positive impact and putting the time and effort in that’s needed to be a great Winfo President!",
+				image: _2021_allison,
+				pdf: _2021_allison_resume
+			}
+		],
+		[Officers.VICE_PRESIDENT]: [
+            {
+                name: "Kayla Chea",
+                statement: "Hi WINFO~\nMy name is Kayla and I am running to be your next WINFO Vice President! My Informatics journey began in 2018, the year I started my studies at UW. I had recently determined that pre-med wasn't for me and had no clue what to major in. As the anxiety set in, I luckily encountered Informatics through INFO200 and instantly fell in love. I worked hard to get into the major, and after being in the major for 2 years I can sincerely say I made the right decision.\nAfter getting admitted, I realized how welcoming the Informatics community is. I love how it embraces different backgrounds and offers help to those who need it. I genuinely enjoy connecting with people in the community and have been getting involved wherever I can. This past year I held various leadership positions in the iSchool. I served as WINFO's Creative Director, SUDO's Co-President, a TA for INFO466, and an Informatics tutor. Serving in these positions has greatly developed my ability to lead, communicate, work with people of varying backgrounds, listen to other's opinions, and meet my responsibilities in a timely manner. I believe the experience I gained from these positions would allow me to successfully fulfill the role of WINFO Vice President. \nAs WINFO Vice President, I will continue to foster an environment that celebrates diversity, promotes mutual respect and inclusivity, empowers women in tech, and encourages engagement from the members of the iSchool. I want students to feel like they have a say in decisions at the iSchool and will strive to listen and account for the opinions of the student body. If elected, I will work hard to improve the iSchool and make it a fun and safe space to connect with your peers and pursue your studies!",
+                image: _2021_kayla,
+                pdf: _2021_kayla_infographic
+            },
+            {
+                name: "Rachel Kinkley",
+                statement: "Hey INFO!!\nMy name is Rachel Kinkley and I hope to be WINFO’s next Vice President. Currently, I’m a second-year student pursuing a double major in Informatics and Psychology. The blend of these majors has allowed me to explore my passion of designing and managing technology that promotes social good and benefits the lives of people. Over the past two years, INFO has been such a welcoming space that has provided me with invaluable experiences. The support and sense of community that I have found within WINFO (especially throughout the pandemic) has transformed my college experience and is something that I would like to continue to spread. I believe that being WINFO’s Vice President would be a great way for me to accomplish this.\nI believe that I am qualified for this position because of my experience within WINFO, my leadership skills, and my passion for the INFO community. I am immensely grateful to have joined WINFO as a First-Year-Representative and that I continued as the Director of Community Efforts this past year. During my time in these roles, I gained leadership experience and have become very familiar with WINFO’s virtual and in-person operations. As a result, I have thorough knowledge of what it needed to allow WINFO’s officer team and RSO as a whole to thrive. In addition to my experiences with WINFO, I have grown as a leader while leading a team of nine people as PODUW’s Director of Visualization.  \nIf elected, I would work to emphasize a sense of community – especially in a virtual environment – and diversity within INFO. It is my goal to make all INFO students feel welcome and at home within our community, just as I have felt. \nI would greatly appreciate your vote for me as your next WINFO Vice President! Thank you!",
+                image: _2021_rachel,
+                video: "https://www.youtube.com/embed/fQ3kuXFSUYo"
+            }
+		],
+		[Officers.FINANCE]: [
+
+		],
+		[Officers.CREATIVE]: [
+            {
+				name: "Dana Rin",
+				statement: "Hi everyone! My name is Dana and I am super excited to be running as your Creative Director for WINFO this year! I’m currently a sophomore and a first-year INFO student focusing on the Human-Computer Interaction track.\nBefore coming to UW, I had no idea what informatics meant or that it even existed. I spoke to an advisor about my passions for technology and design and she gave me a little idea of what INFO was, and recommended I take INFO 200… I immediately fell in love with the concept of developing technology for the good of people and found myself wanting to learn more. As a result of this, I participated in WINFO’s 8th Annual Hackathon - my very first hackathon! Not knowing anyone prior, WINFO hosted a mixer where I was quickly welcomed by the WINFO community and was able to find teammates who were just as new to everything as I was. I remember feeling so at home and excited to be working on a day-long project that didn’t even feel like work because of how much fun I was having. This hackathon paved the way for my interests in user experience/interface design that I find so much joy and satisfaction in. \nAs Creative Director, I want to be able to continue WINFO’s mission of empowering women to thrive as producers of technology through creating designs representative of not just women in INFO, but in other areas of the tech world as well. I’m looking forward to meeting more students within the iSchool, so don’t be afraid to reach out to me with any feedback or suggestions you might have - I want to bring as much joy to you as I do when designing your merch for you! Thank you!",
+				image: _2021_dana,
+				pdf: _2021_dana_infographic
+			}
+		],
+		[Officers.PUBLIC_RELATIONS]: [
+            {
+				name: "Sam Rondini",
+				statement: "Hi INFO! My name is Sam and I am so excited to be in the running for the next WINFO Director of Public Relations position! I am a current junior Informatics student pursuing a custom track designed to explore data and design ethics. Upon admittance to the iSchool, I quickly searched for more ways to get involved and expand my network, leading me to join WINFO! \nThrough my experience as a WINFO First Year Representative, I found a community that values diverse thoughts and welcomes every identity and background. The FYR team and I had the opportunity to plan 3 different WINFO events, ranging from career workshops to social hours, and we were able to create a space where people felt like they could be themselves. \nBefore coming to UW, I had zero clue what informatics was. I knew I wanted to help people and design things that were ethical and just, but I did not know where to start. The WINFO platforms really demonstrated to me that there were people on campus that had the same passions. I have been so inspired by the incredible members of this organization and I hope to collaborate with them to ensure diversity, acceptance, and encouragement remain some of the top values of WINFO and its surrounding community.  \nIn order to accomplish this, I plan to expand WINFO’s social media presence and provide more opportunities for virtual user engagement, in and outside of the iSchool community. Social media is shifting to a platform for consistent learning and I want to provide easily accessible career and industry resources, creating a space where our members can constantly grow and develop.\nI have greatly appreciated my experiences in WINFO so far and I would love the opportunity to help WINFO reach new heights.\n\"Scroll\" through my instagram in the video below to learn more about me!",
+				image: _2021_sam,
+				video: 'https://www.youtube.com/embed/4ojfgcqmd8Y'
+			}
+		],
+		[Officers.OUTREACH]: [
+            {
+				name: "Elise Adams",
+				statement: "My name is Elise Adams, and I am currently a junior studying Informatics and Psychology at UW. I love exploring the intersection of people and technology, whether it be by navigating the intricacies of collaborative teamwork, identifying ways to satisfy people’s needs based on varied levels of ability, or turning raw data into information intended to influence decision making. I have been a member of the Winfo community since the beginning of my sophomore year, and recently assisted in planning and executing Winfo's 9th Annual Hackathon as a member of the Hackathon committee!",
+				image: _2021_elise,
+				pdf: _2021_elise_resume
+			},
+            {
+				name: "Melina Perraut",
+				statement: "Hi everyone! I’m Melina and I’m running to be WINFO’s next Director of Outreach.\nAs a freshman direct admit to Informatics, I entered the iSchool excited to study my dream major but uncertain of how well I would fit within a new, virtual community. However, I have been consistently blown away by the iSchool’s inclusivity. I am incredibly grateful for the chance to contribute to this community and foster that sense of belonging within others.\nAs a WINFO first year representative, I have helped plan community-building and career prep events such as Chatsgiving and Pitch Perfect. I have also shadowed the current Director of Outreach to better understand the role’s responsibilities. Beyond WINFO, I have experience conducting outreach for various organizations. As an intern at a legal non-profit assisting disadvantaged populations, I contacted political representatives and designed workshops to serve community members. As Vice President of my high school’s Science National Honors Society, I worked with elementary schools to increase awareness of STEM opportunities. I also helped run a middle school outreach program for my Speech and Debate team. I am passionate about using outreach to connect those in need with resources to help them succeed, which I hope to continue to do within WINFO. \nAs Director of Outreach, I would continue to foster WINFO’s partnerships with professional organizations while introducing new opportunities to further WINFO’s mission of empowering women and minorities within tech. I plan to strengthen WINFO’s bond with employers despite the pandemic through events such as virtual company information sessions and tours to expand industry connections and professional opportunities for Informatics students. \nWINFO and the iSchool have already helped me grow tremendously, and I hope to pay that forward. Thank you for your time, and I would be honored to serve as your WINFO Director of Outreach!",
+				image: _2021_melina,
+				pdf: _2021_melina_resume
+			}
+		],
+		[Officers.DIVERSITY]: [
+            {
+				name: "Roshni Srikanth",
+				statement: "Hi! I’m Roshni and I’m running to be WINFO’s next director of Diversity Efforts!\nI started college virtually, so I was expecting a lonely first year where I would stare at my computer all day. However, after my first week, I was amazed by how vibrant the iSchool community was, even through Zoom. \nI had the incredible experiences of being a first-year representative for WINFO and being a part of WINFO’s diversity committee. I worked with the other first-year representatives and officers to create events like Chatsgiving, Pitch Perfect, and the Microaggressions power hour. I also shadowed the current directors of Diversity Efforts and Community Efforts to learn about what diversity looks like and how to create events that best reflect the values of the iSchool. \nI want to be your next director of Diversity Efforts because I know how impactful informatics outreach can be. While in high school, I attended a workshop hosted by WINFO, which cemented my interest in pursuing technology as a career. My passion for outreach enabled me to co-found a company called the Legion of Bot, and become the manager of a club called STEM Reach. As part of these organizations, I planned workshops to encourage students from various backgrounds to pursue STEM. As diversity officer, I would use my connections to expand our relationship with K-12 schools, and use my event-planning experience to encourage more diverse people to learn about informatics. I would also work closely with the director of Community Efforts to host more DEI-centered events for minorities in the iSchool. \nAll the wonderful people I have met this year have made my experience at the iSchool incredible. I would love to be able to support this amazing community reach its goals of diversity, equity, and inclusion as your next Director of Diversity!",
+				image: _2021_roshni,
+				pdf: _2021_roshni_resume
+			},
+            {
+				name: "Janvi Wadhawan",
+				statement: "Hi, I’m Janvi! I am currently a Junior at the iSchool pursuing a custom track focusing on both HCI and BHI. In my spare time, I like to test out new recipes, go to the gym, and dabble in film photography. \nAs a freshman, who had just been introduced to this new major, I had didn’t have much understanding of the potential of informatics. After taking classes and speaking to iSchool alum I was intrigued by the opportunities to positively affect the technology that is consuming our world. Whether that be making it more accessible to people of different abilities or viewing it through ethical frameworks to help identify and change discriminatory systems. \nAs the director of diversity, I would like to focus on reaching young people interested in technology and especially young women who are typically discouraged away from STEM fields. I believe the impact of empowering more diverse young people to pursue tech is the start of making technology more equitable and accessible. \nAs an international student, I can empathize with the feelings of being the out-group and it would be my mission to advocate for anyone who feels unheard. Therefore, I would also like to expand diversity events to facilitate conversations among informatics students to voice their unique experiences and potential struggles they face in the iSchool and the greater campus. \nI would love to be a part of a team of inspiring and uplifting women and be able to contribute my own ideas and effort. Therefore, I believe I can make a positive impact on the growth and reach of the organization while supporting the women around me.",
+				image: _2021_janvi,
+				pdf: _2021_janvi_infographic
+			}
+		],
+		[Officers.COMMUNITY_EFFORTS]: [
+            {
+				name: "Gisele Josephine Fox",
+				statement: "Hey guys! My name is Gisele Fox, I use she/her or they/them pronouns, and I’m running for Director of Community Efforts.\nSince October I’ve been a part of WINFO’s Diversity Committee where I’ve had a hand in brainstorming and planning events like the imposter syndrome panel and microaggression power hour. I’d be excited to start working as the Director of Community Efforts as someone who’s worked closely with Rachel and Harkiran and has some ideas of their own to throw into the mix.\nOne idea I’m interested in pursuing is a WINFO podcast where me and the WINFO team can explore all the creative ways you can work with informatics as well as create a space where we can connect as classmates. We’ve already started recording some episodes and, even though I’m planning on pursuing it whether or not I get elected, I think being a member of the core team would be a great position for me to be in to bring this passion project to fruition.\nAs director of community efforts, not only do I want to continue to pursue live events but I also want to find ways to archive all the knowledge we learn from them. I want to create systems to make sure all the info we learn from these amazing guests can be easily accessed for years to come. That way you can find exactly what you’re looking for at any time, whether you’re wondering what it’s like to be a product manager or how to beat the classic imposter syndrome.\nIn the end, I want to make sure we as the students get a kind and accepting space for us to learn and grow as people. I’d love to be there for you as your next Director of Community Efforts!",
+				image: _2021_gisele,
+				video: 'https://www.youtube.com/embed/FJndt0k-uxg'
+			},
+            {
+				name: "Emiri Nishizawa",
+				statement: "Hi, all! I’m Emiri Nishizawa, a freshman direct admit to the Informatics major. I am running to be your next WINFO Director of Community Efforts! \nI was introduced to Informatics and the UW iSchool in my junior year of high school when I attended the UW WiSE conference. My friends and I had started a WiSE (Women in Science and Engineering) club earlier that year. Our focus was to introduce ourselves and others to the different opportunities within STEM. We also worked to learn about women’s experience in those fields. The iSchool advisor’s presentation at one of our meetings opened my eyes to the world of Informatics. I became interested in Informatic’s goals of working with technology to better the world. \nThrough many experiences, I have gained leadership experience that I hope to utilize and expand upon. In addition to co-leading the WiSE club with my friends, I was the co-captain for both my high school and club swim team. As an introvert myself, I find it important and fun to find ways to bring people within a community together. Through my journey at the iSchool, I hope to connect with more people in the diverse community. I am grateful for the opportunities and relationships that WINFO has provided me with, especially as a first-time college student during a pandemic. I was part of the Hackathon Committee this year that aided in planning the Hackathon and the preceding events. As the Director of Community Efforts, I hope to give back to the WINFO and iSchool community that welcomed me so warmly. \nThank you so much for your time, and I hope you consider me as your WINFO Director of Community Efforts. ",
+				image: _2021_emiri,
+				pdf: _2021_emiri_infographic
+			}
+		],
+		[Officers.HACKATHON_DIRECTOR]: [
+            {
+				name: "Sharon Lin",
+				statement: "Hi INFO! My name is Sharon, and I am running to be your next WINFO Hackathon Director! I am currently a junior in Informatics and Economics pursuing the custom track focusing on software development and data science. As someone passionate about women empowerment in tech, I am thrilled by the opportunity to be a part of an inclusive community that values diversity and inclusion and be coordinating one of the largest events in the iSchool!\nLike many students at UW, the WINFO Hackathon was the first collegiate hackathon I have ever attended. For me, it was inspiring to see students with different coding and design backgrounds collaborating on such impactful projects that address a wide array of issues. As your next WINFO Hackathon Director, I want to continue bringing these experiences that promote inclusivity, accessibility, and social good. In addition to that, I aim to make the experience even better by incorporating more workshops, prizes/tracks, mentorship, and networking opportunities, to further emphasize and reflect the great diversity within hackers. \nHaving attended hackathons as a hacker and organized an online hackathon last month as the Co-Director of Tech at TechTogether Seattle, I have gained significant experiences and insights into the necessary preparation and implementation that ensure a successful running of a hackathon. For the past school year, my RSO involvement through SUDO and the Society of Women Engineers at UW has also allowed me to build strong leadership and make meaningful connections with other students. I believe that these cumulative experiences make me a strong candidate for the role of Hackathon Director! \nThank you for taking the time to read my personal statement, and please support me in the running for WINFO's next Hackathon Director! I can't wait to serve this supportive and growing community!",
+				image: _2021_sharon,
+				pdf: _2021_sharon_resume
+			}
+		]
 	}
-	// 2021: {
-	// 	[Officers.PRESIDENT]: [
-
-	// 	],
-	// 	[Officers.VICE_PRESIDENT]: [
-
-	// 	],
-	// 	[Officers.PUBLIC_RELATIONS]: [
-
-	// 	],
-	// 	[Officers.OUTREACH]: [
-
-	// 	],
-	// 	[Officers.FINANCE]: [
-
-	// 	],
-	// 	[Officers.DIVERSITY]: [
-
-	// 	],
-	// 	[Officers.CREATIVE]: [
-
-	// 	],
-	// }
 }
