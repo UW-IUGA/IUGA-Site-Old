@@ -42,4 +42,6 @@ npm run productionstart
 
 ```
 npm run deploy
+# Or:
+sh ./scripts/deploy.sh
 ```
