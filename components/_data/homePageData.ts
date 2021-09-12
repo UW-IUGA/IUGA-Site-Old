@@ -9,8 +9,8 @@ import { faInstagram, faFacebook, IconDefinition } from '@fortawesome/free-brand
  */
 import aaron from '../_assets/electionsImages/2021/aaronzhao.jpg';
 import justin from '../_assets/electionsImages/2021/justinzeng.jpg';
-import sachi from '../_assets/electionsImages/2021/sachifiglioni.jpg';
-import anika from '../assets/electionsImages/2021/anikamishra.jpg';
+import sachi from '../_assets/electionsImages/2021/sachifigliolini.jpg';
+import anika from '../_assets/electionsImages/2021/anikamishra.jpg';
 import augene from '../_assets/electionsImages/2021/augenepak.jpg';
 import kelsey from '../_assets/electionsImages/2021/kelseylu.jpg';
 import pranav from '../_assets/electionsImages/2021/pranavshekar.jpg';
@@ -130,7 +130,7 @@ export const homePageData: HomePageData = {
 		},
 		{
 			position: Officers.FINANCE,
-			name: "Sachi Figlioni",
+			name: "Sachi Figliolini",
 			picture: sachi,
 			linkedin: "http://www.linkedin.com/in/sachi-figliolini/"
 		},
