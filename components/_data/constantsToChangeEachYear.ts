@@ -1,2 +1,2 @@
-export const CURRENT_YEAR = 2020;
-export const CURRENT_YEAR_ELECTIONS = 2021;
+export const CURRENT_YEAR = 2021;
+export const CURRENT_YEAR_ELECTIONS = 2022;

@@ -25,10 +25,10 @@ export const navigationBarLinks: NavigationBarLink[] = [
 		name: "past officers",
 		link: "/pastofficers"
 	},
-	{
-		name: "elections",
-		link: "/elections",
-    },
+	// {
+	// 	name: "elections",
+	// 	link: "/elections",
+    // },
     {
         name: "calendar",
         link: "/calendar",
