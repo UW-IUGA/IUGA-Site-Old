@@ -37,7 +37,7 @@ import _2021_shruti from '../_assets/electionsImages/2021/shrutikompella.jpg';
 import _2021_shruti_infographic from '../_assets/electionsImages/2021/shrutikompella-infographic.pdf';
 import _2021_anika from '../_assets/electionsImages/2021/anikamishra.jpg';
 import _2021_anika_infographic from '../_assets/electionsImages/2021/anikamishra-infographic.pdf';
-import _2021_augene from '../_assets/electionsImages/2021/augenejohnpak.jpg';
+import _2021_augene from '../_assets/electionsImages/2021/augenepak.jpg';
 import _2021_augene_portfolio from '../_assets/electionsImages/2021/augenejohnpak-portfolio.pdf';
 
 /** 2021 winfo officer images */
