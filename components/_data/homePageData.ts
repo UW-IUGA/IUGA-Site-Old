@@ -16,8 +16,8 @@ import kelsey from '../_assets/electionsImages/2021/kelseylu.jpg';
 import pranav from '../_assets/electionsImages/2021/pranavshekar.jpg';
 import shruti from '../_assets/electionsImages/2021/shrutikompella.jpg';
 import kavya from '../_assets/electionsImages/2021/kavyaiyer.jpg';
-import fyr1 from '../_assets/electionsImages/2021/sachifigliolini.jpg';
-import fyr2 from '../_assets/electionsImages/2021/justinzeng.jpg';
+import fyr1 from '../_assets/electionsImages/2021/sirenaakopyan.jpg';
+import fyr2 from '../_assets/electionsImages/2021/phyllischen.jpg';
 
 /**
  * Use these officers enumerates below when you define them and the associated role.
@@ -273,13 +273,14 @@ export const homePageData: HomePageData = {
 	},
 	fyrs: [
 		{
-			name: "Sachi Figliolini",
-			picture: fyr2
+			name: "Sirena Akopyan",
+			picture: fyr2,
+            linkedin: "https://www.linkedin.com/in/sirena-akopyan-61862221a"
 		},
 		{
-			name: "Justin Zeng",
+			name: "Phyllis Chen",
 			picture: fyr1,
-			linkedin: "https://www.linkedin.com/in/justin-zeng-3b7b47165/"
+			linkedin: "https://www.linkedin.com/in/phyllis-chen-profile"
 		}
 	]
 }
