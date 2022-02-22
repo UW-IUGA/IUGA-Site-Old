@@ -86,7 +86,7 @@ const IndexPage: React.FC = () => {
 				</div>
 			})}
 		</div>
-		{/* {fyrs.length > 0 &&
+		{fyrs.length > 0 &&
 			<>
 				<h2>Who are your First Year Representatives? What do they do?</h2>
 				<ContentBox>
@@ -116,7 +116,7 @@ const IndexPage: React.FC = () => {
 					})}
 				</div>
 			</>
-		} */}
+		}
 
 		<h2>Membership</h2>
 		<ContentBox>
