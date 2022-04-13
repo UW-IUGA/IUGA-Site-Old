@@ -274,12 +274,12 @@ export const homePageData: HomePageData = {
 	fyrs: [
 		{
 			name: "Sirena Akopyan",
-			picture: fyr2,
+			picture: fyr1,
             linkedin: "https://www.linkedin.com/in/sirena-akopyan-61862221a"
 		},
 		{
 			name: "Phyllis Chen",
-			picture: fyr1,
+			picture: fyr2,
 			linkedin: "https://www.linkedin.com/in/phyllis-chen-profile"
 		}
 	]
