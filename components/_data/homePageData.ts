@@ -7,17 +7,16 @@ import { faInstagram, faFacebook, IconDefinition } from '@fortawesome/free-brand
  * 
  * https://github.com/UW-IUGA/IUGA-Site/wiki/5.-Good-practices
  */
-import aaron from '../_assets/electionsImages/2021/aaronzhao.jpg';
-import justin from '../_assets/electionsImages/2021/justinzeng.jpg';
-import sachi from '../_assets/electionsImages/2021/sachifigliolini.jpg';
-import anika from '../_assets/electionsImages/2021/anikamishra.jpg';
-import augene from '../_assets/electionsImages/2021/augenepak.jpg';
-import kelsey from '../_assets/electionsImages/2021/kelseylu.jpg';
-import pranav from '../_assets/electionsImages/2021/pranavshekar.jpg';
-import shruti from '../_assets/electionsImages/2021/shrutikompella.jpg';
-import kavya from '../_assets/electionsImages/2021/kavyaiyer.jpg';
-import fyr1 from '../_assets/electionsImages/2021/sirenaakopyan.jpg';
-import fyr2 from '../_assets/electionsImages/2021/phyllischen.jpg';
+
+ import _brianna from '../_assets/electionsImages/2022/brianna.jpg';
+ import _devina from '../_assets/electionsImages/2022/devinaTavathia.jpg';
+ import _drew from '../_assets/electionsImages/2021/drewFavors.jpg';
+ import _justin from '../_assets/electionsImages/2021/justinZeng.jpg';
+ import _phyllis from '../_assets/electionsImages/2021/phyllischen.jpg';
+ import _pranav from '../_assets/electionsImages/2021/pranavshekar.jpg';
+ import _sachi from '../_assets/electionsImages/2021/sachiFigliolini.jpg';
+ import _sarah from '../_assets/electionsImages/2021/sarahThomas.jpg';
+ import _sirena from '../_assets/electionsImages/2021/sirenaKopyan.jpg';
 
 /**
  * Use these officers enumerates below when you define them and the associated role.
@@ -28,6 +27,7 @@ import fyr2 from '../_assets/electionsImages/2021/phyllischen.jpg';
  */
 export enum Officers {
 	PRESIDENT = "President",
+	COPRESIDENT = "Co-President",
 	VICE_PRESIDENT = "Vice President",
 	FINANCE = "Director of Finance",
 	CREATIVE = "Creative Director",
@@ -115,44 +115,42 @@ export const homePageData: HomePageData = {
 	membershipBlurb: "Membership eligibility in IUGA is held by matriculated declared Informatics majors as defined by the Information School and the University of Washington. Members must also be in good disciplinary standing as outlined in the Student Code at the University of Washington.",
 	officers: [
 		{
-			position: Officers.PRESIDENT,
-            name: "Aaron Zhao",
-            picture: aaron,
-            linkedin: "https://www.linkedin.com/in/zhaoaaron/",
-            website: "https://www.aaronzhao.io/"
-		},
-		{
-			position: Officers.VICE_PRESIDENT,
-			name: "Justin Zeng",
-			picture: justin,
+			position: Officers.COPRESIDENT,
+            name: "Justin Zeng",
+            picture: _justin,
             github: 'https://github.com/Once28',
 			linkedin: "https://www.linkedin.com/in/justin-zeng-3b7b47165/"
 		},
 		{
-			position: Officers.FINANCE,
+			position: Officers.COPRESIDENT,
 			name: "Sachi Figliolini",
-			picture: sachi,
-			linkedin: "http://www.linkedin.com/in/sachi-figliolini/"
+			picture: _sachi,
+            linkedin: "http://www.linkedin.com/in/sachi-figliolini/"
+		},
+		{
+			position: Officers.FINANCE,
+			name: "Phyllis Chen",
+			picture: _phyllis,
+			linkedin: "https://www.linkedin.com/in/phyllis-chen-profile"
 		},
 		{
 			position: Officers.CREATIVE,
-			name: "Anika Mishra",
-			picture: anika,
-            linkedin: "http://linkedin.com/in/anikamishra",
-            website: "http://anikamishra.com"
+			name: "Sarah Thomas",
+			picture: _sarah,
+            linkedin: "https://www.linkedin.com/in/sarahetthomase/",
+            website: "sarahthomas.me"
 		},
 		{
 			position: Officers.PUBLIC_RELATIONS,
-			name: "Augene Pak",
-            picture: augene,
-			linkedin: "https://www.linkedin.com/in/augenepak/",
-			website: "https://augene.github.io/"
+			name: "Brianna Pak",
+            picture: _brianna,
+			linkedin: "https://www.linkedin.com/in/briannapak/",
 		},
 		{
 			position: Officers.OUTREACH,
-			name: "Kelsey Lu",
-			picture: kelsey,
-			linkedin: "http://www.linkedin.com/in/kelseylu612/"
+			name: "Sirena Akopyan",
+			picture: _sirena,
+			linkedin: "https://www.linkedin.com/in/sirena-akopyan-61862221a"
 		},
 		{
 			position: Officers.DIVERSITY,
@@ -163,15 +161,17 @@ export const homePageData: HomePageData = {
 		},
 		{
 			position: Officers.IT,
-			name: "Shruti Kompella",
-			picture: shruti,
-			linkedin: "https://www.linkedin.com/in/shruti-k-9a561a173"
+			name: "Devina Tavathia",
+			picture: _devina,
+			linkedin: "https://www.linkedin.com/in/devina-tavathia-40722b167/",
+			website: "https://devinat.github.io/PersonalPortfolio/",
+			github: "https://github.com/DevinaT"
 		},
 		{
 			position: Officers.ACADEMIC,
-			name: "Kavya Iyer",
-            picture: kavya,
-			linkedin: "https://www.linkedin.com/in/kavyaiyer"
+			name: "Drew Favors",
+            picture: _drew,
+			linkedin: "https://www.linkedin.com/in/drewfavors"
 		}
 	],
 	positionInformation: {
