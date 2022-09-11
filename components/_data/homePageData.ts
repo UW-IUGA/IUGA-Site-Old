@@ -184,6 +184,15 @@ export const homePageData: HomePageData = {
 				"Act as, or designate, the Informatics Representative On the iSchool Program Committee",
 				"Act as liaison to other iSchool student organizations"]
 		},
+		[Officers.COPRESIDENT]: {
+			description: "The Co-Presidents are the joint heads of IUGA and their responsibilities include:",
+			responsibilities: ["Co-lead IUGA Meetings",
+				"Assist each other in representing Informatics to faculty and staff",
+				"Shepherd and guide newly elected IUGA Officers during the annual transition",
+				"Act as backup for the Director of Finance for financial matters",
+				"Act as, or designate, the Informatics Representative On the iSchool Program Committee",
+				"Act as liaison to other iSchool student organizations"]
+		},
 		[Officers.VICE_PRESIDENT]: {
 			description: "The Vice President fills roles as needed and has core repsonsibilities with which they are entrusted. These core responsibilities include the following:",
 			responsibilities: [
