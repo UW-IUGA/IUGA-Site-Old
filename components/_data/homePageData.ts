@@ -10,13 +10,13 @@ import { faInstagram, faFacebook, IconDefinition } from '@fortawesome/free-brand
 
  import _brianna from '../_assets/electionsImages/2022/brianna.jpg';
  import _devina from '../_assets/electionsImages/2022/devinaTavathia.jpg';
- import _drew from '../_assets/electionsImages/2021/drewFavors.jpg';
- import _justin from '../_assets/electionsImages/2021/justinZeng.jpg';
- import _phyllis from '../_assets/electionsImages/2021/phyllischen.jpg';
- import _pranav from '../_assets/electionsImages/2021/pranavshekar.jpg';
- import _sachi from '../_assets/electionsImages/2021/sachiFigliolini.jpg';
- import _sarah from '../_assets/electionsImages/2021/sarahThomas.jpg';
- import _sirena from '../_assets/electionsImages/2021/sirenaKopyan.jpg';
+ import _drew from '../_assets/electionsImages/2022/drewFavors.jpg';
+ import _justin from '../_assets/electionsImages/2022/justinZeng.jpg';
+ import _phyllis from '../_assets/electionsImages/2022/phyllischen.jpg';
+ import _pranav from '../_assets/electionsImages/2022/pranavshekar.jpg';
+ import _sachi from '../_assets/electionsImages/2022/sachiFigliolini.jpg';
+ import _sarah from '../_assets/electionsImages/2022/sarahThomas.jpg';
+ import _sirena from '../_assets/electionsImages/2022/sirenaKopyan.jpg';
 
 /**
  * Use these officers enumerates below when you define them and the associated role.
