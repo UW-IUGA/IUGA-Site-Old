@@ -155,7 +155,7 @@ export const homePageData: HomePageData = {
 		{
 			position: Officers.DIVERSITY,
 			name: "Pranav Shekar",
-            picture: pranav,
+            picture: _pranav,
             linkedin: "https://www.linkedin.com/in/pranav-shekar/",
             website: "http://pranavshekar.com/"
 		},
@@ -281,15 +281,15 @@ export const homePageData: HomePageData = {
 		},
 	},
 	fyrs: [
-		{
-			name: "Sirena Akopyan",
-			picture: fyr1,
-            linkedin: "https://www.linkedin.com/in/sirena-akopyan-61862221a"
-		},
-		{
-			name: "Phyllis Chen",
-			picture: fyr2,
-			linkedin: "https://www.linkedin.com/in/phyllis-chen-profile"
-		}
+		// {
+		// 	name: "Sirena Akopyan",
+		// 	picture: fyr1,
+        //     linkedin: "https://www.linkedin.com/in/sirena-akopyan-61862221a"
+		// },
+		// {
+		// 	name: "Phyllis Chen",
+		// 	picture: fyr2,
+		// 	linkedin: "https://www.linkedin.com/in/phyllis-chen-profile"
+		// }
 	]
 }

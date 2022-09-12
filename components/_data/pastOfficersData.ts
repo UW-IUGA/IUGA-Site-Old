@@ -10,8 +10,8 @@ import ana from '../_assets/electionsImages/2020/anadelasalas.jpg';
 import aaron from '../_assets/electionsImages/2020/aaronzhao.jpg';
 import andrey from '../_assets/electionsImages/2020/andreybutenko.jpg';
 import joseph from '../_assets/electionsImages/2020/josephaltamira.jpg';
-import fyr1 from '../_assets/electionsImages/2020/justin-fyr.jpg';
-import fyr2 from '../_assets/electionsImages/2020/sachi-fyr.jpg';
+// import fyr1 from '../_assets/electionsImages/2020/justin-fyr.jpg';
+// import fyr2 from '../_assets/electionsImages/2020/sachi-fyr.jpg';
 
 /** 2019 officer images */
 import _2019_alejandro from "../_assets/electionsImages/2019/alejandro.jpg";
