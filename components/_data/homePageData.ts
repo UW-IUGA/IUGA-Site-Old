@@ -137,8 +137,8 @@ export const homePageData: HomePageData = {
 			position: Officers.CREATIVE,
 			name: "Sarah Thomas",
 			picture: _sarah,
-            linkedin: "https://www.linkedin.com/in/sarahetthomase/",
-            website: "sarahthomas.me"
+            linkedin: "https://www.linkedin.com/in/sarahetthomas/",
+            website: "https://sarahthomas.me"
 		},
 		{
 			position: Officers.PUBLIC_RELATIONS,
