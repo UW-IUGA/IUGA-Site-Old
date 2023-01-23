@@ -3,7 +3,7 @@ services:
   nginx:
     build:
       context: ./_nginx
-    image: uwiuga/nginx_site
+    image: iuga/nginx_site
     links:
         - node1:node1
     ports:
@@ -12,6 +12,6 @@ services:
   node1:
     build:
       context: ./
-    image: uwiuga/next_site
+    image: iuga/next_site
     ports:
         - "3000"

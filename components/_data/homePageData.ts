@@ -17,6 +17,8 @@ import { faInstagram, faFacebook, IconDefinition } from '@fortawesome/free-brand
  import _sachi from '../_assets/electionsImages/2022/sachiFigliolini.jpg';
  import _sarah from '../_assets/electionsImages/2022/sarahThomas.jpg';
  import _sirena from '../_assets/electionsImages/2022/sirenaakopyan.jpg';
+ import _fyr1 from '../_assets/electionsImages/2022/fyr1.jpg';
+ import _fyr2 from '../_assets/electionsImages/2022/fyr2.jpg';
 
 /**
  * Use these officers enumerates below when you define them and the associated role.
@@ -281,15 +283,15 @@ export const homePageData: HomePageData = {
 		},
 	},
 	fyrs: [
-		// {
-		// 	name: "Sirena Akopyan",
-		// 	picture: fyr1,
-        //     linkedin: "https://www.linkedin.com/in/sirena-akopyan-61862221a"
-		// },
-		// {
-		// 	name: "Phyllis Chen",
-		// 	picture: fyr2,
-		// 	linkedin: "https://www.linkedin.com/in/phyllis-chen-profile"
-		// }
+		{
+			name: "Eric Kim",
+			picture: _fyr1,
+            linkedin: "https://www.linkedin.com/in/taehyunnkim/"
+		},
+		{
+			name: "Ryan Louie",
+			picture: _fyr2,
+			linkedin: "https://www.linkedin.com/in/ryan-zi-louie/"
+		}
 	]
 }
