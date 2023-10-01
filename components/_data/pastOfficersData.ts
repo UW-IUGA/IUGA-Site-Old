@@ -1,5 +1,18 @@
 import { Officers, OfficerInfo } from "./homePageData";
 
+/** 2020 officer images */
+import kiran from '../_assets/electionsImages/2020/kiranpradhan.jpg';
+import jacinda from '../_assets/electionsImages/2020/jacindaeng.jpg';
+import alexander from '../_assets/electionsImages/2020/alexandersanchez.jpg';
+import jojo from '../_assets/electionsImages/2020/jojosaunders.jpg';
+import cheryl from '../_assets/electionsImages/2020/cherylwu.jpg';
+import ana from '../_assets/electionsImages/2020/anadelasalas.jpg';
+import aaron from '../_assets/electionsImages/2020/aaronzhao.jpg';
+import andrey from '../_assets/electionsImages/2020/andreybutenko.jpg';
+import joseph from '../_assets/electionsImages/2020/josephaltamira.jpg';
+// import fyr1 from '../_assets/electionsImages/2020/justin-fyr.jpg';
+// import fyr2 from '../_assets/electionsImages/2020/sachi-fyr.jpg';
+
 /** 2019 officer images */
 import _2019_alejandro from "../_assets/electionsImages/2019/alejandro.jpg";
 import _2019_william from "../_assets/electionsImages/2019/williamkwok.jpg";
@@ -72,6 +85,73 @@ type PastOfficersData = {
  *      July 6, 2019
  */
 export const pastOfficersData: PastOfficersData = {
+    2020: [
+        {
+			position: Officers.PRESIDENT,
+            name: "Kiran Pradan",
+                    picture: kiran,
+            github: "https://github.com/kiranpradhan01",
+            linkedin: "https://www.linkedin.com/in/kiran-pradhan/"
+		},
+		{
+			position: Officers.VICE_PRESIDENT,
+			name: "Jacinda Eng",
+			picture: jacinda,
+			linkedin: "https://www.linkedin.com/in/jacinda-eng-6432a8171",
+            github: "https://github.com/jacindaeng",
+            website: "https://jacindaeng.com/"
+		},
+		{
+			position: Officers.FINANCE,
+			name: "Alexander Sanchez",
+			picture: alexander,
+			github: "https://github.com/AlexanderES",
+			linkedin: "https://www.linkedin.com/in/alexander-escalera-503360176/"
+		},
+		{
+			position: Officers.CREATIVE,
+			name: "Jojo Saunders",
+			picture: jojo,
+            linkedin: "https://www.linkedin.com/in/jojosaunders/",
+            website: "https://www.jojosaunders.me/"
+		},
+		{
+			position: Officers.PUBLIC_RELATIONS,
+			name: "Cheryl Wu",
+            picture: cheryl,
+			linkedin: "https://www.linkedin.com/in/cheryl-wu-59baa8174",
+			website: "https://wucheryl.com"
+		},
+		{
+			position: Officers.OUTREACH,
+			name: "Ana De Las Alas",
+			picture: ana,
+			github: "https://github.com/dayoungcheong",
+			linkedin: "https://www.linkedin.com/in/ana-de-las-alas/"
+		},
+		{
+			position: Officers.DIVERSITY,
+			name: "Aaron Zhao",
+            picture: aaron,
+            linkedin: "https://www.linkedin.com/in/zhaoaaron/",
+            website: "https://www.aaronzhao.io/"
+		},
+		{
+			position: Officers.IT,
+			name: "Andrey Butenko",
+			picture: andrey,
+			github: "https://github.com/andreybutenko",
+			linkedin: "https://www.linkedin.com/in/butenkoandrey/",
+			website: "https://andreybutenko.com/"
+		},
+		{
+			position: Officers.ACADEMIC,
+			name: "Joseph Altamira",
+            picture: joseph,
+            github: "https://github.com/Jornalt",
+			linkedin: "https://www.linkedin.com/in/joseph-altamira-0b0a22161/"
+		}
+    ],
 	2019: [
 		{
 			position: Officers.PRESIDENT,

@@ -15,6 +15,32 @@
 
 // import _2021_name from '../_assets/electionsImages/2021/file';
 
+/** 2023 iuga officer images */
+import _2023_Afomeya from '../_assets/electionsImages/2023/AfomeyaHailuimage.jpg';
+import _2023_Afomeya_infographic from '../_assets/electionsImages/2023/AfomeyaHailuinfographic.pdf';
+import _2023_Annie from '../_assets/electionsImages/2023/AnnieTuimage.jpg';
+import _2023_Annie_infographic from '../_assets/electionsImages/2023/AnnieTuinfographic.pdf';
+import _2023_Asad from '../_assets/electionsImages/2023/AsadJafferyimage.jpg';
+import _2023_Asad_infographic from '../_assets/electionsImages/2023/AsadJafferyinfographic.pdf';
+import _2023_Brandon from '../_assets/electionsImages/2023/BrandonMendozaimage.jpg';
+import _2023_Brandon_infographic from '../_assets/electionsImages/2023/BrandonMendozainfographic.pdf';
+import _2023_Drew from '../_assets/electionsImages/2023/DrewFavorsimage.jpg';
+import _2023_Drew_infographic from '../_assets/electionsImages/2023/DrewFavorsinfographic.pdf';
+import _2023_Eric from '../_assets/electionsImages/2023/EricKimimage.jpg';
+import _2023_Eric_infographic from '../_assets/electionsImages/2023/EricKiminfographic.pdf';
+import _2023_Mariko from '../_assets/electionsImages/2023/MarikoWoodworthimage.jpg';
+import _2023_Mariko_infographic from '../_assets/electionsImages/2023/MarikoWoodworthinfographic.pdf';
+import _2023_Phyllis from '../_assets/electionsImages/2023/PhyllisChenimage.jpg';
+import _2023_Phyllis_infographic from '../_assets/electionsImages/2023/PhyllisCheninfographic.pdf';
+import _2023_Ryan from '../_assets/electionsImages/2023/RyanLouieimage.jpg';
+import _2023_Ryan_infographic from '../_assets/electionsImages/2023/RyanLouieinfographic.pdf';
+import _2023_Sheamin from '../_assets/electionsImages/2023/SheaminKimimage.jpg';
+import _2023_Sheamin_infographic from '../_assets/electionsImages/2023/SheaminKiminfographic.pdf';
+import _2023_Sirena from '../_assets/electionsImages/2023/SirenaAkopyanimage.jpg';
+import _2023_Sirena_inforgraphic from '../_assets/electionsImages/2023/SirenaAkopyaninfographic.pdf';
+import _2023_Suraj from '../_assets/electionsImages/2023/SurajShankarGangaramimage.png';
+import _2023_Suraj_infographic from '../_assets/electionsImages/2023/SurajShankarGangaraminfographic.pdf';
+
 /** 2021 iuga officer images */
 import _2021_kavya from '../_assets/electionsImages/2021/kavyaiyer.jpg';
 import _2021_kavya_infographic from '../_assets/electionsImages/2021/kavyaiyer-infographic.pdf';
@@ -37,7 +63,7 @@ import _2021_shruti from '../_assets/electionsImages/2021/shrutikompella.jpg';
 import _2021_shruti_infographic from '../_assets/electionsImages/2021/shrutikompella-infographic.pdf';
 import _2021_anika from '../_assets/electionsImages/2021/anikamishra.jpg';
 import _2021_anika_infographic from '../_assets/electionsImages/2021/anikamishra-infographic.pdf';
-import _2021_augene from '../_assets/electionsImages/2021/augenejohnpak.jpg';
+import _2021_augene from '../_assets/electionsImages/2021/augenepak.jpg';
 import _2021_augene_portfolio from '../_assets/electionsImages/2021/augenejohnpak-portfolio.pdf';
 
 /** 2021 winfo officer images */
@@ -1022,6 +1048,88 @@ export const IUGA_ELECTIONS: Elections = {
 				pdf: _2021_kavya_infographic
 			}
         ]
+	},
+    2023: {
+		[Officers.PRESIDENT]: [
+			{
+				name: "Drew Favors",
+				statement: "Hey, y’all! My name is Drew and I am so thrilled to announce my candidacy for IUGA’s next President. As a rising senior at the University of Washington with a passion for Informatics, I have also been able to hold a position within IUGA over the past year as your Director of Academic Support. I have demonstrated leadership, dedication, and a commitment to excellence in all of my endeavors. I firmly believe that I can bring these qualities to the role of President and make a positive impact on the IUGA community. Over the past three years, I have committed myself wholly to Informatics upon my discovery of the major as an out-of-state freshman with no major. I have actively participated in IUGA events, workshops, and meetings and, as both a student and as the Director of Academic Support, gained valuable insights into the needs and concerns of informatics students and developed a deep understanding of the challenges and opportunities facing our community. As President, I would strive to enhance the overall experience of IUGA members by fostering an inclusive and collaborative environment that promotes growth, creativity, and innovation. I would continue the work of increasing the visibility of Informatics & IUGA on campus by collaborating with other student organizations and creating new partnerships with departments and faculty. Lastly, I would strive in providing adequate resources and career opportunities for students to develop technical and soft skills, including resume & career workshops as well as various industry panels.I believe that my experience, skills, and passion make me an ideal candidate for the role of President of IUGA. I am committed to creating a vibrant and supportive community that will empower informatics students to succeed and thrive. I hope to have your support in this journey.",
+				image: _2023_Drew,
+				pdf: _2023_Drew_infographic
+			},
+			{
+				name: "Sirena Akopyan - Elected",
+				statement: "As a dedicated member of the Informatics Undergraduate Association, I am excited to announce my candidacy for the position of President in the upcoming election. Over the past two years, I have served as the First-Year Representative and currently hold the position of Director of Outreach. As a Peer Advisor for the iSchool, I have had the opportunity to mentor incoming informatics students and share my passion for the field.My experiences with IUGA have taught me a lot about what informatics students actually want, and if elected, I will prioritize three main initiatives. First off, I want us to go crazy on merch next year by hosting design competitions every quarter. This will provide a platform for anyone in the informatics community to showcase their creativity and contribute to the iSchool. We will vote on the designs, and the chosen ones will be produced and sold to the community. Design winners get free merch!! I also plan on giving out free merch to students who win competitions at events like IUGA Game Night :) Second, I plan to bring back big “social” (drinking👀) events, such as iBall, which has been absent from the event calendar for far too long. Last year, we successfully revived iCruise, and this year we are bringing back iBBQ. I believe that social events are crucial to foster a sense of community within the informatics program. Lastly, I aim to increase our recruitment events, timed right before internships are released for specific companies. This will allow students to connect with potential employers, learn about internship opportunities, and get a head start on the application process. I will be running alongside Phyllis Chen, and if we are both elected, we will serve as co-presidents. Together, we will work towards making IUGA an even more inclusive and dynamic community for informatics students. I am grateful for your consideration and I am eager to take on this new challenge as President of the Informatics Undergraduate Association. Thank you.",
+				image: _2023_Sirena,
+				pdf: _2023_Sirena_inforgraphic
+			}
+		],
+		[Officers.VICE_PRESIDENT]: [
+			{
+				name: "Phyllis Chen - Elected",
+				image: _2023_Phyllis,
+				statement: "Hey iMajors :)) My name is Phyllis and I'm excited to be running for your next IUGA vice president! I've had the honor of being this year’s IUGA Director of Finance and helping to host fun and academic events that allows us to bond as a major. I am grateful for the experience, and I want to use this experience to continue representing your best interests by planning future events that cater to your needs and in full consideration of your opinions. My goals for next year include providing INFO Merch that is tailored on student voices and ensure it is well-suited to your liking, additional INFO recruiting events that can enhance industry connections for the next academic year that can teach us career-wise, our iCruise event to be held at a bigger scale and additionally an exciting large social event (like iCruise) that can be held at the beginning of the academic school year, not just the end! I hope to continue advocating for you and I look forward to my future experiences in the iSchool. If I am nominated for the position, me and Sirena (running for president), would like to take on the IUGA positions as co-presidents. I hope you also check out the other amazing candidates that are running and remember to vote! Thank you!",
+				pdf: _2023_Phyllis_infographic
+			}
+		],
+		[Officers.PUBLIC_RELATIONS]: [
+			{
+				name: "Ryan Louie - Elected",
+				image: _2023_Ryan,
+				statement: "Hi everyone! I'm Ryan and I am running for Director of Public Relations. I am a first year representative for IUGA and have learned a lot so far! You might have seen me at events, or taking photos for our LinkedIn headshot events! I'm excited to meet more of you in my time at UW, and snap more headshots when the cherry blossoms appear! To me, being an officer means having a responsibility to serve the club in ways that relate to their position. For public relations, one of the ways I want to expand in this role is focusing on the community aspect. There are a lot of infographic and visuals on Instagram, but I want to promote more people attending our events, and using my camera as a way to document highlights throughout the year, sharing it on our socials. Another thing I would want to do is have IUGA be more active on LinkedIn so as to highlight and promote more of our professional events. It's been a blast this year for me so far, and I would love to continue to help plan events next year as director of public relations!",
+				pdf: _2023_Ryan_infographic
+			},
+			{
+				name: "Asad Jaffery",
+				image: _2023_Asad,
+				statement: "Hi! I’m Asad, a first-year informatics major from Snoqualmie Washington. I’m running for the director of public relations! When reading about the roles, I felt that the director of public relations was the one for me for a couple of reasons. For one, if I was the president, I definitely wouldn’t want to hear myself talk as much as I would have to. But for two, I feel that being able to connect with and contribute to the community of informatics people at UW is the reason that IUGA is so cool to me (I’m also kinda behind in my CS class, so being Director of IT wouldn't be the move for me at the moment😅) . I’ve always been a sociable person, and I thrive when I get to meet new people, and work with others. Ultimately, the main reason that I want to be a part of the IUGA board, is to help people find their place here at UW, and welcome students from all over in order to create a safe, diverse, and fun environment!",
+				pdf: _2023_Asad_infographic
+			}
+		],
+		[Officers.OUTREACH]: [
+			{
+				name: "Suraj Shankar Gangaram - Elected",
+				image: _2023_Suraj,
+				statement: "Hey y'all, I'm Suraj, and I'm excited to have the opportunity to run for IUGA's Director of Outreach! As a second year student in the Informatics program, I have been able to take advantage of iSchool's many resources in building my career path. I know how daunting it is to apply for and secure an internship or employment opportunity, as I applied to over 100 of them during my freshman year alone. Consequently, I want to use this position to help facilitate people's internship application process, and I am planning to use my connections to set up and promote a multitude of career and professional development events. I also know the feeling and stressors involved with being a pre-major, as I had to apply for Informatics during my freshman year. I want to help pre-Informatics students have the best resources possible to apply for the highly selective Informatics program, so that they can join and contribute to iSchool and IUGA in their prospective futures. Having been part of my high school's Associated Student Body (ASB), I have learned how to better empathize with students, and I want to use this officer position to be able to hear out and voice UW students' feedback and concerns surrounding the Informatics program. As IUGA's Director of Outreach, I will take this role very seriously and with utmost responsibility, so that I can help people reach their career potential to the best of mine.",
+				pdf: _2023_Suraj_infographic
+			}
+		],
+		[Officers.FINANCE]: [
+			{
+				name: "Brandon Mendoza - Elected",
+				image: _2023_Brandon,
+				statement: "Hi everyone! I'm Brandon Mendoza. As a motivated and highly organized student leader, I am excited to announce my candidacy for Director of Finance of the Informatics Undergraduate Association. My experience as Treasurer of the Filipino American Student Association has prepared me for this role, giving me hands-on experience managing finances worth over $47,500 in various forms, creating budgets, and making clear and accurate financial reports using advanced spreadsheets skills. Additionally, I have extensive experience in fundraising planning, having organized a lucrative merchandise sales fundraiser that generated over $1,000 on launch day alone. My substantial event planning experience, including organizing a formal and a cultural festival, as well as pioneering a new dinner social during my term, would also be an asset to IUGA. My cross-club collaboration skills would allow me to work effectively with colleagues to plan and execute successful events that align with IUGA's goals. If elected as Director of Finance, I am confident that I would be able to bring my financial organization skills, fundraising experience, and budget proposal skills to the organization and help support its financial goals. My experience as an Informatics Teaching Assistant has also provided me with valuable skills and knowledge that can benefit IUGA. Working with diverse students and iSchool staff has taught me to approach problems from multiple perspectives, which will be important for working with various stakeholders in the iSchool community. Additionally, my knowledge of the iSchool's unique culture, values, and resources would enable me to provide insights into the broader context and perspectives of the iSchool community when making decisions that impact the IUGA student body. Furthermore, my familiarity with the iSchool's programs, initiatives, and faculty members would help me identify potential opportunities for collaboration and partnerships between IUGA and the iSchool. Thank you for your time and consideration!",
+				pdf: _2023_Brandon_infographic
+			},
+			{
+				name: "Annie Tu",
+				image: _2023_Annie,
+				statement: "Hello everyone! My name is Annie, and I am a junior from Bellevue, Washington. I was accepted into Informatics a few months ago, and I am hoping to be more involved in the iSchool community during my final year at UW. My experiences with IUGA have been extremely rewarding: at the first event I ever attended, “Sleepy Husky”, I got to meet other informatics and prospective students, and I also learned ways to build better sleep habits, some of which I still use to this day. I realized that being an officer of an organization and working with other RSO’s on campus means you can have a positive impact on the community around you. I am interested in the Director of Finance position because of the opportunity to be in a leadership role where I can help plan meaningful events that allow informatics students to feel a stronger sense of community. I also want to challenge myself and work with the other officers to create more items for the merch store or expand the size of social events. Fun fact; I was a business major for a quarter, so I have taken several relevant classes that taught me skills such as financial reporting and cost-benefit analysis. In addition, as the Head of Operations for a film production club, I have planned fundraisers, social events, and weekly meetings. On several short film projects, I have been responsible for managing the budget, and I hope to contribute to IUGA in similar ways. Thank you for reading my personal statement, and I hope you’ll consider voting for me!",
+				pdf: _2023_Annie_infographic
+			}
+		],
+		[Officers.DIVERSITY]: [
+			{
+				name: "Mari Woodworth - Elected",
+				image: _2023_Mariko,
+				statement: "Hi everyone! My name is Mari, I’m a third-year Info student and I’m honored to be running to be your next IUGA Director of Diversity. I would not be here if it weren’t for the iSchool’s tight-knit and supportive community. From when I first discovered Info in freshman year to getting into the major, I have experienced first-hand how committed everyone is to uplift one another. For my last year at UW, I want to give back and utilize my passion for promoting diversity to empower communities in the iSchool now and in the future. My experience as Director of Programming for TechTogether Seattle, a gender-focused hackathon, helped kickstart my passion for promoting diversity, specifically in the tech community. I credit hackathons with pushing me into design as they created an inclusive and welcoming atmosphere where I felt safe to try new things and not be afraid to fail in the process. Through these experiences, I want to create more spaces where people feel welcomed and included to express themselves and pursue what they love. This past year, I was also Cultural Head for UW’s Japanese Student Association, where I gained experience collaborating with other RSOs as well as planning large-scale events to promote and educate others about Japanese culture. I better understood the processes behind managing a team and multiple projects with moving parts and feel like I have grown and developed to be a stronger leader and team member. As IUGA Director of Diversity, I want to continue fostering diversity and inclusion within the iSchool through events, collaborations with WINFO, and other initiatives to create a safe and welcoming space for everyone.",
+				pdf: _2023_Mariko_infographic
+			},
+			{
+				name: "Afomeya Hailu",
+				image: _2023_Afomeya,
+				statement: "Hello Everyone! I am Afomeya Hailu, and I am a second-year Informatics and Political Science student running for IUGA’s Director of Diversity Efforts!! I am passionate about creating spaces for underrepresented students and ensuring that all students have access to the tools and resources they need to succeed. I first realized my passion for advocacy in high school during my time on the Student Advisory Board at Making Connections (UW) where I worked to advocate for and solve the needs of my fellow peers. More recently, I worked with Seattle Public Library on two separate projects that focused on building digital art literacy and journalism skills among non-dominant youth in the New Holly area. Following the F*** Stairs campaign at UW, I participated in the UX@UW 2022 hackathon where my partner and I worked on designing a map app for UW students that provided users with accessible routes around campus. Advocating relies heavily on one’s ability to practice EMPATHY! The iSchool’s emphasis on empathy is what initially attracted me to the INFO major, and is a value I practice every day. In this position, I commit to leading with empathy and curiosity as I advocate for all students. As Director of Diversity Efforts, I want to promote/ensure diversity and inclusion within the Informatics community. I am excited to combine my interest in informatics and advocacy to support my peers and future INFO students. Thank you!",
+				pdf: _2023_Afomeya_infographic
+			}
+		],
+		[Officers.CREATIVE]: [
+			{
+				name: "Sheamin Kim - Elected",
+				image: _2023_Sheamin,
+				pdf: _2023_Sheamin_infographic,
+				statement: "My name is Sheamin Kim and I’m a first-year undergraduate student here at the iSchool running for Creative Director of IUGA. Now usually, this is where I start telling you exactly why I am a good candidate. I’d start talking about my leadership experiences in high school as an officer in Key Club and National Honor Society. Then I’d transition into mentioning my current leadership roles as treasurer of the RSO DEV[0] as well as Head Coxswain of the Union Bay Rowing Club. I’d probably also sprinkle some mentions of my experiences with coding and design, maybe mentioning my WINFO Hackathon Finalist title. Then to make myself sound a little less like a resume, I would talk about my hobbies, which happen to be crochet, embroidery, and baking. But why would I do that? It’s not a very creative way to introduce myself. So instead, let’s talk about you. I don’t really know whom you might be- there are lots of students at the iSchool. But I know one thing- you deserve a good Creative Director. One you can rely on to work for you, to turn your requests into tangible results. And I think I can be the one to offer that to you. Not because I’m an amazing person necessarily, but because you all are. You are a group of fabulous students of the iSchool, people who surprise me every day by reaching new heights and bringing things into my worldview that shock and fascinate me. People whose opinions deserve to be heard. So, no matter my shortcomings, I’ll always be striving to be better for the people of the iSchool, because they deserve nothing other than my absolute best effort. Next time I greet you, I hope it is as your new Creative Director."
+			}
+		]
 	}
 }
 
@@ -1423,9 +1531,7 @@ export const WINFO_ELECTIONS: Elections = {
                 video: "https://www.youtube.com/embed/fQ3kuXFSUYo"
             }
 		],
-		[Officers.FINANCE]: [
-
-		],
+		[Officers.FINANCE]: [],
 		[Officers.CREATIVE]: [
             {
 				name: "Dana Rin",
