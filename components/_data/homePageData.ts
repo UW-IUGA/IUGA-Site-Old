@@ -8,17 +8,15 @@ import { faInstagram, faFacebook, IconDefinition } from '@fortawesome/free-brand
  * https://github.com/UW-IUGA/IUGA-Site/wiki/5.-Good-practices
  */
 
- import _brianna from '../_assets/electionsImages/2022/brianna.jpg';
- import _devina from '../_assets/electionsImages/2022/devinaTavathia.jpg';
- import _drew from '../_assets/electionsImages/2022/drewFavors.jpg';
- import _justin from '../_assets/electionsImages/2022/justinZeng.jpg';
- import _phyllis from '../_assets/electionsImages/2022/phyllischen.jpg';
- import _pranav from '../_assets/electionsImages/2022/pranavshekar.jpg';
- import _sachi from '../_assets/electionsImages/2022/sachiFigliolini.jpg';
- import _sarah from '../_assets/electionsImages/2022/sarahThomas.jpg';
- import _sirena from '../_assets/electionsImages/2022/sirenaakopyan.jpg';
- import _fyr1 from '../_assets/electionsImages/2022/fyr1.jpg';
- import _fyr2 from '../_assets/electionsImages/2022/fyr2.jpg';
+import _phyllis from '../_assets/electionsImages/2022/phyllischen.jpg';
+import _sirena from '../_assets/electionsImages/2022/sirenaakopyan.jpg';
+import _suraj from '../_assets/electionsImages/2023/SurajShankarGangaramimage.png';
+import _mariko from '../_assets/electionsImages/2023/MarikoWoodworthimage.jpg';
+import _shea from '../_assets/electionsImages/2023/SheaminKimimage.jpg';
+import _brandon from '../_assets/electionsImages/2023/BrandonMendozaimage.jpg'
+import _ryan from '../_assets/electionsImages/2023/RyanLouieimage.jpg';
+import _eric from '../_assets/electionsImages/2023/erickim.jpg';
+import _bhavya from '../_assets/electionsImages/2023/bhavya.jpg';
 
 /**
  * Use these officers enumerates below when you define them and the associated role.
@@ -118,62 +116,57 @@ export const homePageData: HomePageData = {
 	officers: [
 		{
 			position: Officers.COPRESIDENT,
-            name: "Justin Zeng",
-            picture: _justin,
-            github: 'https://github.com/Once28',
-			linkedin: "https://www.linkedin.com/in/justin-zeng-3b7b47165/"
+            name: "Sirena Akopyan",
+            picture: _sirena,
+			linkedin: "https://www.linkedin.com/in/sirena-akopyan/"
 		},
 		{
 			position: Officers.COPRESIDENT,
-			name: "Sachi Figliolini",
-			picture: _sachi,
-            linkedin: "http://www.linkedin.com/in/sachi-figliolini/"
+			name: "Phyllis Chen",
+			picture: _phyllis,
+            linkedin: "https://www.linkedin.com/in/phyllis-chen-profile/"
 		},
 		{
 			position: Officers.FINANCE,
-			name: "Phyllis Chen",
-			picture: _phyllis,
-			linkedin: "https://www.linkedin.com/in/phyllis-chen-profile"
+			name: "Brandon Mendoza",
+			picture: _brandon,
+			linkedin: "https://www.linkedin.com/in/bwmendo/"
 		},
 		{
 			position: Officers.CREATIVE,
-			name: "Sarah Thomas",
-			picture: _sarah,
-            linkedin: "https://www.linkedin.com/in/sarahetthomas/",
-            website: "https://sarahthomas.me"
+			name: "Sheamin Kim",
+			picture: _shea,
+            linkedin: "https://www.linkedin.com/in/sheamin-kim-b21818250/",
 		},
 		{
 			position: Officers.PUBLIC_RELATIONS,
-			name: "Brianna Pak",
-            picture: _brianna,
-			linkedin: "https://www.linkedin.com/in/briannapak/",
+			name: "Ryan Louie",
+            picture: _ryan,
+			linkedin: "https://www.linkedin.com/in/rylouie/",
 		},
 		{
 			position: Officers.OUTREACH,
-			name: "Sirena Akopyan",
-			picture: _sirena,
-			linkedin: "https://www.linkedin.com/in/sirena-akopyan-61862221a"
+			name: "Suraj Gangaram",
+			picture: _suraj,
+			linkedin: "https://www.linkedin.com/in/suraj-gangaram/"
 		},
 		{
 			position: Officers.DIVERSITY,
-			name: "Pranav Shekar",
-            picture: _pranav,
-            linkedin: "https://www.linkedin.com/in/pranav-shekar/",
-            website: "http://pranavshekar.com/"
+			name: "Mari Woodworth",
+            picture: _mariko,
+            linkedin: "https://www.linkedin.com/in/marikowoodworth/",
 		},
 		{
 			position: Officers.IT,
-			name: "Devina Tavathia",
-			picture: _devina,
-			linkedin: "https://www.linkedin.com/in/devina-tavathia-40722b167/",
-			website: "https://devinat.github.io/PersonalPortfolio/",
-			github: "https://github.com/DevinaT"
+			name: "Eric Kim",
+			picture: _eric,
+			linkedin: "https://www.linkedin.com/in/taehyunnkim/",
 		},
 		{
 			position: Officers.ACADEMIC,
-			name: "Drew Favors",
-            picture: _drew,
-			linkedin: "https://www.linkedin.com/in/drewfavors"
+			name: "Bhavya Garlapati",
+            picture: _bhavya,
+			linkedin: "https://www.linkedin.com/in/bhavya-garlapati-95ab46225/"
 		}
 	],
 	positionInformation: {
@@ -283,15 +276,5 @@ export const homePageData: HomePageData = {
 		},
 	},
 	fyrs: [
-		{
-			name: "Eric Kim",
-			picture: _fyr1,
-            linkedin: "https://www.linkedin.com/in/taehyunnkim/"
-		},
-		{
-			name: "Ryan Louie",
-			picture: _fyr2,
-			linkedin: "https://www.linkedin.com/in/ryan-zi-louie/"
-		}
 	]
 }
