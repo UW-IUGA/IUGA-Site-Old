@@ -2,11 +2,17 @@ import React from 'react';
 import App, { Container, NextAppContext } from 'next/app';
 import { withRouter, WithRouterProps } from 'next/router';
 import { Page } from '../components/Page/Page';
+import ReactGA from 'react-ga';
+
 
 /**
  * RouterProps is the type that must be used in order to get `withRouter` working. 
  */
 type RouterProps = WithRouterProps<Record<string, string | string[] | undefined>>
+
+declare global {
+    interface Window { dataLayer: any; }
+}
 
 /**
  * CustomApp overrides the default injection point that nextjs uses, so we can handle routes and 
@@ -34,9 +40,13 @@ class CustomApp extends App<RouterProps> {
 		return { pageProps };
 	}
 
+    componentDidMount() {
+        ReactGA.initialize('G-8TYQEK04CP');
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }
+
 	render() {
 		const { Component, pageProps, router } = this.props;
-
 		// If the year query parameter exists, you can access it. Otherwise it is undefined.
 		return <Container>
 			<Page pathname={router.pathname}>
