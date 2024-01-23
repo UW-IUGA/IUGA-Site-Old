@@ -1,11 +1,10 @@
 .navigation-bar {
 	background: white;
-	border-top: 5px solid #39275b;
 	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-	padding: 0px;
+	padding: .5rem 1rem;
 	margin: 0px;
 	overflow: hidden;
-	position: fixed;
+	position: relative;
 	z-index: 1;
 	top: 0;
 }

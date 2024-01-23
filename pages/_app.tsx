@@ -1,14 +1,9 @@
 import React from 'react';
-import App, { Container, NextAppContext } from 'next/app';
-import { withRouter, WithRouterProps } from 'next/router';
+import App, { Container, AppContext, AppProps } from 'next/app';
+import { withRouter } from 'next/router';
 import { Page } from '../components/Page/Page';
 import ReactGA from 'react-ga';
 
-
-/**
- * RouterProps is the type that must be used in order to get `withRouter` working. 
- */
-type RouterProps = WithRouterProps<Record<string, string | string[] | undefined>>
 
 declare global {
     interface Window { dataLayer: any; }
@@ -25,12 +20,12 @@ declare global {
  *      William Kwok
  *      June 6, 2019
  */
-class CustomApp extends App<RouterProps> {
+class CustomApp extends App<AppProps> {
     /**
      * getInitialProps is required because the way nextjs works is through server side rendering.
      * It would mess up if you tried to do it the conventional way.
      */
-	static async getInitialProps({ Component, ctx }: NextAppContext) {
+	static async getInitialProps({ Component, ctx }: AppContext) {
 		let pageProps = {};
 
 		if (Component.getInitialProps) {
