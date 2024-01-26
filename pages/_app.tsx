@@ -2,7 +2,7 @@ import React from 'react';
 import App, { Container, AppContext, AppProps } from 'next/app';
 import { withRouter } from 'next/router';
 import { Page } from '../components/Page/Page';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 
 declare global {
@@ -37,7 +37,6 @@ class CustomApp extends App<AppProps> {
 
     componentDidMount() {
         ReactGA.initialize('G-8TYQEK04CP');
-        ReactGA.pageview(window.location.pathname + window.location.search);
     }
 
 	render() {
