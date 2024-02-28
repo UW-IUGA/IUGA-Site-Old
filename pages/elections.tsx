@@ -75,7 +75,7 @@ const ElectionsPage: React.FC<ElectionsPageProps> = () => {
 				{selectedPerson.statement.split("\n").map((paragraph, index) => <p key={index}>{paragraph}</p>)}
 				{selectedPerson.linkToPortfolio && <p className="portfolio-link"><a href={selectedPerson.linkToPortfolio}>Link to portfolio</a></p>}
 				{selectedPerson.extraImage && <div className="election-wrapper"><img className="elections-extra-image" src={selectedPerson.extraImage} alt={`${selectedPerson.name} infographic`} /></div>}
-				{selectedPerson.pdf && <div className="election-wrapper"><embed src={selectedPerson.pdf} type="application/pdf" width="100%" height="600px" /></div>}
+				{selectedPerson.pdf && <div className="election-wrapper"><embed className="embededFrame" src={selectedPerson.pdf+"#view=FitV"} type="application/pdf" /></div>}
 				{selectedPerson.video && <div className="election-wrapper"><iframe src={selectedPerson.video} className="election-iframe"></iframe></div>}
 			</div>
 		</div>
