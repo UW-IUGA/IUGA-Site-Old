@@ -45,6 +45,11 @@
 	text-align: center;
 }
 
+.embededFrame {
+    width: 100%;
+    height: 600px;
+}
+
 .admin-message {
 	font-style: italic;
 }
